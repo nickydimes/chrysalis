@@ -6,28 +6,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Chrysalis is an interdisciplinary research framework studying criticality and transformation dynamics across physics, neuroscience, and ethnography. It models the "Eight-Step Navigation Protocol" — a universal pattern observed in phase transitions across physical, psychological, and cultural domains.
 
-There are two copies: `chrysalis/` (main, fully developed) and `chrysalis-1/` (minimal fork with physics simulations only).
-
 ## Commands
 
-### Python Simulations (chrysalis/)
+### Python Simulations
 ```bash
-source chrysalis/.venv/bin/activate
-python chrysalis/simulations/phase_transitions/ising_2d.py
-python chrysalis/simulations/phase_transitions/potts_2d.py
-python chrysalis/simulations/phase_transitions/percolation_2d.py
-python chrysalis/simulations/neuroscience/critical_brain.py
+source .venv/bin/activate
+python simulations/phase_transitions/ising_2d.py
+python simulations/phase_transitions/potts_2d.py
+python simulations/phase_transitions/percolation_2d.py
+python simulations/neuroscience/critical_brain.py
 ```
 
 ### Tools
 ```bash
-python chrysalis/src/tools/supernote_parser.py       # Parse markdown observation notes
-python chrysalis/src/tools/universality_plotter.py    # Generate universality comparison dashboard
+python src/tools/supernote_parser.py       # Parse markdown observation notes
+python src/tools/universality_plotter.py    # Generate universality comparison dashboard
 ```
 
-### Gemini MCP Server (chrysalis/gemini-mcp/)
+### Gemini MCP Server (gemini-mcp/)
 ```bash
-cd chrysalis/gemini-mcp
+cd gemini-mcp
 npm run build        # tsc compile
 npm test             # jest
 npm run test:watch   # jest --watch
@@ -39,12 +37,10 @@ npm run type-check   # tsc --noEmit
 
 ### Services
 ```bash
-./chrysalis/launch_chrysalis.sh   # Starts Ollama server + Open WebUI
+./launch_chrysalis.sh   # Starts Ollama server + Open WebUI
 ```
 
 ## Architecture
-
-### chrysalis/ (main project)
 - **simulations/phase_transitions/**: Three classical models (Ising 2D, Potts 2D, Percolation 2D) demonstrating universality — different microscopic dynamics exhibiting identical critical behavior
 - **simulations/neuroscience/**: Neural branching process model (critical brain hypothesis, σ_c = 1.0)
 - **src/tools/**: Analysis utilities — `supernote_parser.py` organizes observations by Eight-Step Protocol sections, `universality_plotter.py` generates cross-system comparison dashboards
