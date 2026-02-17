@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "date": "2026-02-17",
+    "location": "Simulation Lab",
+    "tags": [
+      "test",
+      "simulation",
+      "neuroscience"
+    ],
+    "source": "Internal test",
+    "original_file": "test_observation.md"
+  },
+  "protocol_steps": {
+    "Purification": "Testing the clearing of the mental workspace.",
+    "Containment": "Observing the peak fluctuations in the neural model at sigma 0.5.",
+    "Anchoring": "",
+    "Dissolution": "",
+    "Liminality": "",
+    "Encounter": "",
+    "Integration": "The Universality proof is now ready for visual verification.",
+    "Emergence": ""
+  }
+}

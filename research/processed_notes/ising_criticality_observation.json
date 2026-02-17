@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "date": "2026-01-08",
+    "location": "Simulation Lab",
+    "tags": [
+      "physics",
+      "ising-model",
+      "phase-transition",
+      "criticality",
+      "universality"
+    ],
+    "source": "Simulation analysis — Onsager 1944, Kadanoff 1966 block-spin RG",
+    "original_file": "ising_criticality_observation.md"
+  },
+  "protocol_steps": {
+    "Purification": "Before approaching the critical point, the 2D Ising system must be prepared by equilibrating from an arbitrary initial configuration. At high temperature the spins are fully disordered — a thermal bath has stripped all remnant structure. Metropolis dynamics serve as the purification mechanism: repeated local updates erase memory of the initial state. The autocorrelation time quantifies how many sweeps are needed before the system has genuinely \"forgotten\" where it started. Only after this preparation can measurements near T_c be trusted.",
+    "Containment": "The finite lattice itself acts as the container. Periodic boundary conditions create a closed topology — no edges, no surface effects, just bulk behavior folded onto a torus. The lattice size L sets the scale of containment: it bounds the maximum correlation length the system can develop. When xi >> L, the container constrains the phase transition, rounding the divergence into a finite-size peak. This is not a limitation but a feature — it's what makes finite-size scaling analysis possible.",
+    "Anchoring": "",
+    "Dissolution": "As temperature approaches T_c = 2/ln(1+sqrt(2)) from above, the paramagnetic order dissolves. Domains of aligned spins grow, merge, and break apart on all length scales simultaneously. The spin-spin correlation function transitions from exponential decay (xi finite) to power-law decay (xi -> infinity). The specific heat diverges logarithmically. The old high-temperature phase — uniform disorder with short-range correlations — is breaking apart.",
+    "Liminality": "At exactly T_c, the system dwells in the threshold state. The correlation length has diverged: every spin is correlated with every other spin across the entire lattice. Fluctuations exist on all length scales — the system is scale-invariant. The magnetization distribution becomes bimodal for finite L, reflecting the system's susceptibility to spontaneous symmetry breaking in either direction. This is maximal susceptibility: the slightest perturbation (an external field h -> 0+) will select one of the two ordered states.",
+    "Encounter": "The renormalization group reveals what was inaccessible from within either the ordered or disordered phase: the fixed point. Kadanoff's block-spin transformation shows that at T_c, coarse-graining the lattice by factors of b produces a statistically identical system. The critical exponents (beta=1/8, gamma=7/4, nu=1 for 2D Ising) encode the geometry of this fixed point. They are universal — the same exponents govern any system in the Z2 universality class, regardless of microscopic details.",
+    "Integration": "The Binder cumulant U_L = 1 - <m^4>/(3<m^2>^2) provides the integration mechanism. By plotting U_L vs T for multiple lattice sizes, the crossing point identifies T_c without prior knowledge of the critical temperature. The scaling collapse — plotting L^{beta/nu} * m vs (T-T_c)*L^{1/nu} — binds the finite-size data from different L values onto a single universal curve. Measurements that appeared system-size-dependent are revealed as different views of the same underlying function.",
+    "Emergence": "The ordered low-temperature phase cannot be predicted from the high-temperature phase alone. Spontaneous symmetry breaking selects one of two degenerate ground states (all up or all down) — a choice not encoded in the symmetric Hamiltonian. The emergent magnetization is a collective property: no single spin \"decides\" to align, yet long-range order crystallizes from local interactions. This is genuine emergence — new macroscopic structure that exists only as a property of the whole."
+  }
+}

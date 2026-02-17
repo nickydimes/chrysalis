@@ -21,6 +21,20 @@ python simulations/neuroscience/critical_brain.py
 ```bash
 python src/tools/supernote_parser.py       # Parse markdown observation notes
 python src/tools/universality_plotter.py    # Generate universality comparison dashboard
+# Or via installed CLI entry points:
+chrysalis-parse                            # Same as supernote_parser.py
+chrysalis-validate                         # Same as validate_notes.py
+```
+
+### Package Installation
+```bash
+pip install -e .    # Editable install — enables cross-module imports and CLI entry points
+```
+
+### Python Tests
+```bash
+python -m pytest tests/ -v             # Run all 43 tests
+python -m pytest tests/test_supernote_parser.py   # Run one module
 ```
 
 ### Gemini MCP Server (gemini-mcp/)
@@ -35,6 +49,9 @@ npm run dev          # tsx src/index.ts
 npm run type-check   # tsc --noEmit
 ```
 
+### MCP Integration
+The gemini-mcp server is configured in `.mcp.json` for Claude Code auto-discovery via stdio transport. It exposes 5 tools: `gemini_chat`, `gemini_list_models`, `gemini_deep_research`, `gemini_web`, `gemini_summarize_web`. Requires `GEMINI_API_KEY` in `gemini-mcp/.env`. The HTTP transport (`npm run start`, port 3000) is also available for Python MCP clients.
+
 ### Services
 ```bash
 ./launch_chrysalis.sh   # Starts Ollama server + Open WebUI
@@ -47,7 +64,7 @@ npm run type-check   # tsc --noEmit
 - **data/ethnographic/**: Structured ethnographic observations; **data/raw_notes/**: Raw markdown notes
 - **research/**: Working notes, processed observations, references, and theoretical models
 - **docs/**: Foundational theory, framework design, and methodology documentation
-- **gemini-mcp/**: TypeScript MCP server for Google Gemini (v1.3.2), separate Node.js project with its own build system
+- **gemini-mcp/**: TypeScript MCP server for Google Gemini (v1.3.2), supports both stdio (`dist/stdio.js`) and HTTP (`dist/index.js`) transports
 - **prompts/templates/**: LLM prompt templates
 
 ### Key Dependencies

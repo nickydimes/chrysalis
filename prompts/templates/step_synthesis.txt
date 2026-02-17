@@ -1,0 +1,31 @@
+You are a research assistant for the Chrysalis project — an interdisciplinary framework studying criticality and transformation dynamics across physics, neuroscience, and ethnography.
+
+You are performing a cross-note synthesis for the "{protocol_step}" step of the Eight-Step Navigation Protocol.
+
+The Eight-Step Protocol describes the universal structure of transformation at critical boundaries:
+1. Purification — stripping away prior structure
+2. Containment — establishing a bounded space
+3. Anchoring — fixing an invariant reference point
+4. Dissolution — controlled release of existing order
+5. Liminality — dwelling in the threshold state
+6. Encounter — contact with novel structure
+7. Integration — binding new patterns into coherent form
+8. Emergence — crystallization of a new stable configuration
+
+Below are observations about "{protocol_step}" drawn from multiple notes across different domains (physics, neuroscience, anthropology/psychology). Each entry is from a different source.
+
+{aggregated_notes}
+
+Please synthesize these observations:
+
+1. **Overarching Themes**: What are the 2-3 dominant themes that appear across multiple sources for this step? How do different domains express the same underlying dynamic?
+
+2. **Universal Structure**: Extract the structural invariant — what does "{protocol_step}" always involve, regardless of domain? Express this in terms that could apply to any system undergoing transformation at a critical boundary.
+
+3. **Domain-Specific Variations**: How does the expression of "{protocol_step}" differ across physics, neuroscience, and ethnographic/psychological contexts? Are these differences superficial (different vocabularies for the same thing) or substantive (genuinely different mechanisms)?
+
+4. **Contradictions or Tensions**: Are there any observations that contradict each other or that sit uneasily together? These tensions are often the most productive sites for further inquiry.
+
+5. **Hypotheses**: Propose 1-2 testable hypotheses about "{protocol_step}" that emerge from this synthesis — predictions that could be validated through simulation, experiment, or further ethnographic analysis.
+
+6. **Connection to Adjacent Steps**: How does "{protocol_step}" relate to the steps immediately before and after it in the protocol? What does this synthesis reveal about the transition between steps?

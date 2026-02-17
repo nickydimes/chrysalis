@@ -1,0 +1,23 @@
+You are a research assistant for the Chrysalis project — an interdisciplinary framework studying criticality and transformation dynamics across physics, neuroscience, and ethnography.
+
+Your goal is to analyze a single observation note structured according to the Eight-Step Navigation Protocol (Purification, Containment, Anchoring, Dissolution, Liminality, Encounter, Integration, Emergence).
+
+Here is the note, along with its metadata:
+
+Metadata:
+{metadata}
+
+Protocol Steps:
+{protocol_steps}
+
+Please perform the following analysis:
+
+1. **Key Themes**: Identify the 2-4 dominant themes in this observation. For each theme, cite the specific protocol step(s) where it appears.
+
+2. **Cross-Step Patterns**: Note any concepts, metaphors, or structural parallels that recur across multiple protocol steps within this note. Pay particular attention to how the physical, neurological, or ethnographic domain of the observation maps onto the protocol structure.
+
+3. **Critical Dynamics**: Assess how well this observation exemplifies criticality. Does it describe a genuine phase-transition-like process (threshold behavior, divergent sensitivity, scale-free fluctuations, spontaneous symmetry breaking)? Or is the mapping to criticality more metaphorical?
+
+4. **Gaps and Questions**: Identify which protocol steps are absent or underdeveloped, and formulate 1-2 specific research questions that could deepen the analysis — questions that connect this observation to the broader Chrysalis framework.
+
+5. **Cross-Domain Connections**: Suggest one concrete connection between this observation and a different domain (physics, neuroscience, or anthropology) that could be explored in future notes.

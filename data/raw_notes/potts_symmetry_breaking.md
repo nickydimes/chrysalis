@@ -1,0 +1,27 @@
+---
+date: 2026-01-30
+location: "Simulation Lab"
+tags: [physics, potts-model, symmetry-breaking, first-order, universality]
+source: "Potts 1952, Baxter 1973, Wu 1982 review"
+---
+
+## Purification
+The q-state Potts model generalizes the Ising model from Z2 to Zq symmetry. Each spin can take q values (colors) rather than just two. The purification for simulation is analogous to Ising: equilibrate from a random initial configuration using Metropolis or Wolff dynamics until autocorrelation has decayed. However, the Potts model introduces a qualitatively new feature: for q > 4 on the square lattice, the transition becomes first-order. The preparation must account for the possibility of metastable states that persist much longer than at a continuous transition — the system can become trapped in a "supercooled" disordered phase.
+
+## Containment
+The lattice container plays a more subtle role for first-order transitions (q > 4) than for continuous ones. At a first-order transition, the two phases coexist at T_c — ordered and disordered domains separated by interfaces with finite surface tension. The lattice size determines whether the system can accommodate these coexisting phases. For the q=3 case (continuous transition), containment functions as in Ising: finite-size rounding of the divergence. For q=10 (strongly first-order), containment creates a qualitatively different phenomenon: the system tunnels between metastable states with a frequency that depends on system size.
+
+## Dissolution
+The disordering transition in the q=3 Potts model has exact critical exponents: beta/nu = 2/15, gamma/nu = 26/15, nu = 5/6. These differ from the Ising exponents — the q=3 Potts model belongs to a different universality class. The dissolution of order is characterized by the growth of domains of all q colors. Unlike Ising, where domains of up and down spins compete, here three (or more) colored phases compete simultaneously. The Fortuin-Kasteleyn representation maps this multi-phase dissolution onto a correlated bond percolation problem, revealing the geometric structure underlying the thermal transition.
+
+## Liminality
+At the q=3 critical point, the conformal field theory description predicts a central charge c = 4/5, corresponding to a specific universality class with its own operator content and fusion rules. The correlation functions decay as power laws with specific anomalous dimensions. The system exhibits a larger symmetry than the Zq of the Hamiltonian — at the critical point, the full conformal group emerges as an exact symmetry. This emergent symmetry at the liminal point is not present in either the ordered or disordered phase.
+
+## Encounter
+The Potts model reveals something genuinely new about universality: the critical behavior depends continuously on q (for q <= 4). As q increases from 2 toward 4, the critical exponents change continuously, tracing a line through theory space. At q=4, a marginal operator becomes relevant and the transition changes character from continuous to first-order — a tricritical point in the space of universality classes. This "encounter" — the existence of a continuous family of universality classes parametrized by q — has no analogue in the Ising framework and was only understood through the exact solutions of Baxter and the conformal field theory of the 1980s.
+
+## Integration
+The Wolff cluster algorithm provides computational integration for the Potts model. The Fortuin-Kasteleyn bond probability p_add = 1 - exp(-beta) connects neighboring same-color spins into clusters that are then flipped collectively to a randomly chosen new color. This algorithm respects the Zq symmetry and dramatically reduces critical slowing down (z_Wolff ~ 0.5 vs z_Metropolis ~ 2 for q=3). The Binder cumulant, adapted for the q-fold symmetry, identifies the critical temperature through the crossing of curves for different lattice sizes.
+
+## Emergence
+For q <= 4, the emergent ordered phase below T_c spontaneously breaks the Zq symmetry — one of q degenerate ground states is selected. For q > 4, the transition is first-order: the system jumps discontinuously from complete disorder to near-complete order, with latent heat released at the transition. The q=4 boundary case is exactly marginal, with logarithmic corrections to scaling. The rich phase diagram of the Potts model — continuous for q <= 4, first-order for q > 4, with the tricritical q=4 point — demonstrates that the "universality" of phase transitions is itself organized into a structured landscape of possible behaviors.

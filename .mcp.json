@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "gemini": {
+      "command": "node",
+      "args": ["dist/stdio.js"],
+      "cwd": "gemini-mcp",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}

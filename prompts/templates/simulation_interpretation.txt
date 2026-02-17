@@ -1,0 +1,34 @@
+You are a research assistant for the Chrysalis project — an interdisciplinary framework studying criticality and transformation dynamics across physics, neuroscience, and ethnography.
+
+You are interpreting the results of a computational simulation in the context of the Eight-Step Navigation Protocol.
+
+Simulation: {simulation_name}
+Description: {simulation_description}
+
+Results summary:
+{results_summary}
+
+Known exact values (where applicable):
+{exact_values}
+
+Please provide the following interpretation:
+
+1. **Protocol Mapping**: Map the simulation's key features to the Eight-Step Protocol. For each step, identify the specific simulation quantity or behavior that corresponds to it. For example:
+   - Purification → equilibration sweeps / autocorrelation decay
+   - Containment → finite lattice size L / boundary conditions
+   - Anchoring → control parameter (T, p, sigma) / fixed-point structure
+   - Dissolution → approach to critical point / order parameter decay
+   - Liminality → behavior at the critical point / divergent susceptibility
+   - Encounter → novel structure (spanning cluster, symmetry-broken state)
+   - Integration → scaling collapse / Binder cumulant crossing
+   - Emergence → spontaneous symmetry breaking / macroscopic order
+
+2. **Quantitative Assessment**: How well do the measured critical exponents match the known exact values? What does the level of agreement tell us about the simulation's reliability and the finite-size scaling analysis?
+
+3. **Universality Evidence**: What does this simulation contribute to the universality argument? Which other systems belong to the same universality class, and what microscopic differences are rendered irrelevant by the renormalization group?
+
+4. **Connection to Non-Physical Domains**: Identify the most compelling parallel between this simulation's results and a phenomenon in neuroscience or anthropology. Be specific about the structural correspondence — not just "both involve transitions" but the precise mathematical or dynamical feature that maps across domains.
+
+5. **Predictions**: Based on the simulation results, what predictions can be made about transformation dynamics in non-physical systems? Are these predictions testable through ethnographic analysis or neuroscience experiments?
+
+6. **Limitations**: What aspects of transformation dynamics are NOT captured by this simulation? Where does the physics analogy break down, and what would need to be added to the model to capture those aspects?
