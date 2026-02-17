@@ -55,4 +55,14 @@ npm run type-check   # tsc --noEmit
 - **Node.js** (gemini-mcp): @google/generative-ai, @modelcontextprotocol/sdk, winston, dotenv
 
 ### Simulation Pattern
-All phase transition simulations follow the same structure: sweep a control parameter through a critical point, measure order parameter/susceptibility/specific heat, and generate 4-panel visualization figures. Critical points: Ising T_c ≈ 2.269, Potts T_c ≈ 0.995, Percolation p_c ≈ 0.5927.
+All simulations follow a common structure with research-grade features:
+- **Control parameter sweep** through a critical point with measurement of order parameter, susceptibility, and specific heat
+- **Multi-seed ensemble averaging** (seeds: 42, 137, 256, 314, 999) with bootstrap error bars (n_bootstrap=200)
+- **Finite-size scaling** across multiple lattice sizes with Binder cumulant analysis
+- **Two output figures**: `*_results.png` (4-panel overview) and `*_scaling.png` (4-panel scaling analysis)
+
+#### Model-specific features
+- **Ising** (T_c ≈ 2.269): Wolff cluster algorithm, autocorrelation time comparison, exact exponents β/ν=1/8, γ/ν=7/4, ν=1
+- **Potts** (T_c ≈ 0.995): Wolff cluster with FK bond probability, exact exponents β/ν=2/15, γ/ν=26/15, ν=5/6
+- **Percolation** (p_c ≈ 0.5927): Union-Find with path compression, spanning probability, cluster size distribution with MLE power-law fit (τ=187/91), exact exponents β/ν=5/48, γ/ν=43/24, ν=4/3
+- **Critical Brain** (σ_c = 1.0): Sparse set-based avalanche propagation, size/duration distributions with MLE fits, size-duration scaling (γ_sd=2), mean-field exponents P(s)~s^{-3/2}, P(d)~d^{-2}
