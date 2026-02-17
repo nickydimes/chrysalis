@@ -1,0 +1,3 @@
+[submodule "gemini-mcp"]
+	path = gemini-mcp
+	url = https://github.com/houtini-ai/gemini-mcp.git

@@ -15,6 +15,9 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Secrets
+.webui_secret_key
+
 # Large files
 *.bin
 *.gguf
