@@ -23,6 +23,7 @@ Produces:
 
 import numpy as np
 import matplotlib.pyplot as plt
+from numba import njit
 from pathlib import Path
 
 
@@ -49,53 +50,86 @@ def powerlaw_mle(data, s_min=5):
     return alpha
 
 
-# --- Model ---
+# --- Model (numba-accelerated) ---
 
-def run_avalanche_sparse(N, sigma, rng, max_activations):
+@njit
+def _run_avalanche(N, p, seed_i, seed_j, max_activations, rand_vals, footprint):
+    """Numba-accelerated avalanche propagation using array-based BFS.
+
+    Uses two flat arrays as alternating active-neuron buffers.
+    footprint is a pre-allocated N×N boolean array (zeroed on entry).
+
+    Returns (size, duration, rand_consumed).
     """
-    Run a single avalanche using sparse set-based propagation.
+    # Active buffers (flat: pairs of i,j stored as i*N+j)
+    buf_a = np.empty(N * N, dtype=np.int32)
+    buf_b = np.empty(N * N, dtype=np.int32)
 
-    Uses Python sets for active/footprint tracking — dramatically faster
-    for small (subcritical) avalanches since we avoid allocating full N×N arrays.
-    Only converts to dense array when needed for snapshots.
-
-    Returns (size, duration, footprint_set).
-    """
-    p = sigma / 2.0
-
-    # Seed one random neuron
-    i, j = int(rng.integers(N)), int(rng.integers(N))
-    active = {(i, j)}
-    footprint = {(i, j)}
-
+    footprint[seed_i, seed_j] = True
+    buf_a[0] = seed_i * N + seed_j
+    n_active = 1
     size = 1
     duration = 0
+    rand_idx = 0
+    n_rand = len(rand_vals)
 
-    while active:
+    di = np.array([1, -1, 0, 0], dtype=np.int32)
+    dj = np.array([0, 0, 1, -1], dtype=np.int32)
+
+    while n_active > 0:
         duration += 1
-        new_active = set()
+        n_new = 0
 
-        for (ai, aj) in active:
-            for di, dj in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
-                ni, nj = (ai + di) % N, (aj + dj) % N
-                if (ni, nj) not in footprint and rng.random() < p:
-                    new_active.add((ni, nj))
+        for k in range(n_active):
+            idx = buf_a[k]
+            ai = idx // N
+            aj = idx % N
+            for d in range(4):
+                ni = (ai + di[d]) % N
+                nj = (aj + dj[d]) % N
+                if not footprint[ni, nj]:
+                    if rand_vals[rand_idx] < p:
+                        footprint[ni, nj] = True
+                        buf_b[n_new] = ni * N + nj
+                        n_new += 1
+                    rand_idx += 1
+                    if rand_idx >= n_rand:
+                        rand_idx = 0
 
-        new_active -= footprint
-        active = new_active
-        footprint |= active
-        size += len(active)
+        size += n_new
+        n_active = n_new
+
+        # Swap buffers
+        buf_a, buf_b = buf_b, buf_a
 
         if size >= max_activations:
             break
 
+    return size, duration
+
+
+def run_avalanche_sparse(N, sigma, rng, max_activations):
+    """Run a single avalanche with numba acceleration.
+
+    Returns (size, duration, footprint_array).
+    """
+    p = sigma / 2.0
+    seed_i = int(rng.integers(N))
+    seed_j = int(rng.integers(N))
+    # Pre-generate random numbers (4 per potential neuron)
+    rand_vals = rng.random(N * N)
+    footprint = np.zeros((N, N), dtype=np.bool_)
+    size, duration = _run_avalanche(N, p, seed_i, seed_j, max_activations,
+                                     rand_vals, footprint)
     return size, duration, footprint
 
 
-def footprint_to_array(footprint_set, N):
-    """Convert a set of (i,j) tuples to a boolean N×N array."""
+def footprint_to_array(footprint, N):
+    """Identity for array footprints, convert sets for backward compat."""
+    if isinstance(footprint, np.ndarray):
+        return footprint
     arr = np.zeros((N, N), dtype=bool)
-    for i, j in footprint_set:
+    for i, j in footprint:
         arr[i, j] = True
     return arr
 

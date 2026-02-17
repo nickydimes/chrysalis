@@ -51,7 +51,7 @@ npm run type-check   # tsc --noEmit
 - **prompts/templates/**: LLM prompt templates
 
 ### Key Dependencies
-- **Python**: numpy, scipy, matplotlib, networkx, pandas (see `requirements.txt`)
+- **Python**: numpy, matplotlib, networkx, pandas (see `requirements.txt`)
 - **Node.js** (gemini-mcp): @google/generative-ai, @modelcontextprotocol/sdk, winston, dotenv
 
 ### Simulation Pattern

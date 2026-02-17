@@ -25,6 +25,7 @@ Produces:
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
+from numba import njit
 from pathlib import Path
 
 
@@ -51,10 +52,82 @@ def powerlaw_mle(data, s_min=5):
     return alpha
 
 
-# --- Union-Find ---
+# --- Union-Find (numba-accelerated) ---
 
+@njit
+def _uf_find(parent, x):
+    """Find root with path compression."""
+    root = x
+    while parent[root] != root:
+        root = parent[root]
+    while parent[x] != root:
+        parent[x], x = root, parent[x]
+    return root
+
+
+@njit
+def _uf_union(parent, rank, size, a, b):
+    """Union by rank."""
+    ra = _uf_find(parent, a)
+    rb = _uf_find(parent, b)
+    if ra == rb:
+        return
+    if rank[ra] < rank[rb]:
+        ra, rb = rb, ra
+    parent[rb] = ra
+    size[ra] += size[rb]
+    if rank[ra] == rank[rb]:
+        rank[ra] += 1
+
+
+@njit
+def _find_clusters(grid):
+    """Numba-accelerated cluster finding via Union-Find.
+    Returns (labeled, sizes_array, n_clusters)."""
+    L = grid.shape[0]
+    n = L * L
+    parent = np.arange(n, dtype=np.int32)
+    rank = np.zeros(n, dtype=np.int32)
+    size = np.ones(n, dtype=np.int32)
+
+    # Build unions
+    for i in range(L):
+        for j in range(L):
+            if grid[i, j] == 0:
+                continue
+            idx = i * L + j
+            if j + 1 < L and grid[i, j + 1]:
+                _uf_union(parent, rank, size, idx, i * L + j + 1)
+            if i + 1 < L and grid[i + 1, j]:
+                _uf_union(parent, rank, size, idx, (i + 1) * L + j)
+
+    # Label clusters — assign sequential labels to roots
+    labeled = np.zeros((L, L), dtype=np.int32)
+    root_label = np.full(n, -1, dtype=np.int32)
+    label_counter = 0
+    # First pass: assign labels to roots
+    for i in range(L):
+        for j in range(L):
+            if grid[i, j] == 0:
+                continue
+            root = _uf_find(parent, i * L + j)
+            if root_label[root] < 0:
+                root_label[root] = label_counter
+                label_counter += 1
+            labeled[i, j] = root_label[root] + 1  # 1-indexed
+
+    # Collect sizes (one per cluster)
+    sizes = np.empty(label_counter, dtype=np.int32)
+    for idx in range(n):
+        if root_label[idx] >= 0:
+            sizes[root_label[idx]] = size[idx]
+
+    return labeled, sizes, label_counter
+
+
+# Python-facing wrapper (keeps existing API)
 class UnionFind:
-    """Union-Find with path compression and union-by-rank."""
+    """Union-Find with path compression and union-by-rank (Python fallback)."""
 
     def __init__(self, n):
         self.parent = list(range(n))
@@ -80,58 +153,19 @@ class UnionFind:
         if self.rank[ra] == self.rank[rb]:
             self.rank[ra] += 1
 
-    def cluster_sizes(self):
-        """Return array of all cluster sizes."""
-        roots = {}
-        for i in range(len(self.parent)):
-            r = self.find(i)
-            roots[r] = self.size[r]
-        return np.array(list(roots.values()))
-
 
 # --- Model ---
 
 def generate_lattice(L, p, rng):
     """Generate an LxL lattice where each site is occupied with probability p."""
-    return (rng.random((L, L)) < p).astype(int)
+    return (rng.random((L, L)) < p).astype(np.int8)
 
 
 def find_clusters_uf(grid):
-    """Label connected clusters using Union-Find with 4-connectivity.
-    Returns (labeled_array, cluster_sizes_excluding_empty)."""
-    L = grid.shape[0]
-    uf = UnionFind(L * L)
-    occupied = grid.ravel().astype(bool)
-
-    for i in range(L):
-        for j in range(L):
-            if not grid[i, j]:
-                continue
-            idx = i * L + j
-            # Check right and down neighbors
-            if j + 1 < L and grid[i, j + 1]:
-                uf.union(idx, i * L + j + 1)
-            if i + 1 < L and grid[i + 1, j]:
-                uf.union(idx, (i + 1) * L + j)
-
-    # Build labeled array and sizes
-    labeled = np.zeros((L, L), dtype=int)
-    root_to_label = {}
-    label_counter = 0
-    sizes = []
-
-    for i in range(L):
-        for j in range(L):
-            if not grid[i, j]:
-                continue
-            root = uf.find(i * L + j)
-            if root not in root_to_label:
-                label_counter += 1
-                root_to_label[root] = label_counter
-                sizes.append(uf.size[root])
-            labeled[i, j] = root_to_label[root]
-
-    return labeled, np.array(sizes) if sizes else np.array([])
+    """Label connected clusters using numba-accelerated Union-Find.
+    Returns (labeled_array, cluster_sizes)."""
+    labeled, sizes, n_clusters = _find_clusters(grid)
+    return labeled, sizes if n_clusters > 0 else np.array([], dtype=np.int32)
 
 
 def largest_cluster_fraction(labeled, L):

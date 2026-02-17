@@ -23,7 +23,7 @@ Produces:
 
 import numpy as np
 import matplotlib.pyplot as plt
-from collections import deque
+from numba import njit
 from pathlib import Path
 
 
@@ -57,62 +57,113 @@ def autocorrelation_time(series):
     return max(tau_int, 0.5)
 
 
-# --- Model ---
+# --- Model (numba-accelerated) ---
 
 def init_lattice(N, rng):
     """Initialize NxN lattice with random spins ±1."""
-    return rng.choice([-1, 1], size=(N, N))
+    return rng.choice(np.array([-1, 1], dtype=np.int8), size=(N, N)).astype(np.int8)
 
 
+@njit
 def lattice_energy(spins):
     """Total energy with periodic boundary conditions (J=1)."""
-    return -np.sum(
-        spins * np.roll(spins, 1, axis=0) +
-        spins * np.roll(spins, 1, axis=1)
-    )
-
-
-def metropolis_sweep(spins, beta, rng):
-    """One full sweep: N^2 single-spin-flip Metropolis updates."""
     N = spins.shape[0]
-    for _ in range(N * N):
-        i = rng.integers(N)
-        j = rng.integers(N)
+    E = 0
+    for i in range(N):
+        for j in range(N):
+            E -= spins[i, j] * (spins[(i + 1) % N, j] + spins[i, (j + 1) % N])
+    return E
+
+
+@njit
+def _metropolis_sweep(spins, beta, rand_ij, rand_accept):
+    """Numba-accelerated Metropolis sweep. Pre-generated random numbers."""
+    N = spins.shape[0]
+    n = N * N
+    for k in range(n):
+        i = rand_ij[k, 0]
+        j = rand_ij[k, 1]
         nn_sum = (
             spins[(i + 1) % N, j] + spins[(i - 1) % N, j] +
             spins[i, (j + 1) % N] + spins[i, (j - 1) % N]
         )
         dE = 2 * spins[i, j] * nn_sum
-        if dE <= 0 or rng.random() < np.exp(-beta * dE):
+        if dE <= 0 or rand_accept[k] < np.exp(-beta * dE):
             spins[i, j] *= -1
+
+
+def metropolis_sweep(spins, beta, rng):
+    """One full sweep: N^2 single-spin-flip Metropolis updates."""
+    N = spins.shape[0]
+    n = N * N
+    rand_ij = rng.integers(0, N, size=(n, 2))
+    rand_accept = rng.random(n)
+    _metropolis_sweep(spins, beta, rand_ij, rand_accept)
+
+
+@njit
+def _wolff_step(spins, p_add, seed_i, seed_j, rand_vals):
+    """Numba-accelerated Wolff cluster flip using array-based stack.
+
+    rand_vals is a pre-allocated random array (size N*N) — we consume
+    entries sequentially and return (flipped_count, rand_consumed).
+    """
+    N = spins.shape[0]
+    cluster_spin = spins[seed_i, seed_j]
+
+    # Stack and visited array
+    stack_i = np.empty(N * N, dtype=np.int32)
+    stack_j = np.empty(N * N, dtype=np.int32)
+    visited = np.zeros((N, N), dtype=np.bool_)
+
+    stack_i[0] = seed_i
+    stack_j[0] = seed_j
+    visited[seed_i, seed_j] = True
+    stack_top = 1
+    flipped = 0
+    rand_idx = 0
+
+    # Neighbor offsets
+    di = np.array([1, -1, 0, 0], dtype=np.int32)
+    dj = np.array([0, 0, 1, -1], dtype=np.int32)
+
+    while stack_top > 0:
+        stack_top -= 1
+        ci = stack_i[stack_top]
+        cj = stack_j[stack_top]
+        flipped += 1
+
+        for d in range(4):
+            ni = (ci + di[d]) % N
+            nj = (cj + dj[d]) % N
+            if not visited[ni, nj] and spins[ni, nj] == cluster_spin:
+                if rand_vals[rand_idx] < p_add:
+                    visited[ni, nj] = True
+                    stack_i[stack_top] = ni
+                    stack_j[stack_top] = nj
+                    stack_top += 1
+                rand_idx += 1
+                if rand_idx >= len(rand_vals):
+                    rand_idx = 0  # wrap — very rare, only for huge clusters
+
+    # Flip all visited spins
+    for i in range(N):
+        for j in range(N):
+            if visited[i, j]:
+                spins[i, j] *= -1
+
+    return flipped
 
 
 def wolff_step(spins, beta, rng):
     """Single Wolff cluster flip. Returns number of spins flipped."""
     N = spins.shape[0]
     p_add = 1 - np.exp(-2 * beta)
-
-    i0 = rng.integers(N)
-    j0 = rng.integers(N)
-    cluster_spin = spins[i0, j0]
-
-    cluster = set()
-    cluster.add((i0, j0))
-    queue = deque([(i0, j0)])
-
-    while queue:
-        i, j = queue.popleft()
-        for di, dj in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
-            ni, nj = (i + di) % N, (j + dj) % N
-            if (ni, nj) not in cluster and spins[ni, nj] == cluster_spin:
-                if rng.random() < p_add:
-                    cluster.add((ni, nj))
-                    queue.append((ni, nj))
-
-    for i, j in cluster:
-        spins[i, j] *= -1
-
-    return len(cluster)
+    seed_i = int(rng.integers(N))
+    seed_j = int(rng.integers(N))
+    # Pre-generate enough random numbers (4 per spin worst case)
+    rand_vals = rng.random(N * N)
+    return _wolff_step(spins, p_add, seed_i, seed_j, rand_vals)
 
 
 def wolff_sweep(spins, beta, rng):

@@ -24,7 +24,7 @@ Produces:
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
-from collections import deque
+from numba import njit
 from pathlib import Path
 
 
@@ -58,22 +58,28 @@ def autocorrelation_time(series):
     return max(tau_int, 0.5)
 
 
-# --- Model ---
+# --- Model (numba-accelerated) ---
 
 Q = 3  # number of Potts states
 
 
 def init_lattice(N, rng):
     """Initialize NxN lattice with random spins in {0, 1, ..., Q-1}."""
-    return rng.integers(0, Q, size=(N, N))
+    return rng.integers(0, Q, size=(N, N), dtype=np.int8)
 
 
+@njit
 def lattice_energy(spins):
     """Total energy H = -J * sum delta(s_i, s_j) over nearest-neighbor bonds."""
-    return -np.sum(
-        (spins == np.roll(spins, 1, axis=0)).astype(int) +
-        (spins == np.roll(spins, 1, axis=1)).astype(int)
-    )
+    N = spins.shape[0]
+    E = 0
+    for i in range(N):
+        for j in range(N):
+            if spins[i, j] == spins[(i + 1) % N, j]:
+                E -= 1
+            if spins[i, j] == spins[i, (j + 1) % N]:
+                E -= 1
+    return E
 
 
 def order_parameter(spins):
@@ -84,53 +90,107 @@ def order_parameter(spins):
     return (Q * max_fraction - 1) / (Q - 1)
 
 
+@njit
+def _metropolis_sweep(spins, beta, q, rand_ij, rand_spin, rand_accept):
+    """Numba-accelerated Metropolis sweep for Potts model."""
+    N = spins.shape[0]
+    n = N * N
+    for k in range(n):
+        i = rand_ij[k, 0]
+        j = rand_ij[k, 1]
+        old_spin = spins[i, j]
+        new_spin = (old_spin + rand_spin[k]) % q
+
+        # Count matching neighbors
+        old_matches = 0
+        new_matches = 0
+        for d in range(4):
+            if d == 0:
+                ni, nj = (i + 1) % N, j
+            elif d == 1:
+                ni, nj = (i - 1) % N, j
+            elif d == 2:
+                ni, nj = i, (j + 1) % N
+            else:
+                ni, nj = i, (j - 1) % N
+            nb = spins[ni, nj]
+            if nb == old_spin:
+                old_matches += 1
+            if nb == new_spin:
+                new_matches += 1
+
+        dE = old_matches - new_matches
+        if dE <= 0 or rand_accept[k] < np.exp(-beta * dE):
+            spins[i, j] = new_spin
+
+
 def metropolis_sweep(spins, beta, rng):
     """One full sweep: N^2 single-spin-flip Metropolis updates."""
     N = spins.shape[0]
-    for _ in range(N * N):
-        i = rng.integers(N)
-        j = rng.integers(N)
-        old_spin = spins[i, j]
-        new_spin = (old_spin + rng.integers(1, Q)) % Q
+    n = N * N
+    rand_ij = rng.integers(0, N, size=(n, 2))
+    rand_spin = rng.integers(1, Q, size=n).astype(np.int8)
+    rand_accept = rng.random(n)
+    _metropolis_sweep(spins, beta, Q, rand_ij, rand_spin, rand_accept)
 
-        neighbors = [
-            spins[(i + 1) % N, j], spins[(i - 1) % N, j],
-            spins[i, (j + 1) % N], spins[i, (j - 1) % N],
-        ]
-        dE = sum(1 for nb in neighbors if nb == old_spin) - sum(1 for nb in neighbors if nb == new_spin)
-        if dE <= 0 or rng.random() < np.exp(-beta * dE):
-            spins[i, j] = new_spin
+
+@njit
+def _wolff_step(spins, p_add, seed_i, seed_j, new_spin, rand_vals):
+    """Numba-accelerated Wolff cluster flip for Potts model."""
+    N = spins.shape[0]
+    cluster_spin = spins[seed_i, seed_j]
+
+    stack_i = np.empty(N * N, dtype=np.int32)
+    stack_j = np.empty(N * N, dtype=np.int32)
+    visited = np.zeros((N, N), dtype=np.bool_)
+
+    stack_i[0] = seed_i
+    stack_j[0] = seed_j
+    visited[seed_i, seed_j] = True
+    stack_top = 1
+    flipped = 0
+    rand_idx = 0
+
+    di = np.array([1, -1, 0, 0], dtype=np.int32)
+    dj = np.array([0, 0, 1, -1], dtype=np.int32)
+
+    while stack_top > 0:
+        stack_top -= 1
+        ci = stack_i[stack_top]
+        cj = stack_j[stack_top]
+        flipped += 1
+
+        for d in range(4):
+            ni = (ci + di[d]) % N
+            nj = (cj + dj[d]) % N
+            if not visited[ni, nj] and spins[ni, nj] == cluster_spin:
+                if rand_vals[rand_idx] < p_add:
+                    visited[ni, nj] = True
+                    stack_i[stack_top] = ni
+                    stack_j[stack_top] = nj
+                    stack_top += 1
+                rand_idx += 1
+                if rand_idx >= len(rand_vals):
+                    rand_idx = 0
+
+    for i in range(N):
+        for j in range(N):
+            if visited[i, j]:
+                spins[i, j] = new_spin
+
+    return flipped
 
 
 def wolff_step(spins, beta, rng):
     """Single Wolff cluster flip for Potts model. Returns number of spins flipped."""
     N = spins.shape[0]
-    p_add = 1 - np.exp(-beta)  # FK bond probability for Potts
-
-    i0 = rng.integers(N)
-    j0 = rng.integers(N)
-    cluster_spin = spins[i0, j0]
-
-    # Choose a new state different from the cluster spin
-    new_spin = (cluster_spin + rng.integers(1, Q)) % Q
-
-    cluster = set()
-    cluster.add((i0, j0))
-    queue = deque([(i0, j0)])
-
-    while queue:
-        i, j = queue.popleft()
-        for di, dj in [(1, 0), (-1, 0), (0, 1), (0, -1)]:
-            ni, nj = (i + di) % N, (j + dj) % N
-            if (ni, nj) not in cluster and spins[ni, nj] == cluster_spin:
-                if rng.random() < p_add:
-                    cluster.add((ni, nj))
-                    queue.append((ni, nj))
-
-    for i, j in cluster:
-        spins[i, j] = new_spin
-
-    return len(cluster)
+    p_add = 1 - np.exp(-beta)
+    seed_i = int(rng.integers(N))
+    seed_j = int(rng.integers(N))
+    cluster_spin = spins[seed_i, seed_j]
+    new_spin = np.int8((cluster_spin + rng.integers(1, Q)) % Q)
+    rand_vals = rng.random(N * N)
+    return _wolff_step(spins, p_add, seed_i, seed_j, new_spin, rand_vals)
 
 
 def wolff_sweep(spins, beta, rng):
