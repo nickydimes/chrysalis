@@ -1,0 +1,4048 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="predicate" attr.type="string"/>
+<key id="d0" for="node" attr.name="type" attr.type="string"/>
+<graph edgedefault="directed"><node id="Riverbend Flood">
+  <data key="d0">Event</data>
+</node>
+<node id="Structural dissolution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Riverbend Village, Near Riverbanks">
+  <data key="d0">Context</data>
+</node>
+<node id="Post-Flood Transition, 2020-2024">
+  <data key="d0">Event</data>
+</node>
+<node id="Ethnographic Field Study, 2023">
+  <data key="d0">Context</data>
+</node>
+<node id="Riverbend Flood Recovery">
+  <data key="d0">Event</data>
+</node>
+<node id="Community elders maintained social cohesion during crisis.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Anchoring">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Dissolution of traditional agricultural practices">
+  <data key="d0">Observation</data>
+</node>
+<node id="Dissolution">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Liminality in community response">
+  <data key="d0">Observation</data>
+</node>
+<node id="Liminality">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Engagement with new technologies and knowledge for aquaculture.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Encounter">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Adoption of aquaculture leading to a diversified economy.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Integration">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Rise of a more resilient economic structure post-transition.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergence">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Mountain Village of Oakhaven">
+  <data key="d0">Context</data>
+</node>
+<node id="Severe Drought in Oakhaven, circa 2018-2021">
+  <data key="d0">Event</data>
+</node>
+<node id="Purification of old irrigation systems">
+  <data key="d0">Observation</data>
+</node>
+<node id="Containment strategies for water rationing and protection">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Anchoring through traditional elders' knowledge">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Dissolution of social structures under stress">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Liminality as the village's uncertain state">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Encounter with external knowledge sources">
+  <data key="d0">Observation</data>
+</node>
+<node id="Integration of new techniques with existing skills">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Emergence into a transformed economy">
+  <data key="d0">Observation</data>
+</node>
+<node id="Purification">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Containment">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="drought management">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="community adaptation">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="traditional knowledge">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="inter-tribal exchange">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="economic transformation">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Simulation Results">
+  <data key="d0">Event</data>
+</node>
+<node id="Critical Points at T=1.0">
+  <data key="d0">Observation</data>
+</node>
+<node id="N=24">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Higher Peak Susceptibility (12.902)">
+  <data key="d0">Observation</data>
+</node>
+<node id="N=16">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Peak Susceptibility (5.721)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Eight-Step Navigation Protocol">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Breakdown of Existing Structures">
+  <data key="d0">Observation</data>
+</node>
+<node id="Heightened Susceptibility">
+  <data key="d0">Observation</data>
+</node>
+<node id="Organizational Change">
+  <data key="d0">Context</data>
+</node>
+<node id="System Sensitivity at Critical Point">
+  <data key="d0">Observation</data>
+</node>
+<node id="Susceptibility Values">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Mental workspace purification">
+  <data key="d0">Observation</data>
+</node>
+<node id="Purification (Chrysalis framework preparatory step)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Peak neural fluctuations at sigma 0.5">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Containment phase">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Liminal state of neural model fluctuations">
+  <data key="d0">Observation</data>
+</node>
+<node id="Neural model transition">
+  <data key="d0">Event</data>
+</node>
+<node id="Universality proof">
+  <data key="d0">Observation</data>
+</node>
+<node id="Integration phase">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Emergence of new order">
+  <data key="d0">Observation</data>
+</node>
+<node id="Boundary between ordered and disordered states">
+  <data key="d0">Observation</data>
+</node>
+<node id="Sigma 0.5 threshold">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Neural model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Simulation Lab">
+  <data key="d0">Context</data>
+</node>
+<node id="Neural model transition phases">
+  <data key="d0">Event</data>
+</node>
+<node id="Emergent order verification">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical dynamics at sigma 0.5">
+  <data key="d0">Observation</data>
+</node>
+<node id="Neural workspace">
+  <data key="d0">Observation</data>
+</node>
+<node id="Baseline state (anchoring)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Liminal state of neural fluctuations">
+  <data key="d0">Observation</data>
+</node>
+<node id="percolation_theory">
+  <data key="d0">Context</data>
+</node>
+<node id="critical_transition_in_site_percolation">
+  <data key="d0">Observation</data>
+</node>
+<node id="site_percolation">
+  <data key="d0">SimModel</data>
+</node>
+<node id="random_lattice_with_site_occupation_probability_p">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="connectivity_threshold_p_c">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="critical_threshold_0.5927_for_square_lattice">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="critical_threshold_p_c">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="fractal_dimension_d_f_91/48">
+  <data key="d0">Observation</data>
+</node>
+<node id="fractal_nature_of_incipient_infinite_cluster">
+  <data key="d0">Observation</data>
+</node>
+<node id="power-law_divergence_in_cluster_size_distribution">
+  <data key="d0">Observation</data>
+</node>
+<node id="susceptibility_like_divergence_in_mean_cluster_size">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="universal_critical_exponents_tau_187/91_beta_5/36">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="maximal_sensitivity_at_p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="emergence_of_long_range_connectivity_from_short_range_local_occupation_probabilities">
+  <data key="d0">Observation</data>
+</node>
+<node id="finite_size_lxL_lattice_with_boundary_conditions">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="structural_impossibility_of_spanning_clusters_below_p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="finite_size_scaling_collapse_of_spanning_probabilities">
+  <data key="d0">Observation</data>
+</node>
+<node id="red_bond_structure_and_backbone_formation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Broadbent_and_Hammersley_1957">
+  <data key="d0">Event</data>
+</node>
+<node id="Stauffer_and_Aharony_1994">
+  <data key="d0">Event</data>
+</node>
+<node id="geometric_probability_factors">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="simulation_lab_hypothetical_theoretical_framework">
+  <data key="d0">Context</data>
+</node>
+<node id="critical_transition">
+  <data key="d0">Observation</data>
+</node>
+<node id="p_c">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="emergent_connectivity">
+  <data key="d0">Observation</data>
+</node>
+<node id="emergent_properties_like_fractal_dimension_and_conductivity_exponent">
+  <data key="d0">Observation</data>
+</node>
+<node id="qualitative_new_spanning_cluster_at_p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="macroscopic_connectivity_emergence">
+  <data key="d0">Observation</data>
+</node>
+<node id="eight_step_protocol">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="stripping_of_thermodynamic_variables">
+  <data key="d0">Observation</data>
+</node>
+<node id="finite_LxL_lattice_with_spanning_cluster_requirement">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="small_disconnected_clusters_below_p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="fractal_distribution_of_cluster_sizes">
+  <data key="d0">Observation</data>
+</node>
+<node id="fractal_properties_and_maximal_sensitivity_at_p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="diverging_correlation_length">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="qualitatively_new_spanning_cluster">
+  <data key="d0">Observation</data>
+</node>
+<node id="geometric_object_impossible_below_p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="macroscopic_connected_structure_from_local_random_events">
+  <data key="d0">Observation</data>
+</node>
+<node id="Ndembu white clay smearing">
+  <data key="d0">Observation</data>
+</node>
+<node id="Symbolic purification">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Maasai warrior shaving">
+  <data key="d0">Event</data>
+</node>
+<node id="Ndembu mudyi tree">
+  <data key="d0">Context</data>
+</node>
+<node id="Sacred groves (Ndembu)">
+  <data key="d0">Event</data>
+</node>
+<node id="Kivas (Maasai)">
+  <data key="d0">Event</data>
+</node>
+<node id="Monastic cells (Tibetan Buddhism)">
+  <data key="d0">Event</data>
+</node>
+<node id="Eleusinian Mysteries">
+  <data key="d0">Event</data>
+</node>
+<node id="Tibetan bardo teachings">
+  <data key="d0">Event</data>
+</node>
+<node id="Ndembu 'dead and unborn' state">
+  <data key="d0">Observation</data>
+</node>
+<node id="Communitas (Ndembu)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Anti-structure">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Eleusinian epopteia">
+  <data key="d0">Observation</data>
+</node>
+<node id="Aboriginal dreamtime visions">
+  <data key="d0">Observation</data>
+</node>
+<node id="Zen kensho">
+  <data key="d0">Observation</data>
+</node>
+<node id="Ndembu new name/clothing">
+  <data key="d0">Observation</data>
+</node>
+<node id="Maasai elder → moran transition">
+  <data key="d0">Observation</data>
+</node>
+<node id="Van Gennep’s three-phase sequence">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Path-dependent emergence">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Structural dissolution (social/psychological)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical-transitions">
+  <data key="d0">Event</data>
+</node>
+<node id="Symbolic erasure (Ndembu)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Songlines (Aboriginal)">
+  <data key="d0">Context</data>
+</node>
+<node id="Turner’s *The Ritual Process* (1969)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Rites of Passage Framework">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Van Gennep’s *Les rites de passage* (1909)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Ndembu ritual space">
+  <data key="d0">Event</data>
+</node>
+<node id="Eleusinian darkness">
+  <data key="d0">Observation</data>
+</node>
+<node id="Tibetan skandhas dissolution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Structural lattices (songlines, monastic rules)">
+  <data key="d0">Context</data>
+</node>
+<node id="Liminal ambiguity (Eleusinian)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Creative breakthroughs">
+  <data key="d0">Observation</data>
+</node>
+<node id="Hysteresis in transformations">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Critical fluctuations (physics analogy)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Phase-change">
+  <data key="d0">Event</data>
+</node>
+<node id="Ndembu’s new roles">
+  <data key="d0">Observation</data>
+</node>
+<node id="Structural dissolution (psychic/structural collapse)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Boundary conditions">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Elder guides (ritual containment)">
+  <data key="d0">Observation</data>
+</node>
+<node id="assumptive world">
+  <data key="d0">Context</data>
+</node>
+<node id="structured reality including the deceased">
+  <data key="d0">Observation</data>
+</node>
+<node id="grief">
+  <data key="d0">Event</data>
+</node>
+<node id="systemic phase transition from assumptive world to psychological reconstruction">
+  <data key="d0">SimModel</data>
+</node>
+<node id="purification phase">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="destruction of the 'assumptive world' (analogous to thermal quenching)">
+  <data key="d0">Observation</data>
+</node>
+<node id="destruction of behavioral, cognitive, and somatic patterns tied to the deceased">
+  <data key="d0">Observation</data>
+</node>
+<node id="liminality">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="state of heightened sensitivity and cognitive search for the deceased’s presence">
+  <data key="d0">Observation</data>
+</node>
+<node id="physiological disruption (e.g., elevated cortisol, immune suppression)">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="continuing bonds">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="internalized anchor for transformed relationships with the deceased">
+  <data key="d0">Observation</data>
+</node>
+<node id="new configurations of meaning and identity post-grief, distinct from pre-loss baseline">
+  <data key="d0">SimModel</data>
+</node>
+<node id="mourning rituals">
+  <data key="d0">Event</data>
+</node>
+<node id="cultural containment mechanisms for grief dynamics">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="dissolution">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="disruption of behavioral, cognitive, and social patterns tied to the deceased">
+  <data key="d0">Observation</data>
+</node>
+<node id="divergent susceptibility in grief as a psychological analogue to critical points in phase transitions">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="shiva">
+  <data key="d0">Event</data>
+</node>
+<node id="mourning ritual for grief containment">
+  <data key="d0">Observation</data>
+</node>
+<node id="antyesti">
+  <data key="d0">Event</data>
+</node>
+<node id="Victorian mourning">
+  <data key="d0">Event</data>
+</node>
+<node id="rituals for grief containment">
+  <data key="d0">Observation</data>
+</node>
+<node id="social and psychological limbo during grief">
+  <data key="d0">Observation</data>
+</node>
+<node id="post-traumatic growth">
+  <data key="d0">Observation</data>
+</node>
+<node id="new existential insights emerging from liminal space in grief">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="integration">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="reorganization of life around the loss as a permanent feature">
+  <data key="d0">Observation</data>
+</node>
+<node id="emergence">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="qualitative transformation of identity and relational dynamics post-grief">
+  <data key="d0">Observation</data>
+</node>
+<node id="late 20th century to present psychological and anthropological studies">
+  <data key="d0">Period_or_Event</data>
+</node>
+<node id="phase_change (psychological and cultural transition)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="creative reorganization in grief">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Purified cortical slices (in vitro rat cortical cultures)">
+  <data key="d0">Context</data>
+</node>
+<node id="Neural dynamics in organotypic cultures">
+  <data key="d0">Observation</data>
+</node>
+<node id="Branching ratio (σ)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Phase boundary between quiescence and runaway excitation">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Criticality (σ = 1)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Power-law distributions in neuronal avalanches (P(s) ~ s^(-3/2), P(d) ~ d^(-2))">
+  <data key="d0">Observation</data>
+</node>
+<node id="Mean-field universality in statistical mechanics">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Self-organized criticality">
+  <data key="d0">Concept</data>
+</node>
+<node id="Homeostatic plasticity (synaptic scaling, inhibitory balance)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Percolation theory in statistical physics">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Neuronal avalanches">
+  <data key="d0">Observation</data>
+</node>
+<node id="Scale-free dynamics">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Critical branching ratio (σ = 1)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Liminal state of maximal dynamic range and information processing">
+  <data key="d0">Observation</data>
+</node>
+<node id="Largest repertoire of activity patterns">
+  <data key="d0">Observation</data>
+</node>
+<node id="σ &gt; 1">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Pathological dissolution via global synchronization">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Loss of computation capacity">
+  <data key="d0">Observation</data>
+</node>
+<node id="σ &lt; 1">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Subcritical regime suppressing neural activity">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Critical exponents (τ = 3/2, α = 2)">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Neural dynamics with statistical mechanics frameworks">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Resting-state fMRI under anesthesia (criticality)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Propofol">
+  <data key="d0">Event</data>
+</node>
+<node id="Loss of criticality in scale-free dynamics">
+  <data key="d0">Observation</data>
+</node>
+<node id="Consciousness emergence">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical neural avalanches (σ = 1)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Homeostatic plasticity">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Synaptic scaling and inhibitory balance">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Neural avalanches">
+  <data key="d0">Observation</data>
+</node>
+<node id="Phase transition in cortical dynamics">
+  <data key="d0">Event</data>
+</node>
+<node id="Eight-step protocol">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Purification, containment, anchoring, dissolution, liminality, encounter, integration, emergence">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Purification (sensory/motor removal)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Intrinsic neural dynamics">
+  <data key="d0">Context</data>
+</node>
+<node id="Neuromodulation exclusion">
+  <data key="d0">Event</data>
+</node>
+<node id="Purification step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="q-state Potts Model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Ising model with q discrete spin values (colors)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Critical transitions varying between continuous (q ≤ 4) and first-order (q &gt; 4)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Lattice-gas model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Metastable states for q &gt; 4">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Emergent conformal symmetry at criticality (q=3)">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Tricritical point at q=4">
+  <data key="d0">Event</data>
+</node>
+<node id="Latent heat release and discontinuous order-disorder transition for q &gt; 4">
+  <data key="d0">Observation</data>
+</node>
+<node id="Fortuin-Kasteleyn bond percolation">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Multi-phase competition in dissolution (e.g., q=3 domains of all colors)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Finite-size effects in containment (coexistence of ordered/disordered phases)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Universality class depending on q (continuous for q ≤ 4, abrupt change at q=4)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Critical slowing down addressed via Wolff cluster algorithm">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Wolff cluster algorithm (z_Wolff ~ 0.5 vs z_Metropolis ~ 2 for q=3)">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Emergent conformal symmetry (c = 4/5) at q=3 critical point">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Tricritical point at q=4 (marginal operator relevant)">
+  <data key="d0">Event</data>
+</node>
+<node id="q=3">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Emergent conformal symmetry (c = 4/5)">
+  <data key="d0">Observation</data>
+</node>
+<node id="q=4">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Tricritical point (continuous/first-order transition boundary)">
+  <data key="d0">Event</data>
+</node>
+<node id="q &gt; 4">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="First-order transition with metastable states and latent heat">
+  <data key="d0">Observation</data>
+</node>
+<node id="q ≤ 4">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Continuous phase transition with power-law correlations">
+  <data key="d0">Observation</data>
+</node>
+<node id="Simulation Lab (theoretical/analytical framework)">
+  <data key="d0">Context</data>
+</node>
+<node id="Potts model studies (1950s–1980s)">
+  <data key="d0">Event</data>
+</node>
+<node id="Mathematical and theoretical physics study of phase transitions">
+  <data key="d0">Event</data>
+</node>
+<node id="Potts model research (1950s–1980s)">
+  <data key="d0">Context</data>
+</node>
+<node id="Potts 1952">
+  <data key="d0">Event</data>
+</node>
+<node id="Introduction of q-state Potts model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Baxter 1973">
+  <data key="d0">Event</data>
+</node>
+<node id="Critical exponents and universality classes for q-state Potts model">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Wu 1982 review">
+  <data key="d0">Event</data>
+</node>
+<node id="Computational algorithms (e.g., Wolff cluster) for critical slowing down">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Metropolis/Wolff dynamics">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Equilibration in Potts model (q ≤ 4)">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Special handling for metastable states (q &gt; 4)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Wolff cluster algorithm">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Zq symmetry respecting integration (z_Wolff ~ 0.5)">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Finite-size coexistence of ordered/disordered phases (q &gt; 4)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Metastable state tunneling (q &gt; 4)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Metropolis/Wolff equilibration (q ≤ 4)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Multi-phase domain growth (e.g., q=3 colors)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergent conformal symmetry (c = 4/5) at q=3">
+  <data key="d0">Observation</data>
+</node>
+<node id="Tricritical point (q=4) as continuous/first-order transition boundary">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Spontaneous symmetry breaking in ordered phases (q ≤ 4)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Discontinuous order-disorder transitions (q &gt; 4)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Severe Drought in Oakhaven">
+  <data key="d0">Event</data>
+</node>
+<node id="Terraced farming">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Removal of inefficiencies">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Community cleaning and improvement of irrigation canals">
+  <data key="d0">Context</data>
+</node>
+<node id="Strict rationing and guarding of the main spring">
+  <data key="d0">Observation</data>
+</node>
+<node id="Controlled use and protection of remaining resources">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Elders provided ancient techniques for water preservation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Elders">
+  <data key="d0">Context</data>
+</node>
+<node id="Traditional knowledge">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Crop failure">
+  <data key="d0">Observation</data>
+</node>
+<node id="Breakdown of social hierarchies">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Uncertainty between migration and staying">
+  <data key="d0">Observation</data>
+</node>
+<node id="Nomadic tribe">
+  <data key="d0">Context</data>
+</node>
+<node id="Encounter with external knowledge">
+  <data key="d0">Observation</data>
+</node>
+<node id="Multi-resource economy">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Combined traditional terrace farming with new irrigation methods">
+  <data key="d0">Context</data>
+</node>
+<node id="Emergence from crisis to resilience">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergence into a multi-resource economy">
+  <data key="d0">Event</data>
+</node>
+<node id="Geographic_location">
+  <data key="d0">Context</data>
+</node>
+<node id="Mountains of Central Europe">
+  <data key="d0">Observation</data>
+</node>
+<node id="Oral History Compilation">
+  <data key="d0">Context</data>
+</node>
+<node id="Chrysalis Framework">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Theravada Vipassana">
+  <data key="d0">Context</data>
+</node>
+<node id="Purification through *ditthi-visuddhi*">
+  <data key="d0">Observation</data>
+</node>
+<node id="Zen">
+  <data key="d0">Context</data>
+</node>
+<node id="Integration via ‘laundry’ metaphor">
+  <data key="d0">Observation</data>
+</node>
+<node id="Tibetan Dzogchen">
+  <data key="d0">Context</data>
+</node>
+<node id="Encounter with *rigpa*">
+  <data key="d0">Observation</data>
+</node>
+<node id="Christian Mysticism">
+  <data key="d0">Context</data>
+</node>
+<node id="Theoria (encounter with divine structure)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Contemplative Studies Reading Room">
+  <data key="d0">Context</data>
+</node>
+<node id="Contemplative traditions (generalized)">
+  <data key="d0">Context</data>
+</node>
+<node id="DMN (Default Mode Network)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Top-down predictive processing">
+  <data key="d0">Observation</data>
+</node>
+<node id="DMN">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Narrative self-model">
+  <data key="d0">Observation</data>
+</node>
+<node id="Theta coherence">
+  <data key="d0">Observation</data>
+</node>
+<node id="Anchoring stability">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Gamma oscillations">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Expert meditators (&gt;10,000 hours)">
+  <data key="d0">Context</data>
+</node>
+<node id="Emergent neural configuration">
+  <data key="d0">Observation</data>
+</node>
+<node id="Reduction of conceptual elaboration">
+  <data key="d0">Observation</data>
+</node>
+<node id="Dissolution of habitual perceptual patterns (*dukkha-nana*)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Loss of stable self-model and observer–object boundary dissolution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Spontaneous rapture, luminosity, and nondual awareness">
+  <data key="d0">Observation</data>
+</node>
+<node id="Structured temporal boundaries (e.g., bell signals, vinaya/regula rules)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Breath, kasina, or mantra as fixed reference points">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="DMN suppression">
+  <data key="d0">Observation</data>
+</node>
+<node id="Increased bottom-up sensory attention">
+  <data key="d0">Observation</data>
+</node>
+<node id="Attentional stability">
+  <data key="d0">Observation</data>
+</node>
+<node id="Gamma oscillation amplification">
+  <data key="d0">Observation</data>
+</node>
+<node id="Neuroscience_of_meditation">
+  <data key="d0">Context</data>
+</node>
+<node id="DMN suppression and theta coherence as anchors">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Phase transitions between narrative self-model and nondual awareness">
+  <data key="d0">Observation</data>
+</node>
+<node id="Neural consolidation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Increased insula/hippocampus volume post-retreat">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Contemplative neuroscience">
+  <data key="d0">Context</data>
+</node>
+<node id="Contemplative traditions">
+  <data key="d0">Context</data>
+</node>
+<node id="Critical transitions in meditation practices">
+  <data key="d0">Event</data>
+</node>
+<node id="Chrysalis framework">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Thermal purification via Metropolis dynamics">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="System preparation">
+  <data key="d0">Context</data>
+</node>
+<node id="Erasure of initial state memory">
+  <data key="d0">Observation</data>
+</node>
+<node id="2D Ising Model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Phase transition dynamics near critical temperature (T_c)">
+  <data key="d0">Event</data>
+</node>
+<node id="Z₂ universality class">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Thermal equilibration">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Metropolis dynamics">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Thermal purification">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="High-temperature paramagnetic order">
+  <data key="d0">Observation</data>
+</node>
+<node id="Domains of aligned spins">
+  <data key="d0">Observation</data>
+</node>
+<node id="Exponential decay in spin-spin correlations">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Critical temperature (T_c)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Transition from exponential to power-law correlations">
+  <data key="d0">Observation</data>
+</node>
+<node id="Logarithmic divergence of specific heat">
+  <data key="d0">Observation</data>
+</node>
+<node id="Near T_c">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Scale-invariant fluctuations">
+  <data key="d0">Observation</data>
+</node>
+<node id="Maximal susceptibility at T_c">
+  <data key="d0">Event</data>
+</node>
+<node id="Bimodal magnetization distribution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Universal critical exponents (β=1/8, γ=7/4, ν=1)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Renormalization group transformations">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Universal fixed point">
+  <data key="d0">Observation</data>
+</node>
+<node id="Finite-size scaling">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Data across different lattice sizes">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Universal collapse of measurements">
+  <data key="d0">Observation</data>
+</node>
+<node id="Finite lattice with periodic boundary conditions">
+  <data key="d0">Context</data>
+</node>
+<node id="Correlation length">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Spontaneous symmetry breaking">
+  <data key="d0">Observation</data>
+</node>
+<node id="Local interactions">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Long-range order">
+  <data key="d0">Observation</data>
+</node>
+<node id="Collective property beyond individual spin behavior">
+  <data key="d0">Observation</data>
+</node>
+<node id="Onsager 1944 block-spin RG">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Kadanoff 1966 block-spin RG">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Criticality and universality">
+  <data key="d0">Event</data>
+</node>
+<node id="Phase transition dynamics">
+  <data key="d0">Observation</data>
+</node>
+<node id="Renormalization Group (RG) Framework">
+  <data key="d0">Context</data>
+</node>
+<node id="Wilson &amp; Fisher (1971–1972)">
+  <data key="d0">Event</data>
+</node>
+<node id="Integration of short-wavelength fluctuations to reveal long-wavelength physics">
+  <data key="d0">Observation</data>
+</node>
+<node id="Purification of irrelevant microscopic details (lattice structure, interaction shape, higher-order couplings)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Fixed points as liminal states between ordered and disordered phases">
+  <data key="d0">Observation</data>
+</node>
+<node id="Dynamical systems reformulation of critical phenomena">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Fixed Points">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical exponents">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Liminal states between ordered/disordered phases">
+  <data key="d0">Context</data>
+</node>
+<node id="Universality Class">
+  <data key="d0">Observation</data>
+</node>
+<node id="Symmetry and dimensionality convergence">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Fixed-point universality classes">
+  <data key="d0">SimModel</data>
+</node>
+<node id="RG Coarse-Graining Protocol">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Hamiltonian space as a container for RG flow">
+  <data key="d0">Context</data>
+</node>
+<node id="Dissolution of irrelevant couplings under coarse-graining">
+  <data key="d0">Observation</data>
+</node>
+<node id="Irrelevance of microscopic specifics (e.g., lattice type, interaction range)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Critical Phenomena">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergent universal critical behavior">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Simulation Lab (theoretical framework, abstract space)">
+  <data key="d0">GeographicLocation</data>
+</node>
+<node id="Abstract objects transcending physical realizations">
+  <data key="d0">Context</data>
+</node>
+<node id="Critical Exponents">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Fixed points as saddle points between ordered/disordered phases">
+  <data key="d0">Observation</data>
+</node>
+<node id="Universality">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Long-distance critical behavior">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="RG Framework">
+  <data key="d0">Context</data>
+</node>
+<node id="Epsilon-expansion dynamical systems">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Phase Transitions">
+  <data key="d0">Event</data>
+</node>
+<node id="Universality as a geometric property">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical Systems">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Diverse systems (e.g., Ising model, liquid-gas)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Nigredo (alchemical blackening)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Destruction of current form through alchemical or psychological shadow confrontation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Purification (Jungian shadow work)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Alchemical vessel (vas hermeticum)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Symbolic containment for transformation processes">
+  <data key="d0">Observation</data>
+</node>
+<node id="Therapeutic analyst-analysand relationship (Jungian)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Philosophical mercury">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Persistent cyclical Self/archetypal anchoring through dissolution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Ouroboros (cyclical invariant)">
+  <data key="d0">Context</data>
+</node>
+<node id="Albedo (liquefaction)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Dissolution of rigid ego-structures into a liminal, volatile state">
+  <data key="d0">Observation</data>
+</node>
+<node id="Peacock’s tail phase (liminal flux)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Peacock’s tail phase">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Maximal flux between albedo and rubedo">
+  <data key="d0">Observation</data>
+</node>
+<node id="Numinous danger of inflation">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Coniunctio (union of opposites)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Encounter of sol/luna or anima/animus">
+  <data key="d0">Observation</data>
+</node>
+<node id="Spontaneous symmetry-breaking">
+  <data key="d0">Context</data>
+</node>
+<node id="Philosopher’s stone">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Irreversible integration of opposites as paradoxical, self-sustaining product">
+  <data key="d0">Observation</data>
+</node>
+<node id="Lapis philosophorum (emergent paradoxical product)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Lapis philosophorum">
+  <data key="d0">Observation</data>
+</node>
+<node id="Individuation of Self (Jungian)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Medieval to Early Modern Alchemical Traditions">
+  <data key="d0">Context</data>
+</node>
+<node id="Metallurgical cultures worldwide (e.g., medieval Europe, Islamic alchemy, Chinese metallurgy)">
+  <data key="d0">Geographic_location</data>
+</node>
+<node id="Jungian Psychology">
+  <data key="d0">Context</data>
+</node>
+<node id="Psychological dissolution of ego-structures and reunion with the Self">
+  <data key="d0">Observation</data>
+</node>
+<node id="Archetypal dynamics (shadow, anima/animus, collective unconscious)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Medieval to Early Modern Alchemy">
+  <data key="d0">Context</data>
+</node>
+<node id="Critical Transitions in Transformation Processes (20th-century reinterpretation)">
+  <data key="d0">Event</data>
+</node>
+<node id="Critical Transitions in Transformation Processes">
+  <data key="d0">Event</data>
+</node>
+<node id="Phase transitions (nigredo, albedo, rubedo, coniunctio)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Jung 1944 *Psychology and Alchemy*">
+  <data key="d0">Source</data>
+</node>
+<node id="Destruction of current form through nigredo and shadow confrontation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Eliade 1962 *The Forge and the Crucible*">
+  <data key="d0">Source</data>
+</node>
+<node id="Alchemical vessel and philosophical mercury as containers for transformation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Eight-step alchemical protocol">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Purification → Containment → Anchoring → Dissolution → Liminality → Encounter → Integration → Emergence">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Nigredo (alchemical blackening) and shadow confrontation">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Vas hermeticum (physical vessel) and therapeutic analyst-analysand relationship">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Philosophical mercury/Self as invariant cyclical principle">
+  <data key="d0">Observation</data>
+</node>
+<node id="Albedo (whitening) and solutio (material liquefaction)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Peacock’s tail phase and numinous danger of inflation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Multiplication/projection phases and philosopher’s stone as catalyst">
+  <data key="d0">Observation</data>
+</node>
+<node id="Lapis philosophorum as emergent paradoxical product">
+  <data key="d0">Observation</data>
+</node>
+<node id="Medieval to Early Modern Alchemy → Jungian Psychology">
+  <data key="d0">Context</data>
+</node>
+<node id="Kaelthar Island">
+  <data key="d0">Context</data>
+</node>
+<node id="Ancient Times">
+  <data key="d0">Event</data>
+</node>
+<node id="Storytelling as a means of purification">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Storytelling">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Cataclysmic event">
+  <data key="d0">Event</data>
+</node>
+<node id="Dissolution of societal structures">
+  <data key="d0">Observation</data>
+</node>
+<node id="Failure of traditional containment rituals">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Traditional containment rituals">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Internal conflicts and factions">
+  <data key="d0">Observation</data>
+</node>
+<node id="Prolonged state due to lack of transformative encounter">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Shaping identity and society">
+  <data key="d0">Observation</data>
+</node>
+<node id="Storytellers">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Attempted anchoring with new narratives">
+  <data key="d0">Observation</data>
+</node>
+<node id="Failure to unite the people">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Dissolution into chaos">
+  <data key="d0">Event</data>
+</node>
+<node id="Failure of rituals and cataclysmic event">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Lack of transformative encounter">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Prolonged liminality">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Emergence of identity crisis">
+  <data key="d0">Observation</data>
+</node>
+<node id="Identity Crisis">
+  <data key="d0">Observation</data>
+</node>
+<node id="Resilience and change">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Psychedelic-Assisted Therapy">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Purification (preparatory sessions)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Psychological purification of expectations and fears">
+  <data key="d0">Observation</data>
+</node>
+<node id="Controlled setting (e.g., eyeshades, music playlists)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Controlled pharmacological doses (e.g., psilocybin)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Controlled pharmacological doses (psilocybin)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Increased cortical entropy">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Dissolution of the default mode network (DMN)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Habitual self-model reduction">
+  <data key="d0">Observation</data>
+</node>
+<node id="Entropic Brain Hypothesis (increased entropy toward criticality)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Entropic Brain Hypothesis">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Pathological attractors (e.g., depression, addiction) as excessive order">
+  <data key="d0">Context</data>
+</node>
+<node id="Critical transition from subcritical to critical brain dynamics">
+  <data key="d0">Event</data>
+</node>
+<node id="Critical transition">
+  <data key="d0">Event</data>
+</node>
+<node id="Increased entropy, flattened hierarchical dynamics, and global connectivity">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Liminal state">
+  <data key="d0">Observation</data>
+</node>
+<node id="Ego dissolution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Time distortion">
+  <data key="d0">Observation</data>
+</node>
+<node id="Increased global connectivity">
+  <data key="d0">Observation</data>
+</node>
+<node id="REBUS model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Maximal sensitivity state">
+  <data key="d0">Context</data>
+</node>
+<node id="Creative breakthroughs as emergent psychological configurations">
+  <data key="d0">Observation</data>
+</node>
+<node id="Threshold perturbation for discontinuous change">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Neurobiological markers of phase transition">
+  <data key="d0">Observation</data>
+</node>
+<node id="BDNF elevation">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Increased dendritic spine density">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Sustained remission post-treatment">
+  <data key="d0">Observation</data>
+</node>
+<node id="Discontinuous change from pathological to new attractors">
+  <data key="d0">Context</data>
+</node>
+<node id="Eight-step protocol (Purification, Containment, Anchoring, Dissolution, Liminality, Encounter, Integration, Emergence)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Preparatory sessions addressing expectations/fears">
+  <data key="d0">Event</data>
+</node>
+<node id="Multilayered containment (dosing room, therapists, music, pharmacological dose, psychological alliance, homeostatic brain mechanisms)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Therapeutic intention (e.g., 'What is the source of my depression?')">
+  <data key="d0">Context</data>
+</node>
+<node id="Structured music playlist">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="DMN reduction and PCC activity decline">
+  <data key="d0">Observation</data>
+</node>
+<node id="Ego dissolution, synesthesia, and time distortion">
+  <data key="d0">Observation</data>
+</node>
+<node id="Access to unconscious emotional material">
+  <data key="d0">Observation</data>
+</node>
+<node id="Post-session narrative construction">
+  <data key="d0">Observation</data>
+</node>
+<node id="Actionable insight extraction">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Phase-like transformation">
+  <data key="d0">Event</data>
+</node>
+<node id="Rapid, sustained remission of depression via discontinuous change">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Clinical outcomes (e.g., remission of depression)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Clinical outcomes (remission of depression)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergent, qualitatively new psychological states">
+  <data key="d0">Context</data>
+</node>
+<node id="Default Mode Network (DMN)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Habitual cognitive frameworks">
+  <data key="d0">Context</data>
+</node>
+<node id="Modern clinical research on psychedelic-assisted psychotherapy (2014–2026)">
+  <data key="d0">Event</data>
+</node>
+<node id="Bak-Tang-Wiesenfeld (BTW) Sandpile Model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Self-organized criticality through slow grain addition and local toppling">
+  <data key="d0">Observation</data>
+</node>
+<node id="Open boundary conditions for dissipation and containment">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Local toppling triggering macroscopic avalanches">
+  <data key="d0">Observation</data>
+</node>
+<node id="Permanent critical state with power-law avalanche size distributions">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Abelian integration principle (sandpile group operations)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Self-organized critical attractor in phase space">
+  <data key="d0">Context</data>
+</node>
+<node id="Scale-free dynamics and power-law distributions">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Punctuated equilibrium (E.O. Wilson)">
+  <data key="d0">Event</data>
+</node>
+<node id="Earthquake dynamics">
+  <data key="d0">Observation</data>
+</node>
+<node id="Financial crashes">
+  <data key="d0">Observation</data>
+</node>
+<node id="Slow grain addition (purification process)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Open boundary conditions (containment mechanism)">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Local toppling (z_c = 4 grains) triggering avalanches">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Power-law avalanche size distributions">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Universal power-law distributions (e.g., Gutenberg-Richter law)">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Critical attractor in phase space (no fine-tuning required)">
+  <data key="d0">Context</data>
+</node>
+<node id="Self-organized critical state">
+  <data key="d0">Observation</data>
+</node>
+<node id="Maximal sensitivity to perturbations">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Stable attractor in phase space">
+  <data key="d0">Context</data>
+</node>
+<node id="Bak Tang Wiesenfeld (1987)">
+  <data key="d0">Event</data>
+</node>
+<node id="Conceptualization of self-organized criticality in the BTW model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Bak (1996) *How Nature Works*">
+  <data key="d0">Event</data>
+</node>
+<node id="Theoretical formulation and broader applications of BTW model">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Simulation Lab (theoretical/abstract space)">
+  <data key="d0">Context</data>
+</node>
+<node id="Timescale separation (slow grain addition vs. avalanche dynamics)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Long-range spatial correlations in avalanche distributions">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Critical Point (Temperature 1.280, N=16)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Phase Transition">
+  <data key="d0">Event</data>
+</node>
+<node id="Critical Point (Temperature 1.100, N=32)">
+  <data key="d0">Observation</data>
+</node>
+<node id="System Size (N=16)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Higher Critical Temperature">
+  <data key="d0">Observation</data>
+</node>
+<node id="System Size (N=32)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Slightly Lower Critical Temperature">
+  <data key="d0">Observation</data>
+</node>
+<node id="Liminality Phase">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Critical Point in Phase Transition">
+  <data key="d0">Event</data>
+</node>
+<node id="Dissolution Phase">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Susceptibility Peaks">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Societal Changes">
+  <data key="d0">Real-WorldAnalogue</data>
+</node>
+<node id="Phase Transition in Complex Systems">
+  <data key="d0">Event</data>
+</node>
+<node id="Cell Differentiation">
+  <data key="d0">Real-WorldAnalogue</data>
+</node>
+<node id="Critical Point in Biological Systems">
+  <data key="d0">Event</data>
+</node>
+<node id="Chrysalis Simulations">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Critical Temperature (1.280, N=16)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical Temperature (1.100, N=32)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Larger Systems">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Approaching Thermodynamic Limit">
+  <data key="d0">Observation</data>
+</node>
+<node id="Different System Geometries">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Varied Phase Transition Behavior">
+  <data key="d0">Observation</data>
+</node>
+<node id="Hysteresis">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Dynamic Phase Transition Behavior">
+  <data key="d0">Observation</data>
+</node>
+<node id="Metastability">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Varying Parameters in Simulations">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Spin-glass/spin-system analog">
+  <data key="d0">Context</data>
+</node>
+<node id="Critical phenomena">
+  <data key="d0">Observation</data>
+</node>
+<node id="Phase transitions">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergent scaling behavior">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical Temperature (T_c)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="2.269">
+  <data key="d0">NumericalValue</data>
+</node>
+<node id="Sharp peak in susceptibility at T=2.269">
+  <data key="d0">Observation</data>
+</node>
+<node id="Susceptibility">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="18.706">
+  <data key="d0">NumericalValue</data>
+</node>
+<node id="2.5">
+  <data key="d0">TemperatureValue</data>
+</node>
+<node id="9.486">
+  <data key="d0">NumericalValue</data>
+</node>
+<node id="2.0">
+  <data key="d0">TemperatureValue</data>
+</node>
+<node id="0.515">
+  <data key="d0">NumericalValue</data>
+</node>
+<node id="Ising model critical point">
+  <data key="d0">Observation</data>
+</node>
+<node id="Power-law fluctuations">
+  <data key="d0">Observation</data>
+</node>
+<node id="Fractal correlations">
+  <data key="d0">Observation</data>
+</node>
+<node id="Ordered Phase">
+  <data key="d0">Phase</data>
+</node>
+<node id="T=2.269">
+  <data key="d0">TemperatureValue</data>
+</node>
+<node id="Low susceptibility">
+  <data key="d0">Observation</data>
+</node>
+<node id="Disordered Phase">
+  <data key="d0">Phase</data>
+</node>
+<node id="Susceptibility does not asymptotically diverge">
+  <data key="d0">Observation</data>
+</node>
+<node id="Finite-Size Effects">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="N=50">
+  <data key="d0">SystemSize</data>
+</node>
+<node id="Consistent peak at T=2.269">
+  <data key="d0">Observation</data>
+</node>
+<node id="Multicriticality">
+  <data key="d0">Observation</data>
+</node>
+<node id="Non-monotonic susceptibility behavior">
+  <data key="d0">Observation</data>
+</node>
+<node id="Hysteresis-like Effects">
+  <data key="d0">Observation</data>
+</node>
+<node id="Non-monotonic susceptibility">
+  <data key="d0">Observation</data>
+</node>
+<node id="Self-organized criticality (SOC)">
+  <data key="d0">Concept</data>
+</node>
+<node id="Purification Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Equilibrium sweeps (eq_sweeps=500)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Containment Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Measurement sweeps (meas_sweeps=1000)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Anchoring Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Finite-size effects (N=50)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Dissolution Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Heating above T_c">
+  <data key="d0">TemperatureValue</data>
+</node>
+<node id="Liminality Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Critical region (T ≈ T_c)">
+  <data key="d0">TemperatureValue</data>
+</node>
+<node id="Encounter Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Integration Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Finite-size corrections">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergence Step">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Power-law behavior">
+  <data key="d0">Observation</data>
+</node>
+<node id="Peak Susceptibility">
+  <data key="d0">Observation</data>
+</node>
+<node id="Spin Glasses">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Bose-Einstein Condensates">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Neural Networks">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Critical brain states">
+  <data key="d0">Observation</data>
+</node>
+<node id="Sandpile Models">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Cultural Transitions">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Peak susceptibility in social movements">
+  <data key="d0">Observation</data>
+</node>
+<node id="Language Evolution">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Criticality in syntax">
+  <data key="d0">Observation</data>
+</node>
+<node id="Economic Markets">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Hysteresis-like behavior">
+  <data key="d0">Observation</data>
+</node>
+<node id="Epilepsy">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Gene Regulation">
+  <data key="d0">RealWorldSystem</data>
+</node>
+<node id="Critical points in transcription factor binding">
+  <data key="d0">Observation</data>
+</node>
+<node id="Neuroscience">
+  <data key="d0">Field</data>
+</node>
+<node id="Materials Science">
+  <data key="d0">Field</data>
+</node>
+<node id="Critical phase transitions in materials">
+  <data key="d0">Observation</data>
+</node>
+<node id="AI &amp; Robotics">
+  <data key="d0">Field</data>
+</node>
+<node id="Self-organized stability in adaptive control systems">
+  <data key="d0">Observation</data>
+</node>
+<node id="Criticality">
+  <data key="d0">Concept</data>
+</node>
+<node id="Structural property of systems">
+  <data key="d0">Observation</data>
+</node>
+<node id="Eight-Step Protocol">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Meta-framework for critical transitions">
+  <data key="d0">Concept</data>
+</node>
+<node id="Exploited for transformation">
+  <data key="d0">Observation</data>
+</node>
+<node id="Chrysalis Simulation (N=24)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Critical point at T=1.0">
+  <data key="d0">Observation</data>
+</node>
+<node id="Peak susceptibility of 12.902">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Chrysalis Simulation (N=16)">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Peak susceptibility of 5.721">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Phase transition temperature">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="T=1.0">
+  <data key="d0">Observation</data>
+</node>
+<node id="Dissolution phase of organizational change">
+  <data key="d0">Real-WorldAnalogue</data>
+</node>
+<node id="Liminality in social movements">
+  <data key="d0">Real-WorldAnalogue</data>
+</node>
+<node id="Chrysalis Simulation">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Susceptibility near critical point">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="System response at T=1.0">
+  <data key="d0">Observation</data>
+</node>
+<node id="Next Steps for Simulations">
+  <data key="d0">Context</data>
+</node>
+<node id="Investigation of temperature variations around T=1.0">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Exploration of different system sizes (finite-size effects)">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Perturbations near the critical point">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Examination of magnetization and correlation lengths">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Fixed critical temperature">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Model characteristics or simulation setup artifacts">
+  <data key="d0">Observation</data>
+</node>
+<node id="System poised for significant change">
+  <data key="d0">Observation</data>
+</node>
+<node id="Dissolution and liminality phases">
+  <data key="d0">ProtocolPhase</data>
+</node>
+<node id="Creative breakthroughs through aquaculture adoption">
+  <data key="d0">Observation</data>
+</node>
+<node id="Adoption of aquaculture leading to a diversified economy">
+  <data key="d0">Observation</data>
+</node>
+<node id="Rise of a more resilient economic structure post-transition">
+  <data key="d0">Observation</data>
+</node>
+<node id="Introduction of aquaculture and sustainable fishing">
+  <data key="d0">Observation</data>
+</node>
+<node id="Neural Model Transition Protocol in Simulation Lab">
+  <data key="d0">Event</data>
+</node>
+<node id="Mental workspace purification as a preparatory phase for structural dissolution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Peak neural fluctuations at sigma 0.5 as a threshold for transition dynamics">
+  <data key="d0">Observation</data>
+</node>
+<node id="Liminal state of neural model fluctuations between containment and dissolution">
+  <data key="d0">Observation</data>
+</node>
+<node id="Universality proof as a symbolic marker of emergent order post-integration">
+  <data key="d0">Observation</data>
+</node>
+<node id="sigma 0.5">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Percolation Theory">
+  <data key="d0">Context</data>
+</node>
+<node id="Isolation of geometric and probabilistic factors from thermodynamic dynamics to study connectivity thresholds">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical threshold p_c marking the boundary between disconnected clusters and a spanning infinite cluster">
+  <data key="d0">Observation</data>
+</node>
+<node id="Power-law divergence of cluster size distribution near p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="Fractal nature of the incipient infinite cluster (dimension d_f = 91/48, infinite surface-to-volume ratio)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Maximal sensitivity at p_c: infinitesimal changes in p or site occupation can trigger macroscopic connectivity">
+  <data key="d0">Observation</data>
+</node>
+<node id="Universality of critical exponents (e.g., tau = 187/91, beta = 5/36) across lattice geometries">
+  <data key="d0">Observation</data>
+</node>
+<node id="Emergence of long-range connectivity from short-range local occupation probabilities">
+  <data key="d0">Observation</data>
+</node>
+<node id="Structural impossibility of spanning clusters below p_c despite proximity to the threshold">
+  <data key="d0">Observation</data>
+</node>
+<node id="Finite-size scaling collapse confirming universal scaling functions for spanning probabilities">
+  <data key="d0">Observation</data>
+</node>
+<node id="Red-bond structure and backbone formation as emergent properties of the percolation phase">
+  <data key="d0">Observation</data>
+</node>
+<node id="Critical transition at p_c">
+  <data key="d0">Event</data>
+</node>
+<node id="Power-law divergence of cluster size distribution near p_c (e.g., susceptibility-like divergence in mean cluster size)">
+  <data key="d0">Observation</data>
+</node>
+<node id="The system is stripped of thermodynamic variables (no Hamiltonian, temperature, or dynamics), focusing solely on geometric probability to isolate the percolation transition.">
+  <data key="d0">Observation</data>
+</node>
+<node id="The finite L x L lattice with defined boundary conditions (e.g., spanning cluster requirement) contains the problem, rounding the transition and enabling critical exponents to emerge independently of system size.">
+  <data key="d0">Observation</data>
+</node>
+<node id="The critical threshold p_c (e.g., 0.5927) anchors the transition point, defining the boundary between order (disconnected clusters) and disorder (spanning cluster).">
+  <data key="d0">Observation</data>
+</node>
+<node id="Below p_c, clusters are small and disconnected, dissolving into a fractal distribution as p approaches p_c. The mean cluster size diverges as a power law, reflecting the breakdown of finite-size order.">
+  <data key="d0">Observation</data>
+</node>
+<node id="At p_c, the system enters a liminal state: the incipient infinite cluster appears, with fractal properties and maximal sensitivity to perturbations. The correlation length diverges, collapsing all scales into a single structure.">
+  <data key="d0">Observation</data>
+</node>
+<node id="The encounter is the qualitatively new spanning cluster itself—a geometric object that is impossible below p_c and enables macroscopic connectivity (e.g., electrical conductivity transition).">
+  <data key="d0">Observation</data>
+</node>
+<node id="Finite-size scaling integrates data across lattice sizes by collapsing spanning probabilities onto a universal curve, confirming consistency across systems of different L.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Above p_c, a macroscopic connected structure emerges from local random events, exhibiting emergent properties (e.g., fractal dimension, conductivity exponent) that cannot be predicted from individual sites.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Site-Based Lattice Systems">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Site-based lattice systems">
+  <data key="d0">SimModel</data>
+</node>
+<node id="Spanning probabilities">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Critical threshold marking the boundary between disconnected clusters and a spanning infinite cluster">
+  <data key="d0">Observation</data>
+</node>
+<node id="Lattice size">
+  <data key="d0">SimParameter</data>
+</node>
+<node id="Spanning cluster">
+  <data key="d0">SimMetric</data>
+</node>
+<node id="Emergence of macroscopic connectivity above p_c">
+  <data key="d0">Observation</data>
+</node>
+<node id="Rites of Passage">
+  <data key="d0">Context</data>
+</node>
+<node id="van Gennep (1909)">
+  <data key="d0">Context</data>
+</node>
+<node id="Turner (1969)">
+  <data key="d0">Context</data>
+</node>
+<node id="Early 20th-century anthropological theory on ritual transitions">
+  <data key="d0">Context</data>
+</node>
+<node id="Ndembu (Zambia)">
+  <data key="d0">Event</data>
+</node>
+<node id="Symbolic purification through white clay smearing">
+  <data key="d0">Observation</data>
+</node>
+<node id="Structural dissolution through symbolic stripping">
+  <data key="d0">Observation</data>
+</node>
+<node id="Perceptual dissolution during rituals">
+  <data key="d0">Observation</data>
+</node>
+<node id="Aboriginal Australian rituals">
+  <data key="d0">Event</data>
+</node>
+<node id="Encounter with dreamtime visions">
+  <data key="d0">Observation</data>
+</node>
+<node id="Dissolution of skandhas during liminality">
+  <data key="d0">Observation</data>
+</node>
+<node id="Symbolic stripping (e.g., white clay smearing)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Ritual spaces as boundaries">
+  <data key="d0">Observation</data>
+</node>
+<node id="Persistent cultural symbols (e.g., mudyi tree)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Temporary suspension of hierarchies (communitas)">
+  <data key="d0">Observation</data>
+</node>
+<node id="'Betwixt and between' realm">
+  <data key="d0">Observation</data>
+</node>
+<node id="Access to new knowledge (e.g., epopteia)">
+  <data key="d0">Observation</data>
+</node>
+<node id="Gradual re-establishment of structure">
+  <data key="d0">Observation</data>
+</node>
+<node id="Qualitative transformation post-transition">
+  <data key="d0">Observation</data>
+</node>
+<node id="Grief and the Transition from Assumptive World to Psychological Reconstruction">
+  <data key="d0">Context</data>
+</node>
+<node id="Psychological and Cultural Dynamics of Grief as a Critical Transition">
+  <data key="d0">Observation</data>
+</node>
+<node id="The shock phase and destruction of the 'assumptive world' serve as purification, suspending normal cognition and dismantling routines.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Mourning rituals (e.g., shiva, antyesti, Victorian mourning) provide external structure to contain grief oscillations between loss-oriented and restoration-oriented coping.">
+  <data key="d0">Observation</data>
+</node>
+<node id="The 'continuing bonds' model anchors the bereaved in an internalized relationship with the deceased, transforming but not severing the connection.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Acute grief disrupts behavioral, cognitive, and social patterns tied to the deceased, mirroring structural collapse.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Bereaved individuals occupy a liminal social position, neither fully present nor yet transformed, marked by heightened sensitivity and cognitive search.">
+  <data key="d0">Observation</data>
+</node>
+<node id="New existential insights (e.g., post-traumatic growth) emerge from the liminal space, reshaping identity, relationships, and meaning.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Reorganization of life around the loss as a permanent feature, with new routines and relational structures built from the continuing bond.">
+  <data key="d0">Observation</data>
+</node>
+<node id="The bereaved person undergoes qualitative transformation, adopting a new identity and relational dynamics distinct from pre-loss existence.">
+  <data key="d0">Observation</data>
+</node>
+<node id="Destruction of the 'assumptive world' as a purification phase, analogous to thermal quenching past a phase transition">
+  <data key="d0">Observation</data>
+</node>
+<node id="Dissolution of behavioral, cognitive, and somatic patterns tied to the deceased">
+  <data key="d0">Observation</data>
+</node>
+<node id="Liminality as a state of heightened sensitivity and cognitive search for the deceased’s presence">
+  <data key="d0">Observation</data>
+</node>
+<node id="Physiological disruption (e.g., elevated cortisol, immune suppression) as a marker of acute grief response">
+  <data key="d0">Observation</data>
+</node>
+<node id="Continuing bonds as an internalized anchor for transformed relationships with the deceased">
+  <data key="d0">Observation</data>
+</node>
+<node id="New configurations of meaning and identity post-grief, distinct from pre-loss baseline">
+  <data key="d0">Observation</data>
+</node>
+<node id="Cultural rituals as containment mechanisms for grief dynamics">
+  <data key="d0">Observation</data>
+</node>
+<node id="Divergent susceptibility in grief as a psychological analogue to critical points in phase transitions">
+  <data key="d0">Observation</data>
+</node>
+<node id="Neuroscience research on organotypic cortical cultures (2003–2017)">
+  <data key="d0">Context</data>
+</node>
+<node id="Neuroscience laboratories (in vitro rat cortical cultures)">
+  <data key="d0">Context</data>
+</node>
+<node id="spontaneous neural activity in purified cortical slices">
+  <data key="d0">Observation</data>
+</node>
+<node id="branching ratio (σ) as a control parameter defining criticality">
+  <data key="d0">Observation</data>
+</node>
+<node id="neuronal avalanches with power-law distributions">
+  <data key="d0">Observation</data>
+</node>
+<node id="self-organized criticality via homeostatic plasticity">
+  <data key="d0">Observation</data>
+</node>
+<node id="emergence of scale-free dynamics in resting-state fMRI under anesthesia">
+  <data key="d0">Observation</data>
+</node>
+<node id="mathematical equivalence between cortical avalanches and percolation/statistical mechanics models">
+  <data key="d0">Observation</data>
+</node>
+<node id="Purification of neural dynamics via sensory/motor removal, revealing intrinsic network organization">
+  <data key="d0">Observation</data>
+</node>
+<node id="branching ratio (σ = 1) as a phase boundary between quiescence and runaway excitation">
+  <data key="d0">Observation</data>
+</node>
+<node id="dissolution occurs when σ &gt; 1, leading to pathological synchronization">
+  <data key="d0">Observation</data>
+</node>
+<node id="liminal state at σ = 1: maximal dynamic range, optimized information transmission, and largest repertoire of activity patterns">
+  <data key="d0">Observation</data>
+</node>
+<node id="self-organized criticality via homeostatic mechanisms (synaptic scaling, inhibitory balance)">
+  <data key="d0">Observation</data>
+</node>
+<node id="emergence of scale-free dynamics in resting-state fMRI under anesthesia (criticality lost under propofol)">
+  <data key="d0">Observation</data>
+</node>
+<node id="consciousness may emerge from critical neural avalanches (Tagliazucchi et al., 2012)">
+  <data key="d0">Observation</data>
+</node>
+<edge source="Riverbend Flood" target="Structural dissolution" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Riverbend Village, Near Riverbanks" target="Post-Flood Transition, 2020-2024" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Riverbend Village, Near Riverbanks" target="Riverbend Flood Recovery" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Post-Flood Transition, 2020-2024" target="Ethnographic Field Study, 2023" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Ethnographic Field Study, 2023" target="Riverbend Flood Recovery" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Riverbend Flood Recovery" target="Dissolution of traditional agricultural practices" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Riverbend Flood Recovery" target="Liminality in community response" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Riverbend Flood Recovery" target="Creative breakthroughs through aquaculture adoption" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Riverbend Flood Recovery" target="Ethnographic Field Study, 2023" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Community elders maintained social cohesion during crisis." target="Anchoring" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Anchoring" target="critical_threshold_p_c" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Anchoring" target="Breath, kasina, or mantra as fixed reference points" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Anchoring" target="Philosophical mercury/Self as invariant cyclical principle" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Anchoring" target="Therapeutic intention (e.g., 'What is the source of my depression?')" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Anchoring" target="Structured music playlist" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Anchoring" target="Riverbend Flood Recovery" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Anchoring" target="The critical threshold p_c (e.g., 0.5927) anchors the transition point, defining the boundary between order (disconnected clusters) and disorder (spanning cluster)." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Anchoring" target="Persistent cultural symbols (e.g., mudyi tree)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Anchoring" target="The 'continuing bonds' model anchors the bereaved in an internalized relationship with the deceased, transforming but not severing the connection." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution of traditional agricultural practices" target="Dissolution" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution of traditional agricultural practices" target="Riverbend Flood Recovery" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Dissolution" target="Breakdown of Existing Structures" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Dissolution" target="small_disconnected_clusters_below_p_c" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Dissolution" target="fractal_distribution_of_cluster_sizes" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Dissolution" target="Multi-phase domain growth (e.g., q=3 colors)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Dissolution" target="Dissolution of habitual perceptual patterns (*dukkha-nana*)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution" target="Albedo (whitening) and solutio (material liquefaction)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Dissolution" target="DMN reduction and PCC activity decline" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Dissolution" target="Dissolution of traditional agricultural practices" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution" target="Riverbend Flood Recovery" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution" target="Below p_c, clusters are small and disconnected, dissolving into a fractal distribution as p approaches p_c. The mean cluster size diverges as a power law, reflecting the breakdown of finite-size order." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution" target="Temporary suspension of hierarchies (communitas)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution" target="Acute grief disrupts behavioral, cognitive, and social patterns tied to the deceased, mirroring structural collapse." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality in community response" target="Liminality" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality in community response" target="Post-Flood Transition, 2020-2024" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Liminality" target="Heightened Susceptibility" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Liminality" target="fractal_properties_and_maximal_sensitivity_at_p_c" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Liminality" target="diverging_correlation_length" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Liminality" target="Emergent conformal symmetry (c = 4/5) at q=3" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Liminality" target="Loss of stable self-model and observer–object boundary dissolution" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality" target="Peacock’s tail phase and numinous danger of inflation" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Liminality" target="Prolonged state due to lack of transformative encounter" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Liminality" target="Ego dissolution, synesthesia, and time distortion" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Liminality" target="Liminality in community response" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality" target="Post-Flood Transition, 2020-2024" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality" target="At p_c, the system enters a liminal state: the incipient infinite cluster appears, with fractal properties and maximal sensitivity to perturbations. The correlation length diverges, collapsing all scales into a single structure." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality" target="'Betwixt and between' realm" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality" target="Bereaved individuals occupy a liminal social position, neither fully present nor yet transformed, marked by heightened sensitivity and cognitive search." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Engagement with new technologies and knowledge for aquaculture." target="Encounter" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Encounter" target="qualitatively_new_spanning_cluster" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Encounter" target="geometric_object_impossible_below_p_c" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Encounter" target="Tricritical point (q=4) as continuous/first-order transition boundary" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Encounter" target="Spontaneous rapture, luminosity, and nondual awareness" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Encounter" target="Coniunctio (union of opposites)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Encounter" target="Access to unconscious emotional material" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Encounter" target="Creative breakthroughs through aquaculture adoption" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Encounter" target="Post-Flood Transition, 2020-2024" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Encounter" target="The encounter is the qualitatively new spanning cluster itself—a geometric object that is impossible below p_c and enables macroscopic connectivity (e.g., electrical conductivity transition)." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Encounter" target="Access to new knowledge (e.g., epopteia)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Encounter" target="New existential insights (e.g., post-traumatic growth) emerge from the liminal space, reshaping identity, relationships, and meaning." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Adoption of aquaculture leading to a diversified economy." target="Integration" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration" target="finite_size_scaling_collapse_of_spanning_probabilities" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Integration" target="Multiplication/projection phases and philosopher’s stone as catalyst" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Integration" target="Post-session narrative construction" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Integration" target="Actionable insight extraction" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Integration" target="Adoption of aquaculture leading to a diversified economy" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration" target="Post-Flood Transition, 2020-2024" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration" target="Finite-size scaling integrates data across lattice sizes by collapsing spanning probabilities onto a universal curve, confirming consistency across systems of different L." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration" target="Gradual re-establishment of structure" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration" target="Reorganization of life around the loss as a permanent feature, with new routines and relational structures built from the continuing bond." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Rise of a more resilient economic structure post-transition." target="Emergence" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Emergence" target="macroscopic_connected_structure_from_local_random_events" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Emergence" target="Spontaneous symmetry breaking in ordered phases (q ≤ 4)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Emergence" target="Discontinuous order-disorder transitions (q &gt; 4)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Emergence" target="Lapis philosophorum as emergent paradoxical product" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Emergence" target="Phase-like transformation" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Emergence" target="Rise of a more resilient economic structure post-transition" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Emergence" target="Post-Flood Transition, 2020-2024" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Emergence" target="Above p_c, a macroscopic connected structure emerges from local random events, exhibiting emergent properties (e.g., fractal dimension, conductivity exponent) that cannot be predicted from individual sites." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Emergence" target="Qualitative transformation post-transition" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Emergence" target="The bereaved person undergoes qualitative transformation, adopting a new identity and relational dynamics distinct from pre-loss existence." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="Severe Drought in Oakhaven, circa 2018-2021" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="drought management" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="community adaptation" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="traditional knowledge" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="inter-tribal exchange" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="economic transformation" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="Severe Drought in Oakhaven" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Mountain Village of Oakhaven" target="Emergence into a multi-resource economy" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Purification of old irrigation systems" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Containment strategies for water rationing and protection" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Anchoring through traditional elders' knowledge" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Dissolution of social structures under stress" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Liminality as the village's uncertain state" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Encounter with external knowledge sources" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Integration of new techniques with existing skills" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven, circa 2018-2021" target="Emergence into a transformed economy" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Purification of old irrigation systems" target="Purification" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Purification of old irrigation systems" target="Removal of inefficiencies" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Purification of old irrigation systems" target="Community cleaning and improvement of irrigation canals" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Containment strategies for water rationing and protection" target="Containment" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Containment strategies for water rationing and protection" target="Strict rationing and guarding of the main spring" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Anchoring through traditional elders' knowledge" target="Anchoring" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Anchoring through traditional elders' knowledge" target="Elders provided ancient techniques for water preservation" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Dissolution of social structures under stress" target="Dissolution" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution of social structures under stress" target="Crop failure" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Liminality as the village's uncertain state" target="Liminality" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality as the village's uncertain state" target="Uncertainty between migration and staying" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Encounter with external knowledge sources" target="Encounter" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration of new techniques with existing skills" target="Integration" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration of new techniques with existing skills" target="Combined traditional terrace farming with new irrigation methods" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Emergence into a transformed economy" target="Emergence" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Purification" target="stripping_of_thermodynamic_variables" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Purification" target="Metropolis/Wolff equilibration (q ≤ 4)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Purification" target="Reduction of conceptual elaboration" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Purification" target="Nigredo (alchemical blackening) and shadow confrontation" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Purification" target="Preparatory sessions addressing expectations/fears" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Purification" target="The system is stripped of thermodynamic variables (no Hamiltonian, temperature, or dynamics), focusing solely on geometric probability to isolate the percolation transition." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Purification" target="Symbolic stripping (e.g., white clay smearing)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Purification" target="The shock phase and destruction of the 'assumptive world' serve as purification, suspending normal cognition and dismantling routines." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Containment" target="finite_LxL_lattice_with_spanning_cluster_requirement" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Containment" target="Finite-size coexistence of ordered/disordered phases (q &gt; 4)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Containment" target="Metastable state tunneling (q &gt; 4)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Containment" target="Structured temporal boundaries (e.g., bell signals, vinaya/regula rules)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Containment" target="Vas hermeticum (physical vessel) and therapeutic analyst-analysand relationship" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Containment" target="Multilayered containment (dosing room, therapists, music, pharmacological dose, psychological alliance, homeostatic brain mechanisms)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Containment" target="The finite L x L lattice with defined boundary conditions (e.g., spanning cluster requirement) contains the problem, rounding the transition and enabling critical exponents to emerge independently of system size." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Containment" target="Ritual spaces as boundaries" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Containment" target="Mourning rituals (e.g., shiva, antyesti, Victorian mourning) provide external structure to contain grief oscillations between loss-oriented and restoration-oriented coping." id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Simulation Results" target="Critical Points at T=1.0" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Simulation Results" target="Eight-Step Navigation Protocol" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Simulation Results" target="Susceptibility Values" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="N=24" target="Higher Peak Susceptibility (12.902)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="N=16" target="Peak Susceptibility (5.721)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Eight-Step Navigation Protocol" target="Liminality Phase" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Eight-Step Navigation Protocol" target="Self-organized criticality (SOC)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Eight-Step Navigation Protocol" target="Dissolution" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Eight-Step Navigation Protocol" target="Liminality" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Eight-Step Navigation Protocol" target="Dissolution phase of organizational change" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Eight-Step Navigation Protocol" target="Liminality in social movements" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Organizational Change" target="System Sensitivity at Critical Point" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Mental workspace purification" target="Purification (Chrysalis framework preparatory step)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Peak neural fluctuations at sigma 0.5" target="Containment phase" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Peak neural fluctuations at sigma 0.5" target="Liminal state of neural model fluctuations" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Neural model transition" target="Structural dissolution" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Neural model transition" target="Peak neural fluctuations at sigma 0.5" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Neural model transition" target="Boundary between ordered and disordered states" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Neural model transition" target="Sigma 0.5 threshold" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Neural model transition" target="Liminal state of neural fluctuations" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Universality proof" target="Integration phase" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Universality proof" target="Emergence of new order" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Universality proof" target="Emergent order verification" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Neural model" target="Peak neural fluctuations at sigma 0.5" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Neural model" target="Critical dynamics at sigma 0.5" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Simulation Lab" target="Neural model transition phases" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neural workspace" target="Baseline state (anchoring)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="percolation_theory" target="critical_transition_in_site_percolation" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="percolation_theory" target="Broadbent_and_Hammersley_1957" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="percolation_theory" target="Stauffer_and_Aharony_1994" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="site_percolation" target="random_lattice_with_site_occupation_probability_p" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="site_percolation" target="connectivity_threshold_p_c" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="site_percolation" target="critical_threshold_0.5927_for_square_lattice" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="site_percolation" target="fractal_nature_of_incipient_infinite_cluster" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="site_percolation" target="power-law_divergence_in_cluster_size_distribution" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="site_percolation" target="susceptibility_like_divergence_in_mean_cluster_size" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="site_percolation" target="universal_critical_exponents_tau_187/91_beta_5/36" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="site_percolation" target="maximal_sensitivity_at_p_c" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="site_percolation" target="emergence_of_long_range_connectivity_from_short_range_local_occupation_probabilities" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="site_percolation" target="finite_size_lxL_lattice_with_boundary_conditions" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="site_percolation" target="structural_impossibility_of_spanning_clusters_below_p_c" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="site_percolation" target="finite_size_scaling_collapse_of_spanning_probabilities" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="site_percolation" target="red_bond_structure_and_backbone_formation" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="site_percolation" target="geometric_probability_factors" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="site_percolation" target="simulation_lab_hypothetical_theoretical_framework" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="site_percolation" target="emergent_connectivity" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="site_percolation" target="emergent_properties_like_fractal_dimension_and_conductivity_exponent" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="site_percolation" target="qualitative_new_spanning_cluster_at_p_c" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="site_percolation" target="macroscopic_connectivity_emergence" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="site_percolation" target="eight_step_protocol" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="critical_threshold_p_c" target="fractal_dimension_d_f_91/48" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="critical_transition" target="p_c" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="p_c" target="Critical threshold marking the boundary between disconnected clusters and a spanning infinite cluster" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Ndembu white clay smearing" target="Symbolic purification" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Maasai warrior shaving" target="Purification" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Maasai warrior shaving" target="Structural dissolution through symbolic stripping" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Ndembu mudyi tree" target="Anchoring" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Sacred groves (Ndembu)" target="Containment" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Kivas (Maasai)" target="Containment" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Monastic cells (Tibetan Buddhism)" target="Containment" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Eleusinian Mysteries" target="Dissolution" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Eleusinian Mysteries" target="Perceptual dissolution during rituals" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Tibetan bardo teachings" target="Dissolution" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Tibetan bardo teachings" target="Dissolution of skandhas during liminality" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Ndembu 'dead and unborn' state" target="Liminality" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Communitas (Ndembu)" target="Anti-structure" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Eleusinian epopteia" target="Encounter" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Aboriginal dreamtime visions" target="Encounter" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Zen kensho" target="Encounter" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Ndembu new name/clothing" target="Integration" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Maasai elder → moran transition" target="Emergence" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Van Gennep’s three-phase sequence" target="Path-dependent emergence" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Structural dissolution (social/psychological)" target="Critical-transitions" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Symbolic erasure (Ndembu)" target="Dissolution" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Songlines (Aboriginal)" target="Anchoring" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Turner’s *The Ritual Process* (1969)" target="Rites of Passage Framework" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Rites of Passage Framework" target="Phase-change" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Van Gennep’s *Les rites de passage* (1909)" target="Rites of Passage Framework" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Ndembu ritual space" target="Containment" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Eleusinian darkness" target="Dissolution" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Tibetan skandhas dissolution" target="Dissolution" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Structural lattices (songlines, monastic rules)" target="Anchoring" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Liminal ambiguity (Eleusinian)" target="Creative breakthroughs" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Creative breakthroughs" target="Threshold perturbation for discontinuous change" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Hysteresis in transformations" target="Emergence" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Critical fluctuations (physics analogy)" target="Liminality" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Ndembu’s new roles" target="Integration" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Structural dissolution (psychic/structural collapse)" target="Boundary conditions" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Elder guides (ritual containment)" target="Containment" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="assumptive world" target="structured reality including the deceased" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="grief" target="systemic phase transition from assumptive world to psychological reconstruction" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="grief" target="destruction of behavioral, cognitive, and somatic patterns tied to the deceased" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="grief" target="physiological disruption (e.g., elevated cortisol, immune suppression)" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="grief" target="new configurations of meaning and identity post-grief, distinct from pre-loss baseline" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="grief" target="divergent susceptibility in grief as a psychological analogue to critical points in phase transitions" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="grief" target="late 20th century to present psychological and anthropological studies" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="grief" target="phase_change (psychological and cultural transition)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="purification phase" target="destruction of the 'assumptive world' (analogous to thermal quenching)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="liminality" target="state of heightened sensitivity and cognitive search for the deceased’s presence" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="liminality" target="social and psychological limbo during grief" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="continuing bonds" target="internalized anchor for transformed relationships with the deceased" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="mourning rituals" target="cultural containment mechanisms for grief dynamics" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="dissolution" target="disruption of behavioral, cognitive, and social patterns tied to the deceased" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="dissolution" target="creative reorganization in grief" id="0">
+  <data key="d1">PRECEDS</data>
+</edge>
+<edge source="shiva" target="mourning ritual for grief containment" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="antyesti" target="mourning ritual for grief containment" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Victorian mourning" target="rituals for grief containment" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="post-traumatic growth" target="new existential insights emerging from liminal space in grief" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="integration" target="reorganization of life around the loss as a permanent feature" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="emergence" target="qualitative transformation of identity and relational dynamics post-grief" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Purified cortical slices (in vitro rat cortical cultures)" target="Neural dynamics in organotypic cultures" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Branching ratio (σ)" target="Phase boundary between quiescence and runaway excitation" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Branching ratio (σ)" target="Criticality (σ = 1)" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Criticality (σ = 1)" target="Power-law distributions in neuronal avalanches (P(s) ~ s^(-3/2), P(d) ~ d^(-2))" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Criticality (σ = 1)" target="Mean-field universality in statistical mechanics" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Self-organized criticality" target="Homeostatic plasticity (synaptic scaling, inhibitory balance)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Self-organized criticality" target="Percolation theory in statistical physics" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Self-organized criticality" target="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Self-organized criticality" target="Scale-free dynamics and power-law distributions" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Self-organized criticality" target="Punctuated equilibrium (E.O. Wilson)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Self-organized criticality" target="Earthquake dynamics" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Self-organized criticality" target="Financial crashes" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Self-organized criticality" target="Timescale separation (slow grain addition vs. avalanche dynamics)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Self-organized criticality" target="Long-range spatial correlations in avalanche distributions" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Neuronal avalanches" target="Scale-free dynamics" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Critical branching ratio (σ = 1)" target="Liminal state of maximal dynamic range and information processing" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Critical branching ratio (σ = 1)" target="Largest repertoire of activity patterns" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="σ &gt; 1" target="Pathological dissolution via global synchronization" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="σ &gt; 1" target="Loss of computation capacity" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="σ &lt; 1" target="Subcritical regime suppressing neural activity" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Critical exponents (τ = 3/2, α = 2)" target="Neural dynamics with statistical mechanics frameworks" id="0">
+  <data key="d1">INTEGRATES</data>
+</edge>
+<edge source="Resting-state fMRI under anesthesia (criticality)" target="Scale-free dynamics" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Propofol" target="Loss of criticality in scale-free dynamics" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Consciousness emergence" target="Critical neural avalanches (σ = 1)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Homeostatic plasticity" target="Synaptic scaling and inhibitory balance" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Neural avalanches" target="Phase transition in cortical dynamics" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Eight-step protocol" target="Purification, containment, anchoring, dissolution, liminality, encounter, integration, emergence" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Purification (sensory/motor removal)" target="Intrinsic neural dynamics" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuromodulation exclusion" target="Purification step" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="q-state Potts Model" target="Ising model with q discrete spin values (colors)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="q-state Potts Model" target="Critical transitions varying between continuous (q ≤ 4) and first-order (q &gt; 4)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="q-state Potts Model" target="Lattice-gas model" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="q-state Potts Model" target="Metastable states for q &gt; 4" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="q-state Potts Model" target="Emergent conformal symmetry at criticality (q=3)" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="q-state Potts Model" target="Tricritical point at q=4" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="q-state Potts Model" target="Latent heat release and discontinuous order-disorder transition for q &gt; 4" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="q-state Potts Model" target="Fortuin-Kasteleyn bond percolation" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="q-state Potts Model" target="Multi-phase competition in dissolution (e.g., q=3 domains of all colors)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="q-state Potts Model" target="Finite-size effects in containment (coexistence of ordered/disordered phases)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="q-state Potts Model" target="Universality class depending on q (continuous for q ≤ 4, abrupt change at q=4)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="q-state Potts Model" target="Critical slowing down addressed via Wolff cluster algorithm" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="q-state Potts Model" target="Wolff cluster algorithm (z_Wolff ~ 0.5 vs z_Metropolis ~ 2 for q=3)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="q-state Potts Model" target="Emergent conformal symmetry (c = 4/5) at q=3 critical point" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="q-state Potts Model" target="Tricritical point at q=4 (marginal operator relevant)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="q=3" target="Emergent conformal symmetry (c = 4/5)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="q=4" target="Tricritical point (continuous/first-order transition boundary)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="q &gt; 4" target="First-order transition with metastable states and latent heat" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="q ≤ 4" target="Continuous phase transition with power-law correlations" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Simulation Lab (theoretical/analytical framework)" target="Potts model studies (1950s–1980s)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Mathematical and theoretical physics study of phase transitions" target="Potts model research (1950s–1980s)" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Potts 1952" target="Introduction of q-state Potts model" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Baxter 1973" target="Critical exponents and universality classes for q-state Potts model" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Wu 1982 review" target="Computational algorithms (e.g., Wolff cluster) for critical slowing down" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Metropolis/Wolff dynamics" target="Equilibration in Potts model (q ≤ 4)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Metropolis/Wolff dynamics" target="Special handling for metastable states (q &gt; 4)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Wolff cluster algorithm" target="Zq symmetry respecting integration (z_Wolff ~ 0.5)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Severe Drought in Oakhaven" target="Terraced farming" id="0">
+  <data key="d1">AFFECTS</data>
+</edge>
+<edge source="Severe Drought in Oakhaven" target="Containment strategies for water rationing and protection" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Severe Drought in Oakhaven" target="Anchoring through traditional elders' knowledge" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Severe Drought in Oakhaven" target="Dissolution of social structures under stress" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Severe Drought in Oakhaven" target="Liminality as the village's uncertain state" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Severe Drought in Oakhaven" target="Integration of new techniques with existing skills" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Terraced farming" target="Purification of old irrigation systems" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Strict rationing and guarding of the main spring" target="Controlled use and protection of remaining resources" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Elders" target="Traditional knowledge" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Crop failure" target="Breakdown of social hierarchies" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Nomadic tribe" target="Encounter with external knowledge" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Nomadic tribe" target="Multi-resource economy" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Multi-resource economy" target="Emergence from crisis to resilience" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Geographic_location" target="Mountains of Central Europe" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Oral History Compilation" target="Mountain Village of Oakhaven" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Oral History Compilation" target="Severe Drought in Oakhaven" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Chrysalis Framework" target="Purification" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Containment" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Anchoring" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Dissolution" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Liminality" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Encounter" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Integration" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Emergence" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Chrysalis Framework" target="Phase transitions between narrative self-model and nondual awareness" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Theravada Vipassana" target="Purification through *ditthi-visuddhi*" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Zen" target="Integration via ‘laundry’ metaphor" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Tibetan Dzogchen" target="Encounter with *rigpa*" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Christian Mysticism" target="Theoria (encounter with divine structure)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Contemplative Studies Reading Room" target="Contemplative traditions (generalized)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="DMN (Default Mode Network)" target="Top-down predictive processing" id="0">
+  <data key="d1">SUPPRESSES</data>
+</edge>
+<edge source="DMN" target="Narrative self-model" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Theta coherence" target="Anchoring stability" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Theta coherence" target="Attentional stability" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Gamma oscillations" target="Expert meditators (&gt;10,000 hours)" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Gamma oscillations" target="Emergent neural configuration" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="DMN suppression" target="Increased bottom-up sensory attention" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Gamma oscillation amplification" target="Expert meditators (&gt;10,000 hours)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Neuroscience_of_meditation" target="DMN suppression and theta coherence as anchors" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Neural consolidation" target="Increased insula/hippocampus volume post-retreat" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Contemplative neuroscience" target="Chrysalis Framework" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Contemplative traditions" target="Critical transitions in meditation practices" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Contemplative traditions" target="Chrysalis framework" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Thermal purification via Metropolis dynamics" target="System preparation" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Thermal purification via Metropolis dynamics" target="Erasure of initial state memory" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="2D Ising Model" target="Phase transition dynamics near critical temperature (T_c)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="2D Ising Model" target="Z₂ universality class" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="2D Ising Model" target="Spontaneous symmetry breaking" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="2D Ising Model" target="Spin-glass/spin-system analog" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="2D Ising Model" target="Critical phenomena" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="2D Ising Model" target="Phase transitions" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="2D Ising Model" target="Emergent scaling behavior" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Thermal equilibration" target="Purification step" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Metropolis dynamics" target="Thermal purification" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="High-temperature paramagnetic order" target="Domains of aligned spins" id="0">
+  <data key="d1">DISOLVES_INTO</data>
+</edge>
+<edge source="High-temperature paramagnetic order" target="Exponential decay in spin-spin correlations" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Critical temperature (T_c)" target="Transition from exponential to power-law correlations" id="0">
+  <data key="d1">TRIGGERS</data>
+</edge>
+<edge source="Logarithmic divergence of specific heat" target="Near T_c" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Scale-invariant fluctuations" target="Maximal susceptibility at T_c" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Scale-invariant fluctuations" target="Bimodal magnetization distribution" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Universal critical exponents (β=1/8, γ=7/4, ν=1)" target="Z₂ universality class" id="0">
+  <data key="d1">GOVERNS</data>
+</edge>
+<edge source="Renormalization group transformations" target="Universal fixed point" id="0">
+  <data key="d1">REVEALS</data>
+</edge>
+<edge source="Finite-size scaling" target="Data across different lattice sizes" id="0">
+  <data key="d1">INTEGRATES</data>
+</edge>
+<edge source="Finite-size scaling" target="Universal collapse of measurements" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Finite-size scaling" target="Spanning probabilities" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Finite lattice with periodic boundary conditions" target="Correlation length" id="0">
+  <data key="d1">CONTAINS</data>
+</edge>
+<edge source="Spontaneous symmetry breaking" target="Local interactions" id="0">
+  <data key="d1">EMERGES_FROM</data>
+</edge>
+<edge source="Long-range order" target="Collective property beyond individual spin behavior" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Onsager 1944 block-spin RG" target="Kadanoff 1966 block-spin RG" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Criticality and universality" target="Phase transition dynamics" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Renormalization Group (RG) Framework" target="Wilson &amp; Fisher (1971–1972)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Renormalization Group (RG) Framework" target="Integration of short-wavelength fluctuations to reveal long-wavelength physics" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Renormalization Group (RG) Framework" target="Purification of irrelevant microscopic details (lattice structure, interaction shape, higher-order couplings)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Renormalization Group (RG) Framework" target="Fixed points as liminal states between ordered and disordered phases" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Renormalization Group (RG) Framework" target="Dynamical systems reformulation of critical phenomena" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Renormalization Group (RG) Framework" target="Simulation Lab (theoretical framework, abstract space)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Renormalization Group (RG) Framework" target="Fixed-point universality classes" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Fixed Points" target="Critical exponents" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Fixed Points" target="Liminal states between ordered/disordered phases" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Fixed Points" target="Abstract objects transcending physical realizations" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Universality Class" target="Symmetry and dimensionality convergence" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Universality Class" target="Fixed-point universality classes" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="RG Coarse-Graining Protocol" target="Hamiltonian space as a container for RG flow" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="RG Coarse-Graining Protocol" target="Dissolution of irrelevant couplings under coarse-graining" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="RG Coarse-Graining Protocol" target="Irrelevance of microscopic specifics (e.g., lattice type, interaction range)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Critical Phenomena" target="Emergent universal critical behavior" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Critical Exponents" target="Fixed points as saddle points between ordered/disordered phases" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Universality" target="Long-distance critical behavior" id="0">
+  <data key="d1">EMERGES_FROM</data>
+</edge>
+<edge source="Universality" target="Varying Parameters in Simulations" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="RG Framework" target="Epsilon-expansion dynamical systems" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Phase Transitions" target="Universality as a geometric property" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Critical Systems" target="Diverse systems (e.g., Ising model, liquid-gas)" id="0">
+  <data key="d1">INTEGRATES</data>
+</edge>
+<edge source="Nigredo (alchemical blackening)" target="Destruction of current form through alchemical or psychological shadow confrontation" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Nigredo (alchemical blackening)" target="Purification (Jungian shadow work)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Alchemical vessel (vas hermeticum)" target="Symbolic containment for transformation processes" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Alchemical vessel (vas hermeticum)" target="Therapeutic analyst-analysand relationship (Jungian)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Philosophical mercury" target="Persistent cyclical Self/archetypal anchoring through dissolution" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Philosophical mercury" target="Ouroboros (cyclical invariant)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Albedo (liquefaction)" target="Dissolution of rigid ego-structures into a liminal, volatile state" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Albedo (liquefaction)" target="Peacock’s tail phase (liminal flux)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Peacock’s tail phase" target="Maximal flux between albedo and rubedo" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Peacock’s tail phase" target="Numinous danger of inflation" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Coniunctio (union of opposites)" target="Encounter of sol/luna or anima/animus" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Coniunctio (union of opposites)" target="Spontaneous symmetry-breaking" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Philosopher’s stone" target="Irreversible integration of opposites as paradoxical, self-sustaining product" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Philosopher’s stone" target="Lapis philosophorum (emergent paradoxical product)" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Lapis philosophorum" target="Individuation of Self (Jungian)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Medieval to Early Modern Alchemical Traditions" target="Metallurgical cultures worldwide (e.g., medieval Europe, Islamic alchemy, Chinese metallurgy)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Jungian Psychology" target="Psychological dissolution of ego-structures and reunion with the Self" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Jungian Psychology" target="Archetypal dynamics (shadow, anima/animus, collective unconscious)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Medieval to Early Modern Alchemy" target="Critical Transitions in Transformation Processes (20th-century reinterpretation)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Critical Transitions in Transformation Processes" target="Phase transitions (nigredo, albedo, rubedo, coniunctio)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Critical Transitions in Transformation Processes" target="Medieval to Early Modern Alchemy → Jungian Psychology" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Jung 1944 *Psychology and Alchemy*" target="Destruction of current form through nigredo and shadow confrontation" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Eliade 1962 *The Forge and the Crucible*" target="Alchemical vessel and philosophical mercury as containers for transformation" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Eight-step alchemical protocol" target="Purification → Containment → Anchoring → Dissolution → Liminality → Encounter → Integration → Emergence" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Kaelthar Island" target="Ancient Times" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Kaelthar Island" target="Storytelling as a means of purification" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Kaelthar Island" target="Cataclysmic event" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Kaelthar Island" target="Internal conflicts and factions" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Kaelthar Island" target="Liminality" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Kaelthar Island" target="Dissolution into chaos" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Kaelthar Island" target="Lack of transformative encounter" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Kaelthar Island" target="Emergence of identity crisis" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Storytelling" target="Purification" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Storytelling" target="Shaping identity and society" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Cataclysmic event" target="Dissolution of societal structures" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Cataclysmic event" target="Failure of traditional containment rituals" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Traditional containment rituals" target="Containment" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Internal conflicts and factions" target="Liminality" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Storytellers" target="Attempted anchoring with new narratives" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Attempted anchoring with new narratives" target="Failure to unite the people" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Dissolution into chaos" target="Failure of rituals and cataclysmic event" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Lack of transformative encounter" target="Prolonged liminality" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Identity Crisis" target="Resilience and change" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Chrysalis framework" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Purification (preparatory sessions)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Controlled pharmacological doses (e.g., psilocybin)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Dissolution of the default mode network (DMN)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Entropic Brain Hypothesis (increased entropy toward criticality)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Critical transition from subcritical to critical brain dynamics" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Liminal state" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Creative breakthroughs as emergent psychological configurations" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Neurobiological markers of phase transition" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Sustained remission post-treatment" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Eight-step protocol (Purification, Containment, Anchoring, Dissolution, Liminality, Encounter, Integration, Emergence)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Clinical outcomes (e.g., remission of depression)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Psychedelic-Assisted Therapy" target="Modern clinical research on psychedelic-assisted psychotherapy (2014–2026)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Purification (preparatory sessions)" target="Psychological purification of expectations and fears" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Purification (preparatory sessions)" target="Controlled setting (e.g., eyeshades, music playlists)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Controlled pharmacological doses (psilocybin)" target="Increased cortical entropy" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Dissolution of the default mode network (DMN)" target="Habitual self-model reduction" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Entropic Brain Hypothesis" target="Pathological attractors (e.g., depression, addiction) as excessive order" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Entropic Brain Hypothesis" target="REBUS model" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Critical transition" target="Increased entropy, flattened hierarchical dynamics, and global connectivity" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Liminal state" target="Ego dissolution" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Liminal state" target="Time distortion" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Liminal state" target="Increased global connectivity" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="REBUS model" target="Maximal sensitivity state" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Neurobiological markers of phase transition" target="BDNF elevation" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Neurobiological markers of phase transition" target="Increased dendritic spine density" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Sustained remission post-treatment" target="Discontinuous change from pathological to new attractors" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Phase-like transformation" target="Rapid, sustained remission of depression via discontinuous change" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Clinical outcomes (remission of depression)" target="Emergent, qualitatively new psychological states" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Default Mode Network (DMN)" target="Habitual cognitive frameworks" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Self-organized criticality through slow grain addition and local toppling" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Open boundary conditions for dissipation and containment" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Local toppling triggering macroscopic avalanches" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Permanent critical state with power-law avalanche size distributions" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Abelian integration principle (sandpile group operations)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Self-organized critical attractor in phase space" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Slow grain addition (purification process)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Open boundary conditions (containment mechanism)" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Local toppling (z_c = 4 grains) triggering avalanches" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Power-law avalanche size distributions" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Universal power-law distributions (e.g., Gutenberg-Richter law)" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" target="Critical attractor in phase space (no fine-tuning required)" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Self-organized critical state" target="Maximal sensitivity to perturbations" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Self-organized critical state" target="Stable attractor in phase space" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Bak Tang Wiesenfeld (1987)" target="Conceptualization of self-organized criticality in the BTW model" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Bak (1996) *How Nature Works*" target="Theoretical formulation and broader applications of BTW model" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Simulation Lab (theoretical/abstract space)" target="Bak-Tang-Wiesenfeld (BTW) Sandpile Model" id="0">
+  <data key="d1">HOSTS</data>
+</edge>
+<edge source="Critical Point (Temperature 1.280, N=16)" target="Phase Transition" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="Critical Point (Temperature 1.100, N=32)" target="Phase Transition" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="System Size (N=16)" target="Higher Critical Temperature" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="System Size (N=32)" target="Slightly Lower Critical Temperature" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Liminality Phase" target="Critical Point in Phase Transition" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Dissolution Phase" target="Susceptibility Peaks" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Societal Changes" target="Phase Transition in Complex Systems" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Cell Differentiation" target="Critical Point in Biological Systems" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Chrysalis Simulations" target="Critical Temperature (1.280, N=16)" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Chrysalis Simulations" target="Critical Temperature (1.100, N=32)" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Larger Systems" target="Approaching Thermodynamic Limit" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Different System Geometries" target="Varied Phase Transition Behavior" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Hysteresis" target="Dynamic Phase Transition Behavior" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Metastability" target="Dynamic Phase Transition Behavior" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Critical Temperature (T_c)" target="2.269" id="0">
+  <data key="d1">ESTIMATED_BY</data>
+</edge>
+<edge source="Critical Temperature (T_c)" target="Sharp peak in susceptibility at T=2.269" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Susceptibility" target="2.269" id="0">
+  <data key="d1">PEAKS_AT</data>
+</edge>
+<edge source="Susceptibility" target="18.706" id="0">
+  <data key="d1">PEAK_VALUE</data>
+</edge>
+<edge source="Susceptibility" target="2.5" id="0">
+  <data key="d1">DECLINES_AT</data>
+</edge>
+<edge source="Susceptibility" target="9.486" id="0">
+  <data key="d1">VALUE_AT</data>
+</edge>
+<edge source="Susceptibility" target="2.0" id="0">
+  <data key="d1">COLLAPSES_AT</data>
+</edge>
+<edge source="Susceptibility" target="0.515" id="0">
+  <data key="d1">VALUE_AT</data>
+</edge>
+<edge source="Susceptibility" target="Power-law fluctuations" id="0">
+  <data key="d1">FOLLOWS</data>
+</edge>
+<edge source="Susceptibility" target="Fractal correlations" id="0">
+  <data key="d1">INDICATES</data>
+</edge>
+<edge source="Ising model critical point" target="2.269" id="0">
+  <data key="d1">THEORETICALLY_APPROXIMATED</data>
+</edge>
+<edge source="Ordered Phase" target="T=2.269" id="0">
+  <data key="d1">OCCURS_BELOW</data>
+</edge>
+<edge source="Ordered Phase" target="Low susceptibility" id="0">
+  <data key="d1">CHARACTERIZED_BY</data>
+</edge>
+<edge source="Disordered Phase" target="T=2.269" id="0">
+  <data key="d1">OCCURS_ABOVE</data>
+</edge>
+<edge source="Disordered Phase" target="Susceptibility does not asymptotically diverge" id="0">
+  <data key="d1">CHARACTERIZED_BY</data>
+</edge>
+<edge source="Finite-Size Effects" target="N=50" id="0">
+  <data key="d1">APPLIES_TO</data>
+</edge>
+<edge source="Finite-Size Effects" target="Consistent peak at T=2.269" id="0">
+  <data key="d1">MAKES</data>
+</edge>
+<edge source="Multicriticality" target="Non-monotonic susceptibility behavior" id="0">
+  <data key="d1">SUGGESTED_BY</data>
+</edge>
+<edge source="Hysteresis-like Effects" target="Non-monotonic susceptibility" id="0">
+  <data key="d1">EXHIBITED_BY</data>
+</edge>
+<edge source="Purification Step" target="Equilibrium sweeps (eq_sweeps=500)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Containment Step" target="Measurement sweeps (meas_sweeps=1000)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Anchoring Step" target="Finite-size effects (N=50)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Dissolution Step" target="Heating above T_c" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality Step" target="Critical region (T ≈ T_c)" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminality Step" target="Fractal correlations" id="0">
+  <data key="d1">CHARACTERIZED_BY</data>
+</edge>
+<edge source="Encounter Step" target="Multicriticality" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Integration Step" target="Finite-size corrections" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Emergence Step" target="Power-law behavior" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Peak Susceptibility" target="Liminality Step" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Spin Glasses" target="Multicriticality" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Spin Glasses" target="Non-monotonic susceptibility" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Bose-Einstein Condensates" target="Phase transitions" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Neural Networks" target="Critical brain states" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Sandpile Models" target="Self-organized criticality (SOC)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Cultural Transitions" target="Peak susceptibility in social movements" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Language Evolution" target="Criticality in syntax" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Economic Markets" target="Hysteresis-like behavior" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Epilepsy" target="Critical brain states" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Gene Regulation" target="Critical points in transcription factor binding" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Neuroscience" target="Critical brain states" id="0">
+  <data key="d1">APPLIES_TO</data>
+</edge>
+<edge source="Materials Science" target="Critical phase transitions in materials" id="0">
+  <data key="d1">APPLIES_TO</data>
+</edge>
+<edge source="AI &amp; Robotics" target="Self-organized stability in adaptive control systems" id="0">
+  <data key="d1">APPLIES_TO</data>
+</edge>
+<edge source="Criticality" target="Structural property of systems" id="0">
+  <data key="d1">IS_A</data>
+</edge>
+<edge source="Criticality" target="Exploited for transformation" id="0">
+  <data key="d1">CAN_BE</data>
+</edge>
+<edge source="Eight-Step Protocol" target="Meta-framework for critical transitions" id="0">
+  <data key="d1">IS_A</data>
+</edge>
+<edge source="Chrysalis Simulation (N=24)" target="Critical point at T=1.0" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Chrysalis Simulation (N=24)" target="Peak susceptibility of 12.902" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Chrysalis Simulation (N=24)" target="Chrysalis Simulation (N=16)" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Chrysalis Simulation (N=16)" target="Critical point at T=1.0" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Chrysalis Simulation (N=16)" target="Peak susceptibility of 5.721" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Phase transition temperature" target="T=1.0" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Chrysalis Simulation" target="Susceptibility near critical point" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Chrysalis Simulation" target="System response at T=1.0" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Chrysalis Simulation" target="Phase transition dynamics" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Next Steps for Simulations" target="Investigation of temperature variations around T=1.0" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Next Steps for Simulations" target="Exploration of different system sizes (finite-size effects)" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Next Steps for Simulations" target="Perturbations near the critical point" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Next Steps for Simulations" target="Examination of magnetization and correlation lengths" id="0">
+  <data key="d1">INCLUDES</data>
+</edge>
+<edge source="Fixed critical temperature" target="Model characteristics or simulation setup artifacts" id="0">
+  <data key="d1">DEFINED_BY</data>
+</edge>
+<edge source="System poised for significant change" target="Dissolution and liminality phases" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Creative breakthroughs through aquaculture adoption" target="Post-Flood Transition, 2020-2024" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Introduction of aquaculture and sustainable fishing" target="Rise of a more resilient economic structure post-transition" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="Neural Model Transition Protocol in Simulation Lab" target="Mental workspace purification as a preparatory phase for structural dissolution" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neural Model Transition Protocol in Simulation Lab" target="Peak neural fluctuations at sigma 0.5 as a threshold for transition dynamics" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neural Model Transition Protocol in Simulation Lab" target="Liminal state of neural model fluctuations between containment and dissolution" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neural Model Transition Protocol in Simulation Lab" target="Universality proof as a symbolic marker of emergent order post-integration" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neural Model Transition Protocol in Simulation Lab" target="sigma 0.5" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Mental workspace purification as a preparatory phase for structural dissolution" target="Purification" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Peak neural fluctuations at sigma 0.5 as a threshold for transition dynamics" target="sigma 0.5" id="0">
+  <data key="d1">QUANTIFIED_BY</data>
+</edge>
+<edge source="Peak neural fluctuations at sigma 0.5 as a threshold for transition dynamics" target="Containment" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Liminal state of neural model fluctuations between containment and dissolution" target="Liminality" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Universality proof as a symbolic marker of emergent order post-integration" target="Emergence" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="Percolation Theory" target="Isolation of geometric and probabilistic factors from thermodynamic dynamics to study connectivity thresholds" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Critical threshold p_c marking the boundary between disconnected clusters and a spanning infinite cluster" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Power-law divergence of cluster size distribution near p_c" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Fractal nature of the incipient infinite cluster (dimension d_f = 91/48, infinite surface-to-volume ratio)" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Maximal sensitivity at p_c: infinitesimal changes in p or site occupation can trigger macroscopic connectivity" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Universality of critical exponents (e.g., tau = 187/91, beta = 5/36) across lattice geometries" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Emergence of long-range connectivity from short-range local occupation probabilities" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Structural impossibility of spanning clusters below p_c despite proximity to the threshold" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Finite-size scaling collapse confirming universal scaling functions for spanning probabilities" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Percolation Theory" target="Red-bond structure and backbone formation as emergent properties of the percolation phase" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Critical transition at p_c" target="Power-law divergence of cluster size distribution near p_c (e.g., susceptibility-like divergence in mean cluster size)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Critical transition at p_c" target="Fractal nature of the incipient infinite cluster (dimension d_f = 91/48, infinite surface-to-volume ratio)" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Critical transition at p_c" target="Maximal sensitivity at p_c: infinitesimal changes in p or site occupation can trigger macroscopic connectivity" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Critical transition at p_c" target="Universality of critical exponents (e.g., tau = 187/91, beta = 5/36) across lattice geometries" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Site-Based Lattice Systems" target="Site-based lattice systems" id="0">
+  <data key="d1">DEFINES</data>
+</edge>
+<edge source="Lattice size" target="Finite-size scaling collapse confirming universal scaling functions for spanning probabilities" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="Spanning cluster" target="Emergence of macroscopic connectivity above p_c" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="Rites of Passage" target="Structural dissolution" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="van Gennep (1909)" target="Structural dissolution" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Turner (1969)" target="Structural dissolution" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Early 20th-century anthropological theory on ritual transitions" target="Structural dissolution" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Ndembu (Zambia)" target="Symbolic purification through white clay smearing" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Aboriginal Australian rituals" target="Encounter with dreamtime visions" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Psychological and Cultural Dynamics of Grief as a Critical Transition" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Purification" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Containment" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Anchoring" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Dissolution" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Liminality" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Encounter" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Integration" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Emergence" id="0">
+  <data key="d1">EXHIBITS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Destruction of the 'assumptive world' as a purification phase, analogous to thermal quenching past a phase transition" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Dissolution of behavioral, cognitive, and somatic patterns tied to the deceased" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Liminality as a state of heightened sensitivity and cognitive search for the deceased’s presence" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Physiological disruption (e.g., elevated cortisol, immune suppression) as a marker of acute grief response" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Continuing bonds as an internalized anchor for transformed relationships with the deceased" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="New configurations of meaning and identity post-grief, distinct from pre-loss baseline" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Cultural rituals as containment mechanisms for grief dynamics" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Grief and the Transition from Assumptive World to Psychological Reconstruction" target="Divergent susceptibility in grief as a psychological analogue to critical points in phase transitions" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuroscience research on organotypic cortical cultures (2003–2017)" target="Neuroscience laboratories (in vitro rat cortical cultures)" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuroscience research on organotypic cortical cultures (2003–2017)" target="spontaneous neural activity in purified cortical slices" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuroscience research on organotypic cortical cultures (2003–2017)" target="branching ratio (σ) as a control parameter defining criticality" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuroscience research on organotypic cortical cultures (2003–2017)" target="neuronal avalanches with power-law distributions" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuroscience research on organotypic cortical cultures (2003–2017)" target="self-organized criticality via homeostatic plasticity" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuroscience research on organotypic cortical cultures (2003–2017)" target="emergence of scale-free dynamics in resting-state fMRI under anesthesia" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Neuroscience research on organotypic cortical cultures (2003–2017)" target="mathematical equivalence between cortical avalanches and percolation/statistical mechanics models" id="0">
+  <data key="d1">RECORDS</data>
+</edge>
+<edge source="Purification of neural dynamics via sensory/motor removal, revealing intrinsic network organization" target="Purification" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="branching ratio (σ = 1) as a phase boundary between quiescence and runaway excitation" target="Anchoring" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="dissolution occurs when σ &gt; 1, leading to pathological synchronization" target="Dissolution" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+<edge source="liminal state at σ = 1: maximal dynamic range, optimized information transmission, and largest repertoire of activity patterns" target="Liminality" id="0">
+  <data key="d1">CORRELATES_WITH</data>
+</edge>
+<edge source="self-organized criticality via homeostatic mechanisms (synaptic scaling, inhibitory balance)" target="Encounter" id="0">
+  <data key="d1">PREDICTS</data>
+</edge>
+<edge source="emergence of scale-free dynamics in resting-state fMRI under anesthesia (criticality lost under propofol)" target="Integration" id="0">
+  <data key="d1">ALIGNS_WITH</data>
+</edge>
+<edge source="consciousness may emerge from critical neural avalanches (Tagliazucchi et al., 2012)" target="Emergence" id="0">
+  <data key="d1">MAPS_TO</data>
+</edge>
+</graph></graphml>

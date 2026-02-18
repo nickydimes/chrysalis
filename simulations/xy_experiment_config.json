@@ -1,0 +1,14 @@
+{
+    "experiment_name": "XY_BKT_Transition",
+    "simulation_module": "xy_2d",
+    "output_base_dir": "chrysalis/simulations/results/XY_BKT_Transition",
+    "global_params": {
+        "eq_sweeps": 200,
+        "meas_sweeps": 400
+    },
+    "parameter_sweep": {
+        "N": [16, 32]
+    },
+    "num_seeds": 2,
+    "seed_offset": 2000
+}

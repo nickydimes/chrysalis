@@ -1,0 +1,23 @@
+Title: Percolation Theory and Social Network Dissolution in Traditional Farming Communities
+Source: Google Search Synthesis
+Date: 2026-02-17
+
+Summary:
+Percolation theory, originally from statistical physics, describes how connectivity in a network changes as nodes (individuals) or links (relationships) are randomly added or removed. In social networks, it's used to study phenomena like the spread of information or disease. When applied to dissolution, the model would examine the impact of removing individuals or connections on the overall structure and cohesion of the community's social network.
+
+Key Concepts:
+- Percolation Threshold: A critical point at which the removal of a certain number of elements leads to a significant change in the network's connectivity, potentially causing it to fragment into smaller, disconnected components.
+- Bond Percolation: Removing connections between nodes.
+- Site Percolation: Removing nodes (individuals) from the network.
+
+Application to Farming Communities:
+Traditional farming communities rely heavily on social networks for resilience, knowledge sharing, and mutual support. Factors such as out-migration, economic pressures, or shifts in communication patterns can lead to the weakening or loss of these social ties. A percolation model could simulate these removals to predict when a community's social fabric might reach a critical point of dissolution, impacting its ability to function cohesively.
+
+Sources mentioned:
+- networkpages.nl
+- wikipedia.org
+- plos.org
+- pnas.org
+- ed.ac.uk
+- sustainability-directory.com
+- mdpi.com

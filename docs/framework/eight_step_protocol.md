@@ -54,11 +54,11 @@ The eight steps are not arbitrary divisions. Each corresponds to a necessary str
 
 **Definition**: Fixing a reference point — an invariant — that persists through the transition and prevents total dissolution.
 
-**Physical analogue**: The renormalization group fixed point. Under coarse-graining, irrelevant operators dissolve, but the fixed-point Hamiltonian is invariant: H* = R(H*). The critical exponents — the measurable signatures of the transition — are properties of this invariant structure. In the sandpile model, the branching ratio sigma = 1 is the invariant that defines the critical state.
+**Physical analogue**: The renormalization group fixed point. Under coarse-graining, irrelevant operators dissolve, but the fixed-point Hamiltonian is invariant: H* = R(H*). The critical exponents — the measurable signatures of the transition — are properties of this invariant structure. In the XY model, the helicity modulus (\(\Upsilon\)) or "stiffness" serves as an anchor, representing the system's resistance to topological fragmentation. In the sandpile model, the branching ratio sigma = 1 is the invariant that defines the critical state.
 
 **Neurological analogue**: The meditation object (breath, mantra, kasina) that provides a return point when concentration dissolves. In psychedelic therapy, the therapeutic intention formulated before the session — a question or theme that persists through the dissolution of normal cognitive frameworks. The music playlist that provides temporal structure.
 
-**Ethnographic analogue**: The Ndembu mudyi (milk tree) representing matrilineal continuity. The Aboriginal songline — a geographic-narrative structure that predates and outlasts any individual walkabout. The monastic rule (Rule of St. Benedict) that provides a fixed framework of daily practices. In alchemy, Mercurius — the principle of transformation that is simultaneously the agent, the process, and the goal.
+**Ethnographic analogue**: The Ndembu mudyi (milk tree) representing matrilineal continuity. The Aboriginal songline — a geographic-narrative structure that predates and outlasts any individual walkabout. The monastic rule (Rule of St. Benedict) that provides a fixed framework of daily practices. In socio-cultural systems, the helicity modulus represents the community's collective "stiffness" or resistance to fragmentation; high stiffness indicates a stable, anchored social fabric. In alchemy, Mercurius — the principle of transformation that is simultaneously the agent, the process, and the goal.
 
 **Why it is necessary**: At the critical point, the correlation length diverges and fluctuations exist on all scales. Without an anchor, the system has no reference point for reorganization — it can dissolve indefinitely without crystallizing into a new configuration. The anchor provides the seed around which the new structure can nucleate. It is not a constraint on the transition but a condition for its completion.
 
@@ -70,13 +70,13 @@ The eight steps are not arbitrary divisions. Each corresponds to a necessary str
 
 **Definition**: The controlled release of existing order; the system enters the critical regime where old patterns break apart.
 
-**Physical analogue**: The approach to T_c from the ordered phase. As temperature increases, domains of aligned spins break apart. The magnetization decreases as m ~ (T_c - T)^beta. Long-range order fragments into fluctuating domains on all length scales. In percolation, the spanning cluster breaks into progressively smaller fragments as p decreases through p_c. The specific heat diverges — the system absorbs maximal energy during the dissolution of order.
+**Physical analogue**: The approach to T_c from the ordered phase. As temperature increases, domains of aligned spins break apart. The magnetization decreases as m ~ (T_c - T)^beta. Long-range order fragments into fluctuating domains on all length scales. In the XY model, this phase is marked by the proliferation of vortex-antivortex pairs — local "knots" of topological disorder that disrupt the quasi-long-range order. In percolation, the spanning cluster breaks into progressively smaller fragments as p decreases through p_c. The specific heat diverges — the system absorbs maximal energy during the dissolution of order.
 
 **Neurological analogue**: Psilocybin-induced reduction of DMN connectivity. The "knowledges of suffering" (dukkha-nana) in Theravada meditation, where the meditator perceives the arising and passing of all phenomena with increasing clarity until the perceptual field dissolves. Acute grief dismantling the "assumptive world" — the implicit model of reality that included the deceased.
 
-**Ethnographic analogue**: Turner's "anti-structure" — the suspension of all social distinctions within the liminal phase. The Eleusinian kykeon experience in the Telesterion. The alchemical solutio — dissolution of the calcined matter in philosophical water. The Tibetan bardo teachings on the dissolution of the five aggregates (skandhas).
+**Ethnographic analogue**: Turner's "anti-structure" — the suspension of all social distinctions within the liminal phase. The Eleusinian kykeon experience in the Telesterion. In Riverbend Village, the collapse of traditional farming hierarchies following the flood, where local "vortices" of resistance and innovation began to form. The alchemical solutio — dissolution of the calcined matter in philosophical water. The Tibetan bardo teachings on the dissolution of the five aggregates (skandhas).
 
-**Why it is necessary**: The new configuration is not accessible by incremental modification of the old one. This is the defining feature of a phase transition as opposed to a crossover: the system must pass through a state of maximal disorder to reach the new ordered phase. In the Ising model, you cannot continuously deform the all-up state into the all-down state without passing through the disordered phase. In psychology, the new identity structure cannot be reached by gradual adjustment of the old one — the old patterns must genuinely release.
+**Why it is necessary**: The new configuration is not accessible by incremental modification of the old one. This is the defining feature of a phase transition as opposed to a crossover: the system must pass through a state of maximal disorder to reach the new ordered phase. In the Ising model, you cannot continuously deform the all-up state into the all-down state without passing through the disordered phase. In the XY model, the system must undergo the unbinding of topological defects to transition between phases. In psychology, the new identity structure cannot be reached by gradual adjustment of the old one — the old patterns must genuinely release.
 
 ---
 
@@ -84,13 +84,13 @@ The eight steps are not arbitrary divisions. Each corresponds to a necessary str
 
 **Definition**: Dwelling in the threshold state — maximal susceptibility, long-range correlation, and emergent possibility.
 
-**Physical analogue**: The system at exactly T_c (or p_c, or sigma_c). The correlation length has diverged. Fluctuations exist on all length scales — the system is scale-invariant. The susceptibility chi diverges: the system's response to an infinitesimal perturbation is infinite. The order parameter distribution becomes bimodal (for finite systems), reflecting the system's capacity to spontaneously organize in either direction. This is not a transient state — in self-organized criticality, the system maintains itself at the critical point indefinitely.
+**Physical analogue**: The system at exactly T_c (or p_c, or sigma_c). The correlation length has diverged. Fluctuations exist on all length scales — the system is scale-invariant. The susceptibility chi diverges: the system's response to an infinitesimal perturbation is infinite. In the XY model, the Berezinskii-Kosterlitz-Thouless (BKT) transition point represents a unique liminal state where the helicity modulus undergoes a "universal jump" (from \(\Upsilon = 2T_c/\pi\) to zero). The order parameter distribution becomes bimodal (for finite systems), reflecting the system's capacity to spontaneously organize in either direction. This is not a transient state — in self-organized criticality, the system maintains itself at the critical point indefinitely.
 
 **Neurological analogue**: Peak psychedelic effect: dissolution of self-other boundaries, maximal neural entropy, increased global functional connectivity, access to usually unconscious material. The "arising and passing away" stage of vipassana practice. The neural avalanche regime at sigma = 1, where the repertoire of distinct activity patterns is largest and information transmission is optimized.
 
-**Ethnographic analogue**: The liminal person is "structurally invisible" (Turner) — neither classified by the old system nor yet by the new. The mudyi tree ritual producing maximal ambiguity: the initiate is simultaneously dead and unborn. The alchemical "peacock's tail" — rapidly shifting colors between albedo and rubedo. The mourning period where the bereaved is neither who they were nor who they will become.
+**Ethnographic analogue**: The liminal person is "structurally invisible" (Turner) — neither classified by the old system nor yet by the new. The mudyi tree ritual producing maximal ambiguity: the initiate is simultaneously dead and unborn. In social cascades, liminality corresponds to the "tipping point" of connectivity where a single innovation can trigger a community-wide shift. The alchemical "peacock's tail" — rapidly shifting colors between albedo and rubedo. The mourning period where the bereaved is neither who they were nor who they will become.
 
-**Why it is necessary**: The liminal state is where the actual transformation occurs. It is the state of maximal sensitivity — the system can be reorganized by minimal perturbation. In physics, this is why critical phenomena are interesting: the system amplifies microscopic fluctuations to macroscopic consequences. In psychology, the liminal state is where rigid prior beliefs can be revised (the REBUS model), where novel configurations of meaning become accessible, and where the system encounters what was previously structurally inaccessible.
+**Why it is necessary**: The liminal state is where the actual transformation occurs. It is the state of maximal sensitivity — the system can be reorganized by minimal perturbation. In physics, this is why critical phenomena are interesting: the system amplifies microscopic fluctuations to macroscopic consequences. In the XY model, the presence of unbound vortices allows for the exploration of diverse topological configurations. In psychology, the liminal state is where rigid prior beliefs can be revised (the REBUS model), where novel configurations of meaning become accessible, and where the system encounters what was previously structurally inaccessible.
 
 **Key property**: Liminality is not comfortable. Turner emphasized that the liminal state is characterized by ambiguity, disorientation, and the suspension of normal social navigation. The alchemists warned against premature termination (inflatio). The temptation to exit the liminal state prematurely — to reimpose the old order or rush to a new one — is the primary failure mode.
 
@@ -100,11 +100,11 @@ The eight steps are not arbitrary divisions. Each corresponds to a necessary str
 
 **Definition**: Contact with novel structure or information that was inaccessible from within the prior ordered state.
 
-**Physical analogue**: The renormalization group fixed point — a mathematical structure that governs the critical behavior but is only "visible" at the critical point. The spanning cluster in percolation — a geometric object with no analogue below p_c. The broken-symmetry partner: the ordered state that spontaneous symmetry breaking did not select. Wilson's reformulation of critical phenomena as a problem in dynamical systems theory — not a solution within the old framework but a fundamentally new framework.
+**Physical analogue**: The renormalization group fixed point — a mathematical structure that governs the critical behavior but is only "visible" at the critical point. The spanning cluster in percolation — a geometric object with no analogue below p_c. In the XY model, the realization of topological stability via the binding of vortex-antivortex pairs. The broken-symmetry partner: the ordered state that spontaneous symmetry breaking did not select. Wilson's reformulation of critical phenomena as a problem in dynamical systems theory — not a solution within the old framework but a fundamentally new framework.
 
 **Neurological analogue**: The psychedelic encounter with formative emotional events from new perspective, or with a felt sense of connectedness inaccessible from the depressive state. The Zen kensho — "seeing one's true nature." The contemplative encounter with nondual awareness, where the subject-object structure of ordinary consciousness is directly recognized as constructed.
 
-**Ethnographic analogue**: The Eleusinian epopteia (supreme vision). Aboriginal dreamtime encounters during walkabout. The alchemical coniunctio — the union of Sol and Luna, conscious and unconscious. In grief, the encounter with post-traumatic growth: greater appreciation for life, new possibilities, increased personal strength.
+**Ethnographic analogue**: The Eleusinian epopteia (supreme vision). Aboriginal dreamtime encounters during walkabout. The alchemical coniunctio — the union of Sol and Luna, conscious and unconscious. In Riverbend Village, the encounter with aquaculture and sustainable fishing as viable alternatives to traditional farming. In grief, the encounter with post-traumatic growth: greater appreciation for life, new possibilities, increased personal strength.
 
 **Why it is necessary**: The encounter provides the content of the transformation — the new structure around which the system will reorganize. Without encounter, dissolution leads only to a return to the prior state once the perturbation is removed. The encounter must be genuinely novel — not derivable from the prior configuration. In physics, this is guaranteed by the structure of phase transitions: the broken-symmetry state is not a perturbation of the symmetric state but a qualitatively different configuration.
 
@@ -114,13 +114,13 @@ The eight steps are not arbitrary divisions. Each corresponds to a necessary str
 
 **Definition**: Binding newly encountered patterns into a coherent form; the system begins to re-order around new attractors.
 
-**Physical analogue**: Finite-size scaling collapse. Data from different system sizes, which appeared to show different behavior, are revealed as different views of the same universal scaling function when plotted as L^{beta/nu} * m vs (T - T_c) * L^{1/nu}. The Binder cumulant crossing identifies the critical temperature without prior knowledge. Universality integrates diverse physical systems into a small number of universality classes.
+**Physical analogue**: Finite-size scaling collapse. Data from different system sizes, which appeared to show different behavior, are revealed as different views of the same universal scaling function when plotted as L^{beta/nu} * m vs (T - T_c) * L^{1/nu}. In the XY model, integration is the binding of vortex-antivortex pairs into neutral molecules, which restores topological order and macroscopic stiffness. The Binder cumulant crossing identifies the critical temperature without prior knowledge. Universality integrates diverse physical systems into a small number of universality classes.
 
 **Neurological analogue**: The "afterglow" period following a psychedelic session — 1-2 weeks of increased brain plasticity (elevated BDNF, increased dendritic spine density) during which new patterns consolidate. Post-retreat integration in contemplative practice: testing insights against ordinary life. The dual-process model of grief: oscillation between loss-oriented and restoration-oriented coping.
 
-**Ethnographic analogue**: Van Gennep's rites of incorporation (rites d'agrégation). New name, new clothing, new social role. The alchemical multiplication — repeated cycling of the process to increase potency. Worden's "finding an enduring connection with the deceased in the midst of embarking on a new life."
+**Ethnographic analogue**: Van Gennep's rites of incorporation (rites d'agrégation). New name, new clothing, new social role. In social systems, the integration phase is marked by the stabilization of new practices (e.g., aquaculture) into a coherent social structure with a measurable jump in collective stiffness. The alchemical multiplication — repeated cycling of the process to increase potency. Worden's "finding an enduring connection with the deceased in the midst of embarking on a new life."
 
-**Why it is necessary**: The liminal encounter produces raw material — insights, visions, new structural possibilities — that must be organized into a stable, functional configuration. Without integration, the products of the liminal state dissipate. In physics, measurement without scaling analysis produces only system-size-dependent numbers; integration (scaling collapse) reveals the universal content. In psychedelic therapy, sessions without structured integration show reduced long-term efficacy. The alchemists were explicit: the stone must be "projected" onto base metal to be useful.
+**Why it is necessary**: The liminal encounter produces raw material — insights, visions, new structural possibilities — that must be organized into a stable, functional configuration. Without integration, the products of the liminal state dissipate. In the XY model, without vortex binding, the system remains in a disordered state. In physics, measurement without scaling analysis produces only system-size-dependent numbers; integration (scaling collapse) reveals the universal content. In psychedelic therapy, sessions without structured integration show reduced long-term efficacy. The alchemists were explicit: the stone must be "projected" onto base metal to be useful.
 
 ---
 
@@ -130,9 +130,9 @@ The eight steps are not arbitrary divisions. Each corresponds to a necessary str
 
 **Physical analogue**: Spontaneous symmetry breaking. The ordered phase below T_c has a nonzero order parameter — a macroscopic property not present in the symmetric Hamiltonian. The magnetization is a collective emergent property: no single spin "decides" to align. In percolation, the spanning cluster above p_c is a macroscopic connected structure that arose from purely local, independent random events. The whole is genuinely more than the sum of its parts.
 
-**Neurological analogue**: Sustained remission of treatment-resistant depression following psilocybin (60% in clinical trials). Trait-level changes in long-term meditators: unprecedented gamma oscillation amplitude, altered self-referential processing, reduced emotional reactivity. The emergent capacities are not amplifications of existing traits but genuinely new neural configurations.
+**Neurological analogue**: Sustained remission of treatment-resistant depression following psilocybin (60% in clinical trials). Trait-level changes in long-term meditators: unprecedented gamma oscillation amplitude, altered self-referential processing, reduced emotional reactivity. In the critical brain, emergence corresponds to the manifestation of neural synchrony and optimized information transmission at the branching point. The emergent capacities are not amplifications of existing traits but genuinely new neural configurations.
 
-**Ethnographic analogue**: The initiated person is qualitatively different from the uninitiated — this is the universal claim of rites of passage. The Maasai elder is not simply an older moran; a genuine phase transition in social identity has occurred. The alchemical lapis philosophorum — a substance that does not exist in nature and cannot be produced by any shortcut. In grief, the reorganized identity that includes the loss as a permanent structural feature, not a wound to be healed.
+**Ethnographic analogue**: The initiated person is qualitatively different from the uninitiated — this is the universal claim of rites of passage. In social networks, emergence is the large-scale coordination (social tipping point) that arises from purely local interactions once a critical mass is reached. The Maasai elder is not simply an older moran; a genuine phase transition in social identity has occurred. The alchemical lapis philosophorum — a substance that does not exist in nature and cannot be produced by any shortcut. In grief, the reorganized identity that includes the loss as a permanent structural feature, not a wound to be healed.
 
 **Why it is necessary**: Emergence is not a step that is "performed" — it is the result of the preceding seven steps being completed. If any earlier step is missing or incomplete, emergence either fails (the system returns to its prior state) or is pathological (the system reorganizes around an unstable or dysfunctional attractor). The irreversibility of genuine emergence is its hallmark: the new configuration, once established, cannot be undone by simply reversing the process.
 
@@ -163,18 +163,18 @@ Each step has a characteristic failure mode:
 
 The protocol maps directly onto the thermodynamic structure of a phase transition:
 
-| Protocol step | Thermodynamic analogue |
-|---|---|
-| Purification | Equilibration (ergodicity, decorrelation) |
-| Containment | Finite-size system (boundary conditions) |
-| Anchoring | Control parameter / fixed point |
-| Dissolution | Approach to T_c (correlation length growth) |
-| Liminality | Critical point (scale invariance, divergent susceptibility) |
-| Encounter | Novel fixed-point structure / broken-symmetry state |
-| Integration | Scaling collapse / universality classification |
-| Emergence | Spontaneous symmetry breaking / new ordered phase |
+| Protocol step | Thermodynamic analogue | XY Model / BKT Analogue |
+|---|---|---|
+| Purification | Equilibration (ergodicity, decorrelation) | Thermalization |
+| Containment | Finite-size system (boundary conditions) | Finite lattice |
+| Anchoring | Control parameter / fixed point | Helicity modulus (\(\Upsilon\)) |
+| Dissolution | Approach to T_c (correlation length growth) | Vortex-antivortex proliferation |
+| Liminality | Critical point (scale invariance, divergent susceptibility) | Universal jump in stiffness |
+| Encounter | Novel fixed-point structure / broken-symmetry state | Topological stability |
+| Integration | Scaling collapse / universality classification | Vortex binding |
+| Emergence | Spontaneous symmetry breaking / new ordered phase | Topologically ordered state |
 
-This mapping is not metaphorical. The mathematical structures — divergent correlation lengths, power-law distributions, scaling functions, universality classes — appear in neural dynamics and can be used as quantitative tools for analyzing ethnographic transformation accounts.
+This mapping is not metaphorical. The mathematical structures — divergent correlation lengths, power-law distributions, scaling functions, universality classes — appear in neural dynamics and social cascades and can be used as quantitative tools for analyzing ethnographic transformation accounts.
 
 ---
 
@@ -182,11 +182,11 @@ This mapping is not metaphorical. The mathematical structures — divergent corr
 
 The protocol was validated against the following primary sources:
 
-**Physics**: Onsager 1944 (exact Ising solution); Kadanoff 1966 (block-spin RG); Wilson 1971 (renormalization group); Bak, Tang & Wiesenfeld 1987 (self-organized criticality); Stauffer & Aharony 1994 (percolation theory)
+**Physics**: Onsager 1944 (exact Ising solution); Kadanoff 1966 (block-spin RG); Wilson 1971 (renormalization group); Berezinskii, Kosterlitz & Thouless 1973 (XY model / BKT transition); Bak, Tang & Wiesenfeld 1987 (self-organized criticality); Stauffer & Aharony 1994 (percolation theory)
 
-**Neuroscience**: Beggs & Plenz 2003 (neuronal avalanches); Carhart-Harris et al 2014 (entropic brain hypothesis); Carhart-Harris & Friston 2019 (REBUS model); Brewer et al 2011 (DMN and meditation); Lutz et al 2004 (long-term meditators); Tagliazucchi et al 2012 (criticality and consciousness)
+**Neuroscience**: Beggs & Plenz 2003 (neuronal avalanches); Carhart-Harris et al 2014 (entropic brain hypothesis); Carhart-Harris & Friston 2019 (REBUS model); Brewer et al 2011 (DMN and meditation); Lutz et al 2004 (long-term meditators); Tagliazucchi et al 2012 (criticality and consciousness); Plenz & Niebur 2014 (Critical Brain Hypothesis)
 
-**Anthropology and psychology**: van Gennep 1909 (rites of passage); Turner 1969 (liminality and communitas); Eliade 1962 (alchemical transformation); Jung 1944 (psychology and alchemy); Klass et al 1996 (continuing bonds); Stroebe & Schut 1999 (dual process model of grief); Tedeschi & Calhoun 2004 (post-traumatic growth)
+**Anthropology and sociology**: van Gennep 1909 (rites of passage); Turner 1969 (liminality and communitas); Eliade 1962 (alchemical transformation); Jung 1944 (psychology and alchemy); Granovetter 1978 (threshold models of collective behavior); Klass et al 1996 (continuing bonds); Stroebe & Schut 1999 (dual process model of grief); Tedeschi & Calhoun 2004 (post-traumatic growth)
 
 ---
 

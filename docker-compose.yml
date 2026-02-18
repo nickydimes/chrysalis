@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  chrysalis:
+    build: .
+    volumes:
+      - .:/app
+      - /app/gemini-mcp/node_modules
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - OLLAMA_API_URL=http://host.docker.internal:11434
+    ports:
+      - "8501:8501" # Streamlit
+      - "3000:3000" # MCP Server
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: tail -f /dev/null # Keep container running for interactive use

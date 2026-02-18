@@ -1,0 +1,82 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Ethnographic Record",
+    "description": "Structured data for an ethnographic or historical account, focusing on elements relevant to critical transitions.",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "The title or subject of the account."
+        },
+        "source": {
+            "type": "string",
+            "description": "Origin of the account (e.g., book, article, oral history reference)."
+        },
+        "period_or_event": {
+            "type": "string",
+            "description": "The historical period or specific event the account describes."
+        },
+        "geographic_location": {
+            "type": "string",
+            "description": "The primary geographic location of the events."
+        },
+        "summary": {
+            "type": "string",
+            "description": "A concise summary of the ethnographic or historical account."
+        },
+        "critical_elements_observed": {
+            "type": "array",
+            "description": "Key observations related to 'criticality' or phase transitions as described in the Chrysalis framework.",
+            "items": {
+                "type": "string"
+            }
+        },
+        "eight_step_protocol_relevance": {
+            "type": "object",
+            "description": "How elements of the account relate to the Eight-Step Navigation Protocol.",
+            "properties": {
+                "Purification": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                },
+                "Containment": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                },
+                "Anchoring": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                },
+                "Dissolution": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                },
+                "Liminality": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                },
+                "Encounter": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                },
+                "Integration": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                },
+                "Emergence": {
+                    "type": "string",
+                    "description": "Description of how this step is observed in the account."
+                }
+            },
+            "additionalProperties": false
+        },
+        "tags": {
+            "type": "array",
+            "description": "Relevant keywords or tags for categorization.",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "required": ["title", "summary"]
+}

@@ -26,9 +26,11 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from numba import njit
 from pathlib import Path
-
+import json
+import argparse
 
 # --- Statistical Infrastructure ---
+
 
 def bootstrap_error(samples, n_bootstrap=200):
     """Return (mean, stderr) via bootstrap resampling."""
@@ -51,7 +53,7 @@ def autocorrelation_time(series):
     centered = series - mean
     tau_int = 0.5
     for t in range(1, n // 2):
-        c_t = np.mean(centered[:n - t] * centered[t:]) / var
+        c_t = np.mean(centered[: n - t] * centered[t:]) / var
         if c_t < 0:
             break
         tau_int += c_t
@@ -227,7 +229,9 @@ def _simulate_single(N, T_values, eq_sweeps, meas_sweeps, seed, use_wolff=True):
 
     for idx, T in enumerate(T_values):
         beta = 1.0 / T
-        sweep_fn = wolff_sweep if use_wolff else lambda s, b, r: metropolis_sweep(s, b, r)
+        sweep_fn = (
+            wolff_sweep if use_wolff else lambda s, b, r: metropolis_sweep(s, b, r)
+        )
 
         for _ in range(eq_sweeps):
             sweep_fn(spins, beta, rng)
@@ -242,17 +246,22 @@ def _simulate_single(N, T_values, eq_sweeps, meas_sweeps, seed, use_wolff=True):
         mag[idx] = np.mean(m_samples)
         ene[idx] = np.mean(e_samples)
         sus[idx] = beta * n_spins * np.var(m_samples)
-        sheat[idx] = (beta ** 2) * n_spins * np.var(e_samples)
-        m2_arr[idx] = np.mean(m_samples ** 2)
-        m4_arr[idx] = np.mean(m_samples ** 4)
+        sheat[idx] = (beta**2) * n_spins * np.var(e_samples)
+        m2_arr[idx] = np.mean(m_samples**2)
+        m4_arr[idx] = np.mean(m_samples**4)
 
         for t_snap in snap_targets:
             if abs(T - t_snap) < 0.05 and t_snap not in snapshots:
                 snapshots[t_snap] = spins.copy()
 
     return {
-        "mag": mag, "ene": ene, "sus": sus, "sheat": sheat,
-        "m2": m2_arr, "m4": m4_arr, "snapshots": snapshots,
+        "mag": mag,
+        "ene": ene,
+        "sus": sus,
+        "sheat": sheat,
+        "m2": m2_arr,
+        "m4": m4_arr,
+        "snapshots": snapshots,
     }
 
 
@@ -261,11 +270,13 @@ def simulate(N=50, T_values=None, eq_sweeps=500, meas_sweeps=1000, seeds=None):
     T_c = 1.0 / np.log(1 + np.sqrt(Q))
 
     if T_values is None:
-        T_values = np.concatenate([
-            np.linspace(0.4, 0.8, 8, endpoint=False),
-            np.linspace(0.8, 1.2, 12, endpoint=False),
-            np.linspace(1.2, 2.0, 8),
-        ])
+        T_values = np.concatenate(
+            [
+                np.linspace(0.4, 0.8, 8, endpoint=False),
+                np.linspace(0.8, 1.2, 12, endpoint=False),
+                np.linspace(1.2, 2.0, 8),
+            ]
+        )
     if seeds is None:
         seeds = SEEDS
 
@@ -332,8 +343,9 @@ def simulate(N=50, T_values=None, eq_sweeps=500, meas_sweeps=1000, seeds=None):
     }
 
 
-def simulate_scaling(L_values=None, T_values=None, eq_sweeps=500, meas_sweeps=1000,
-                      seeds=None):
+def simulate_scaling(
+    L_values=None, T_values=None, eq_sweeps=500, meas_sweeps=1000, seeds=None
+):
     """Run finite-size scaling: multiple L values."""
     if L_values is None:
         L_values = [25, 50, 100]
@@ -345,8 +357,13 @@ def simulate_scaling(L_values=None, T_values=None, eq_sweeps=500, meas_sweeps=10
     results_by_L = {}
     for L in L_values:
         print(f"\n--- L = {L} ---")
-        results_by_L[L] = simulate(N=L, T_values=T_values, eq_sweeps=eq_sweeps,
-                                    meas_sweeps=meas_sweeps, seeds=seeds)
+        results_by_L[L] = simulate(
+            N=L,
+            T_values=T_values,
+            eq_sweeps=eq_sweeps,
+            meas_sweeps=meas_sweeps,
+            seeds=seeds,
+        )
     return results_by_L
 
 
@@ -363,7 +380,6 @@ def measure_autocorrelation(N=50, T_values=None, n_sweeps=2000, seed=42):
 
     for idx, T in enumerate(T_values):
         beta = 1.0 / T
-        n_spins = N * N
         eq = 200
 
         # Metropolis
@@ -386,12 +402,15 @@ def measure_autocorrelation(N=50, T_values=None, n_sweeps=2000, seed=42):
             m_series_w[s] = order_parameter(spins_w)
         tau_wolff[idx] = autocorrelation_time(m_series_w)
 
-        print(f"  T={T:.3f}: tau_metro={tau_metro[idx]:.1f}, tau_wolff={tau_wolff[idx]:.1f}")
+        print(
+            f"  T={T:.3f}: tau_metro={tau_metro[idx]:.1f}, tau_wolff={tau_wolff[idx]:.1f}"
+        )
 
     return {"T": T_values, "tau_metro": tau_metro, "tau_wolff": tau_wolff}
 
 
 # --- Visualization ---
+
 
 def plot_results(results, output_path):
     """Generate 4-panel figure summarizing the phase transition."""
@@ -399,13 +418,24 @@ def plot_results(results, output_path):
     T_c = results["T_c"]
 
     fig = plt.figure(figsize=(14, 10))
-    fig.suptitle("2D 3-State Potts Model — Phase Transition", fontsize=16, fontweight="bold")
+    fig.suptitle(
+        "2D 3-State Potts Model — Phase Transition", fontsize=16, fontweight="bold"
+    )
 
     # Panel 1: Order Parameter
     ax1 = fig.add_subplot(2, 2, 1)
-    ax1.errorbar(T, results["magnetization"], yerr=results["mag_err"],
-                 fmt="o-", color="#2c7bb6", markersize=4, capsize=2)
-    ax1.axvline(T_c, color="gray", linestyle="--", alpha=0.7, label=f"$T_c$ = {T_c:.3f}")
+    ax1.errorbar(
+        T,
+        results["magnetization"],
+        yerr=results["mag_err"],
+        fmt="o-",
+        color="#2c7bb6",
+        markersize=4,
+        capsize=2,
+    )
+    ax1.axvline(
+        T_c, color="gray", linestyle="--", alpha=0.7, label=f"$T_c$ = {T_c:.3f}"
+    )
     ax1.set_xlabel("Temperature")
     ax1.set_ylabel(r"$\langle m \rangle$")
     ax1.set_title("Order Parameter")
@@ -413,9 +443,18 @@ def plot_results(results, output_path):
 
     # Panel 2: Susceptibility
     ax2 = fig.add_subplot(2, 2, 2)
-    ax2.errorbar(T, results["susceptibility"], yerr=results["sus_err"],
-                 fmt="o-", color="#d7191c", markersize=4, capsize=2)
-    ax2.axvline(T_c, color="gray", linestyle="--", alpha=0.7, label=f"$T_c$ = {T_c:.3f}")
+    ax2.errorbar(
+        T,
+        results["susceptibility"],
+        yerr=results["sus_err"],
+        fmt="o-",
+        color="#d7191c",
+        markersize=4,
+        capsize=2,
+    )
+    ax2.axvline(
+        T_c, color="gray", linestyle="--", alpha=0.7, label=f"$T_c$ = {T_c:.3f}"
+    )
     ax2.set_xlabel("Temperature")
     ax2.set_ylabel(r"$\chi$")
     ax2.set_title("Susceptibility")
@@ -423,9 +462,18 @@ def plot_results(results, output_path):
 
     # Panel 3: Specific Heat
     ax3 = fig.add_subplot(2, 2, 3)
-    ax3.errorbar(T, results["specific_heat"], yerr=results["sheat_err"],
-                 fmt="o-", color="#fdae61", markersize=4, capsize=2)
-    ax3.axvline(T_c, color="gray", linestyle="--", alpha=0.7, label=f"$T_c$ = {T_c:.3f}")
+    ax3.errorbar(
+        T,
+        results["specific_heat"],
+        yerr=results["sheat_err"],
+        fmt="o-",
+        color="#fdae61",
+        markersize=4,
+        capsize=2,
+    )
+    ax3.axvline(
+        T_c, color="gray", linestyle="--", alpha=0.7, label=f"$T_c$ = {T_c:.3f}"
+    )
     ax3.set_xlabel("Temperature")
     ax3.set_ylabel(r"$C_v$")
     ax3.set_title("Specific Heat")
@@ -444,8 +492,13 @@ def plot_results(results, output_path):
     for i, (t_snap, label) in enumerate(zip(snap_targets, labels)):
         if t_snap in snapshots:
             inset = fig.add_axes([0.58 + i * 0.14, 0.12, 0.12, 0.25])
-            inset.imshow(snapshots[t_snap], cmap=potts_cmap, vmin=0, vmax=Q - 1,
-                         interpolation="nearest")
+            inset.imshow(
+                snapshots[t_snap],
+                cmap=potts_cmap,
+                vmin=0,
+                vmax=Q - 1,
+                interpolation="nearest",
+            )
             inset.set_xticks([])
             inset.set_yticks([])
             inset.set_title(label, fontsize=9)
@@ -459,12 +512,14 @@ def plot_scaling(results_by_L, autocorr, output_path):
     """Generate 4-panel finite-size scaling figure."""
     T_c = 1.0 / np.log(1 + np.sqrt(Q))
     # Known exact exponents for 2D q=3 Potts
-    beta_nu = 2.0 / 15.0   # beta/nu
+    beta_nu = 2.0 / 15.0  # beta/nu
     gamma_nu = 26.0 / 15.0  # gamma/nu
     nu = 5.0 / 6.0
 
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
-    fig.suptitle("2D 3-State Potts Model — Finite-Size Scaling", fontsize=16, fontweight="bold")
+    fig.suptitle(
+        "2D 3-State Potts Model — Finite-Size Scaling", fontsize=16, fontweight="bold"
+    )
 
     colors = {25: "#2c7bb6", 50: "#fdae61", 100: "#d7191c"}
 
@@ -474,9 +529,10 @@ def plot_scaling(results_by_L, autocorr, output_path):
         T = res["T"]
         m2 = res["m2"]
         m4 = res["m4"]
-        U_L = 1 - m4 / (3 * m2 ** 2)
-        ax1.plot(T, U_L, "o-", color=colors.get(L, "black"), markersize=3,
-                 label=f"L={L}")
+        U_L = 1 - m4 / (3 * m2**2)
+        ax1.plot(
+            T, U_L, "o-", color=colors.get(L, "black"), markersize=3, label=f"L={L}"
+        )
     ax1.axvline(T_c, color="gray", linestyle="--", alpha=0.5)
     ax1.set_xlabel("Temperature")
     ax1.set_ylabel(r"$U_L = 1 - \langle m^4 \rangle / 3\langle m^2 \rangle^2$")
@@ -489,9 +545,8 @@ def plot_scaling(results_by_L, autocorr, output_path):
         T = res["T"]
         m = res["magnetization"]
         x = (T - T_c) * L ** (1.0 / nu)
-        y = L ** beta_nu * m
-        ax2.plot(x, y, "o", color=colors.get(L, "black"), markersize=3,
-                 label=f"L={L}")
+        y = L**beta_nu * m
+        ax2.plot(x, y, "o", color=colors.get(L, "black"), markersize=3, label=f"L={L}")
     ax2.set_xlabel(r"$(T - T_c) \cdot L^{1/\nu}$")
     ax2.set_ylabel(r"$L^{\beta/\nu} \cdot \langle m \rangle$")
     ax2.set_title("Order Parameter Collapse")
@@ -511,9 +566,14 @@ def plot_scaling(results_by_L, autocorr, output_path):
     if len(L_arr) >= 2:
         coeffs = np.polyfit(np.log(L_arr), np.log(chi_max_arr), 1)
         L_fit = np.linspace(L_arr.min(), L_arr.max(), 50)
-        ax3.loglog(L_fit, np.exp(coeffs[1]) * L_fit ** coeffs[0], "--",
-                   color="gray", alpha=0.7,
-                   label=rf"slope = {coeffs[0]:.2f} (exact $\gamma/\nu$ = {gamma_nu:.2f})")
+        ax3.loglog(
+            L_fit,
+            np.exp(coeffs[1]) * L_fit ** coeffs[0],
+            "--",
+            color="gray",
+            alpha=0.7,
+            label=rf"slope = {coeffs[0]:.2f} (exact $\gamma/\nu$ = {gamma_nu:.2f})",
+        )
     ax3.set_xlabel("L")
     ax3.set_ylabel(r"$\chi_{\max}$")
     ax3.set_title(r"$\chi_{\max}$ vs $L$ (log-log)")
@@ -521,10 +581,22 @@ def plot_scaling(results_by_L, autocorr, output_path):
 
     # Panel 4: Autocorrelation time comparison
     ax4 = axes[1, 1]
-    ax4.plot(autocorr["T"], autocorr["tau_metro"], "o-", color="#d7191c",
-             markersize=4, label="Metropolis")
-    ax4.plot(autocorr["T"], autocorr["tau_wolff"], "s-", color="#2c7bb6",
-             markersize=4, label="Wolff")
+    ax4.plot(
+        autocorr["T"],
+        autocorr["tau_metro"],
+        "o-",
+        color="#d7191c",
+        markersize=4,
+        label="Metropolis",
+    )
+    ax4.plot(
+        autocorr["T"],
+        autocorr["tau_wolff"],
+        "s-",
+        color="#2c7bb6",
+        markersize=4,
+        label="Wolff",
+    )
     ax4.axvline(T_c, color="gray", linestyle="--", alpha=0.5)
     ax4.set_xlabel("Temperature")
     ax4.set_ylabel(r"$\tau_{\mathrm{int}}$ (sweeps)")
@@ -537,27 +609,215 @@ def plot_scaling(results_by_L, autocorr, output_path):
     print(f"Scaling results saved to {output_path}")
 
 
+def calculate_protocol_metrics(results):
+    """
+    Maps multi-state Potts simulation results to the Eight-Step Navigation Protocol.
+    """
+    mag = np.atleast_1d(results["magnetization"])
+    sus = np.atleast_1d(results["susceptibility"])
+    sheat = np.atleast_1d(results["specific_heat"])
+
+    # 1. Purification: Order parameter
+    purification = mag
+
+    # 2. Containment: Coherence proxy
+    if np.max(sheat) > 0:
+        containment = 1.0 - (sheat / np.max(sheat))
+    else:
+        containment = np.zeros_like(sheat)
+
+    # 3. Anchoring: State stability
+    anchoring = mag**2
+
+    # 4. Dissolution: Energy fluctuations
+    if np.max(sheat) > 0:
+        dissolution = sheat / np.max(sheat)
+    else:
+        dissolution = np.zeros_like(sheat)
+
+    # 5. Liminality: Susceptibility peak
+    if np.max(sus) > 0:
+        liminality = sus / np.max(sus)
+    else:
+        liminality = np.zeros_like(sus)
+
+    # 6. Encounter: Correlation length proxy
+    encounter = np.sqrt(sus)
+
+    # 7. Integration: Coherent ordering
+    integration = mag**2
+
+    # 8. Emergence: Final stable order parameter
+    emergence = np.abs(mag)
+
+    metrics = {
+        "Purification": purification,
+        "Containment": containment,
+        "Anchoring": anchoring,
+        "Dissolution": dissolution,
+        "Liminality": liminality,
+        "Encounter": encounter,
+        "Integration": integration,
+        "Emergence": emergence,
+    }
+
+    result_dict = {}
+    for k, v in metrics.items():
+        if hasattr(v, "tolist"):
+            result_dict[k] = v.tolist()
+        else:
+            result_dict[k] = [float(v)]
+
+    return result_dict
+
+
 # --- Main ---
 
-if __name__ == "__main__":
+
+def run(args=None):
+    """
+    Runs the 2D 3-State Potts Model simulation.
+    Args:
+        args: A list of arguments (e.g., from sys.argv[1:]). If None, uses default values or argparse.
+    """
+    parser = argparse.ArgumentParser(
+        description="Run 2D 3-State Potts Model simulation."
+    )
+    parser.add_argument("--N", type=int, default=50, help="Lattice size N")
+    parser.add_argument(
+        "--T", type=float, default=None, help="Single temperature to simulate"
+    )
+    parser.add_argument(
+        "--eq_sweeps", type=int, default=500, help="Equilibration sweeps"
+    )
+    parser.add_argument(
+        "--meas_sweeps", type=int, default=1000, help="Measurement sweeps"
+    )
+    parser.add_argument(
+        "--L_values",
+        type=int,
+        nargs="*",
+        default=[25, 50, 100],
+        help="Lattice sizes for finite-size scaling",
+    )
+    parser.add_argument(
+        "--n_autocorr_sweeps",
+        type=int,
+        default=2000,
+        help="Number of sweeps for autocorrelation measurement",
+    )
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        default=str(Path(__file__).parent),
+        help="Directory to save simulation results.",
+    )
+    parser.add_argument(
+        "--seed", type=int, default=42, help="Base seed for random number generation."
+    )
+    parser.add_argument(
+        "--no_scaling",
+        action="store_true",
+        help="Disable finite-size scaling and autocorrelation.",
+    )
+
+    # Parse arguments provided, or from sys.argv if none provided
+    parsed_args = parser.parse_args(args=args)
+
     print("2D 3-State Potts Model Simulation")
     print("=" * 40)
 
-    output_dir = Path(__file__).parent
+    output_dir = Path(parsed_args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)  # Ensure output directory exists
     output_path = output_dir / "potts_results.png"
     scaling_path = output_dir / "potts_scaling.png"
 
-    # Main results with default L=50
-    results = simulate(N=50, eq_sweeps=500, meas_sweeps=1000)
+    # Main results
+    T_vals = [parsed_args.T] if parsed_args.T is not None else None
+    results = simulate(
+        N=parsed_args.N,
+        T_values=T_vals,
+        eq_sweeps=parsed_args.eq_sweeps,
+        meas_sweeps=parsed_args.meas_sweeps,
+        seeds=[parsed_args.seed],
+    )
     plot_results(results, output_path)
 
-    # Finite-size scaling
-    print("\n--- Finite-Size Scaling ---")
-    results_by_L = simulate_scaling(L_values=[25, 50, 100],
-                                     eq_sweeps=500, meas_sweeps=1000)
+    if not parsed_args.no_scaling:
+        # Finite-size scaling
+        print("\n--- Finite-Size Scaling ---")
+        results_by_L = simulate_scaling(
+            L_values=parsed_args.L_values,
+            eq_sweeps=parsed_args.eq_sweeps,
+            meas_sweeps=parsed_args.meas_sweeps,
+            seeds=[parsed_args.seed],
+        )
 
-    # Autocorrelation comparison
-    print("\n--- Autocorrelation Comparison ---")
-    autocorr = measure_autocorrelation(N=50, n_sweeps=2000)
+        # Autocorrelation comparison
+        print("\n--- Autocorrelation Comparison ---")
+        autocorr = measure_autocorrelation(
+            N=parsed_args.N,
+            n_sweeps=parsed_args.n_autocorr_sweeps,
+            seed=parsed_args.seed,
+        )
 
-    plot_scaling(results_by_L, autocorr, scaling_path)
+        plot_scaling(results_by_L, autocorr, scaling_path)
+    else:
+        results_by_L = {}
+        autocorr = {}
+
+    # Prepare data for JSON serialization (convert numpy arrays to lists)
+    def convert_numpy_to_list(obj):
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        if isinstance(obj, dict):
+            return {k: convert_numpy_to_list(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [convert_numpy_to_list(elem) for elem in obj]
+        return obj
+
+    all_results = {
+        "params": {
+            "N": parsed_args.N,
+            "T": parsed_args.T,
+            "eq_sweeps": parsed_args.eq_sweeps,
+            "meas_sweeps": parsed_args.meas_sweeps,
+            "L_values": parsed_args.L_values,
+            "n_autocorr_sweeps": parsed_args.n_autocorr_sweeps,
+            "seed": parsed_args.seed,
+        },
+        "main_results": convert_numpy_to_list(results),
+        "scaling_results_by_L": {
+            str(k): convert_numpy_to_list(v) for k, v in results_by_L.items()
+        },
+        "autocorrelation_results": convert_numpy_to_list(autocorr),
+        "protocol_metrics": calculate_protocol_metrics(results),
+    }
+
+    results_json_path = output_dir / "results.json"
+    with open(results_json_path, "w") as f:
+        json.dump(all_results, f, indent=4)
+    print(f"Numerical results saved to {results_json_path}")
+
+    # Save CSV
+    import pandas as pd
+
+    df = pd.DataFrame(
+        {
+            "T": results["T"],
+            "magnetization": results["magnetization"],
+            "mag_err": results["mag_err"],
+            "susceptibility": results["susceptibility"],
+            "sus_err": results["sus_err"],
+            "specific_heat": results["specific_heat"],
+            "sheat_err": results["sheat_err"],
+            "energy": results["energy"],
+        }
+    )
+    results_csv_path = output_dir / "results.csv"
+    df.to_csv(results_csv_path, index=False)
+    print(f"CSV results saved to {results_csv_path}")
+
+
+if __name__ == "__main__":
+    run()

@@ -25,6 +25,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from numba import njit
 from pathlib import Path
+import argparse
+import json
 
 
 # --- Statistical Infrastructure ---
@@ -508,27 +510,174 @@ def plot_scaling(results_by_L, autocorr, output_path):
     print(f"Scaling results saved to {output_path}")
 
 
+def calculate_protocol_metrics(results):
+    """
+    Maps physical simulation results to the Eight-Step Navigation Protocol.
+    Returns a dictionary of metrics for each phase.
+    """
+    mag = np.atleast_1d(results["magnetization"])
+    sus = np.atleast_1d(results["susceptibility"])
+    sheat = np.atleast_1d(results["specific_heat"])
+    
+    # 1. Purification: 1 - Normalized Shannon Entropy
+    p_plus = (1 + mag) / 2.0
+    p_minus = (1 - mag) / 2.0
+    ent = - (p_plus * np.log2(np.clip(p_plus, 1e-10, 1.0)) + 
+             p_minus * np.log2(np.clip(p_minus, 1e-10, 1.0)))
+    purification = 1.0 - ent
+
+    # 2. Containment: Coherence proxy
+    if np.max(sheat) > 0:
+        containment = 1.0 - (sheat / np.max(sheat))
+    else:
+        containment = np.zeros_like(sheat)
+
+    # 3. Anchoring: State stability
+    anchoring = mag ** 2
+
+    # 4. Dissolution: Energy fluctuations
+    if np.max(sheat) > 0:
+        dissolution = sheat / np.max(sheat)
+    else:
+        dissolution = np.zeros_like(sheat)
+
+    # 5. Liminality: Susceptibility peak
+    if np.max(sus) > 0:
+        liminality = sus / np.max(sus)
+    else:
+        liminality = np.zeros_like(sus)
+
+    # 6. Encounter: Correlation length proxy
+    encounter = np.sqrt(sus)
+
+    # 7. Integration: Coherent ordering
+    integration = mag ** 2
+
+    # 8. Emergence: Final magnetization
+    emergence = np.abs(mag)
+
+    metrics = {
+        "Purification": purification,
+        "Containment": containment,
+        "Anchoring": anchoring,
+        "Dissolution": dissolution,
+        "Liminality": liminality,
+        "Encounter": encounter,
+        "Integration": integration,
+        "Emergence": emergence
+    }
+    
+    result_dict = {}
+    for k, v in metrics.items():
+        if hasattr(v, "tolist"):
+            result_dict[k] = v.tolist()
+        else:
+            # Fallback for scalar
+            result_dict[k] = [float(v)]
+            
+    return result_dict
+
+
 # --- Main ---
 
-if __name__ == "__main__":
+def run(args=None):
+    """
+    Runs the 2D Ising Model simulation.
+    Args:
+        args: A list of arguments (e.g., from sys.argv[1:]). If None, uses default values or argparse.
+    """
+    parser = argparse.ArgumentParser(description="Run 2D Ising Model simulation.")
+    parser.add_argument("--N", type=int, default=50, help="Lattice size N")
+    parser.add_argument("--T", type=float, default=None, help="Single temperature to simulate")
+    parser.add_argument("--eq_sweeps", type=int, default=500, help="Equilibration sweeps")
+    parser.add_argument("--meas_sweeps", type=int, default=1000, help="Measurement sweeps")
+    parser.add_argument("--L_values", type=int, nargs='*', default=[25, 50, 100],
+                        help="Lattice sizes for finite-size scaling")
+    parser.add_argument("--n_autocorr_sweeps", type=int, default=2000,
+                        help="Number of sweeps for autocorrelation measurement")
+    parser.add_argument("--output_dir", type=str, default=str(Path(__file__).parent),
+                        help="Directory to save simulation results.")
+    parser.add_argument("--seed", type=int, default=42, help="Base seed for random number generation.")
+    parser.add_argument("--no_scaling", action="store_true", help="Disable finite-size scaling and autocorrelation.")
+    
+    # Parse arguments provided, or from sys.argv if none provided
+    parsed_args = parser.parse_args(args=args)
+
     print("2D Ising Model Simulation")
     print("=" * 40)
 
-    output_dir = Path(__file__).parent
+    output_dir = Path(parsed_args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True) # Ensure output directory exists
     output_path = output_dir / "ising_results.png"
     scaling_path = output_dir / "ising_scaling.png"
 
-    # Main results with default L=50
-    results = simulate(N=50, eq_sweeps=500, meas_sweeps=1000)
+    # Main results
+    T_vals = [parsed_args.T] if parsed_args.T is not None else None
+    results = simulate(N=parsed_args.N, T_values=T_vals, eq_sweeps=parsed_args.eq_sweeps, meas_sweeps=parsed_args.meas_sweeps, seeds=[parsed_args.seed])
     plot_results(results, output_path)
 
-    # Finite-size scaling
-    print("\n--- Finite-Size Scaling ---")
-    results_by_L = simulate_scaling(L_values=[25, 50, 100],
-                                     eq_sweeps=500, meas_sweeps=1000)
+    if not parsed_args.no_scaling:
+        # Finite-size scaling
+        print("\n--- Finite-Size Scaling ---")
+        results_by_L = simulate_scaling(L_values=parsed_args.L_values,
+                                         eq_sweeps=parsed_args.eq_sweeps, meas_sweeps=parsed_args.meas_sweeps, seeds=[parsed_args.seed])
 
-    # Autocorrelation comparison
-    print("\n--- Autocorrelation Comparison ---")
-    autocorr = measure_autocorrelation(N=50, n_sweeps=2000)
+        # Autocorrelation comparison
+        print("\n--- Autocorrelation Comparison ---")
+        autocorr = measure_autocorrelation(N=parsed_args.N, n_sweeps=parsed_args.n_autocorr_sweeps, seed=parsed_args.seed)
 
-    plot_scaling(results_by_L, autocorr, scaling_path)
+        plot_scaling(results_by_L, autocorr, scaling_path)
+    else:
+        results_by_L = {}
+        autocorr = {}
+
+    # Prepare data for JSON serialization (convert numpy arrays to lists)
+    def convert_numpy_to_list(obj):
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        if isinstance(obj, dict):
+            return {k: convert_numpy_to_list(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [convert_numpy_to_list(elem) for elem in obj]
+        return obj
+
+    all_results = {
+        "params": {
+            "N": parsed_args.N,
+            "T": parsed_args.T,
+            "eq_sweeps": parsed_args.eq_sweeps,
+            "meas_sweeps": parsed_args.meas_sweeps,
+            "L_values": parsed_args.L_values,
+            "n_autocorr_sweeps": parsed_args.n_autocorr_sweeps,
+            "seed": parsed_args.seed
+        },
+        "main_results": convert_numpy_to_list(results),
+        "scaling_results_by_L": {str(k): convert_numpy_to_list(v) for k, v in results_by_L.items()},
+        "autocorrelation_results": convert_numpy_to_list(autocorr),
+        "protocol_metrics": calculate_protocol_metrics(results)
+    }
+    
+    results_json_path = output_dir / "results.json"
+    with open(results_json_path, 'w') as f:
+        json.dump(all_results, f, indent=4)
+    print(f"Numerical results saved to {results_json_path}")
+
+    # Save CSV
+    import pandas as pd
+    df = pd.DataFrame({
+        "T": results["T"],
+        "magnetization": results["magnetization"],
+        "mag_err": results["mag_err"],
+        "susceptibility": results["susceptibility"],
+        "sus_err": results["sus_err"],
+        "specific_heat": results["specific_heat"],
+        "sheat_err": results["sheat_err"],
+        "energy": results["energy"]
+    })
+    results_csv_path = output_dir / "results.csv"
+    df.to_csv(results_csv_path, index=False)
+    print(f"CSV results saved to {results_csv_path}")
+
+
+if __name__ == "__main__":
+    run()

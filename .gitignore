@@ -7,6 +7,15 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 
+# Generated Data / Logs
+data/ethnographic/
+data/raw/
+gemini-mcp-stderr.log
+simulations/results/
+simulations/experiment_log.json
+chrysalis/data/analysis_plots/
+docs/build/
+
 # IDE
 .vscode/
 .idea/
@@ -21,3 +30,9 @@ Thumbs.db
 # Large files
 *.bin
 *.gguf
+vector_db/
+vector_db/
+vector_db/
+vector_db/
+vector_db/
+*.sqlite3

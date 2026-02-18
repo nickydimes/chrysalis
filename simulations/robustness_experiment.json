@@ -1,0 +1,14 @@
+{
+    "experiment_name": "Ising_Robustness_Study",
+    "simulation_module": "ising_2d",
+    "global_params": {
+        "eq_sweeps": 50,
+        "meas_sweeps": 100
+    },
+    "parameter_sweep": {
+        "T": [1.0, 2.0, 2.5, 3.5],
+        "N": [10, 20]
+    },
+    "num_seeds": 2,
+    "seed_offset": 100
+}

@@ -27,6 +27,8 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 from numba import njit
 from pathlib import Path
+import json
+import argparse
 
 
 # --- Statistical Infrastructure ---
@@ -528,23 +530,166 @@ def plot_scaling(results_by_L, output_path):
     print(f"Scaling results saved to {output_path}")
 
 
+def calculate_protocol_metrics(results):
+    """
+    Maps geometric percolation results to the Eight-Step Navigation Protocol.
+    """
+    p = np.atleast_1d(results["p"])
+    p_inf = np.atleast_1d(results["order_param"])
+    sus = np.atleast_1d(results["susceptibility"])
+    var_p_inf = np.atleast_1d(results["variance"])
+    span_prob = np.atleast_1d(results["span_prob"])
+    
+    # 1. Purification: filling the structure
+    if np.max(p) > 0:
+        purification = p / np.max(p)
+    else:
+        purification = p
+
+    # 2. Containment: Order parameter relative to max
+    if np.max(p_inf) > 0:
+        containment = p_inf / np.max(p_inf)
+    else:
+        containment = p_inf
+
+    # 3. Anchoring: Spanning probability (global connectivity)
+    anchoring = span_prob
+
+    # 4. Dissolution: Peak in p_inf fluctuations
+    if np.max(var_p_inf) > 0:
+        dissolution = var_p_inf / np.max(var_p_inf)
+    else:
+        dissolution = var_p_inf
+
+    # 5. Liminality: Susceptibility peak
+    if np.max(sus) > 0:
+        liminality = sus / np.max(sus)
+    else:
+        liminality = sus
+
+    # 6. Encounter: Correlation length proxy
+    sq_sus = np.sqrt(sus)
+    if np.max(sq_sus) > 0:
+        encounter = sq_sus / np.max(sq_sus)
+    else:
+        encounter = sus
+
+    # 7. Integration: Product of spanning probability and order parameter
+    integration = span_prob * p_inf
+
+    # 8. Emergence: Final spanning cluster strength
+    emergence = p_inf
+
+    metrics = {
+        "Purification": purification,
+        "Containment": containment,
+        "Anchoring": anchoring,
+        "Dissolution": dissolution,
+        "Liminality": liminality,
+        "Encounter": encounter,
+        "Integration": integration,
+        "Emergence": emergence
+    }
+    
+    result_dict = {}
+    for k, v in metrics.items():
+        if hasattr(v, "tolist"):
+            result_dict[k] = v.tolist()
+        else:
+            result_dict[k] = [float(v)]
+            
+    return result_dict
+
+
 # --- Main ---
 
-if __name__ == "__main__":
+def run(args=None):
+    """
+    Runs the 2D Site Percolation Model simulation.
+    Args:
+        args: A list of arguments (e.g., from sys.argv[1:]). If None, uses default values or argparse.
+    """
+    parser = argparse.ArgumentParser(description="Run 2D Site Percolation Model simulation.")
+    parser.add_argument("--L", type=int, default=100, help="Lattice size L")
+    parser.add_argument("--p", type=float, default=None, help="Single probability to simulate")
+    parser.add_argument("--n_realizations", type=int, default=200, help="Number of realizations per p-value")
+    parser.add_argument("--L_values", type=int, nargs='*', default=[50, 100, 200],
+                        help="Lattice sizes for finite-size scaling")
+    parser.add_argument("--output_dir", type=str, default=str(Path(__file__).parent),
+                        help="Directory to save simulation results.")
+    parser.add_argument("--seed", type=int, default=42, help="Base seed for random number generation.")
+    parser.add_argument("--no_scaling", action="store_true", help="Disable finite-size scaling.")
+    
+    # Parse arguments provided, or from sys.argv if none provided
+    parsed_args = parser.parse_args(args=args)
+
     print("2D Site Percolation Simulation")
     print("=" * 40)
 
-    output_dir = Path(__file__).parent
+    output_dir = Path(parsed_args.output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True) # Ensure output directory exists
     output_path = output_dir / "percolation_results.png"
     scaling_path = output_dir / "percolation_scaling.png"
 
-    # Main results with default L=100
-    results = simulate(L=100, n_realizations=200)
+    # Main results
+    p_vals = [parsed_args.p] if parsed_args.p is not None else None
+    results = simulate(L=parsed_args.L, p_values=p_vals, n_realizations=parsed_args.n_realizations, seeds=[parsed_args.seed])
     plot_results(results, output_path)
 
-    # Finite-size scaling
-    print("\n--- Finite-Size Scaling ---")
-    results_by_L = simulate_scaling(L_values=[50, 100, 200],
-                                     n_realizations=200)
+    if not parsed_args.no_scaling:
+        # Finite-size scaling
+        print("\n--- Finite-Size Scaling ---")
+        results_by_L = simulate_scaling(L_values=parsed_args.L_values,
+                                         n_realizations=parsed_args.n_realizations, seeds=[parsed_args.seed])
 
-    plot_scaling(results_by_L, scaling_path)
+        plot_scaling(results_by_L, scaling_path)
+    else:
+        results_by_L = {}
+
+    # Prepare data for JSON serialization (convert numpy arrays to lists)
+    def convert_numpy_to_list(obj):
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        if isinstance(obj, dict):
+            return {k: convert_numpy_to_list(v) for k, v in obj.items()}
+        if isinstance(obj, list):
+            return [convert_numpy_to_list(elem) for elem in obj]
+        return obj
+
+    all_results = {
+        "params": {
+            "L": parsed_args.L,
+            "p": parsed_args.p,
+            "n_realizations": parsed_args.n_realizations,
+            "L_values": parsed_args.L_values,
+            "seed": parsed_args.seed
+        },
+        "main_results": convert_numpy_to_list(results),
+        "scaling_results_by_L": {str(k): convert_numpy_to_list(v) for k, v in results_by_L.items()},
+        "protocol_metrics": calculate_protocol_metrics(results)
+    }
+    
+    results_json_path = output_dir / "results.json"
+    with open(results_json_path, 'w') as f:
+        json.dump(all_results, f, indent=4)
+    print(f"Numerical results saved to {results_json_path}")
+
+    # Save CSV
+    import pandas as pd
+    df = pd.DataFrame({
+        "p": results["p"],
+        "order_param": results["order_param"],
+        "op_err": results["op_err"],
+        "susceptibility": results["susceptibility"],
+        "sus_err": results["sus_err"],
+        "variance": results["variance"],
+        "var_err": results["var_err"],
+        "span_prob": results["span_prob"]
+    })
+    results_csv_path = output_dir / "results.csv"
+    df.to_csv(results_csv_path, index=False)
+    print(f"CSV results saved to {results_csv_path}")
+
+
+if __name__ == "__main__":
+    run()

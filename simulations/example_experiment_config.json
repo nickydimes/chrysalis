@@ -1,0 +1,15 @@
+{
+    "experiment_name": "Ising_N_Sweep",
+    "simulation_module": "ising_2d",
+    "output_base_dir": "chrysalis/simulations/results/Ising_N_Sweep",
+    "global_params": {
+        "eq_sweeps": 500,
+        "meas_sweeps": 1000
+    },
+    "parameter_sweep": {
+        "N": [20, 40, 60],
+        "L_values": [[20, 40, 60]]
+    },
+    "num_seeds": 3,
+    "seed_offset": 1000
+}

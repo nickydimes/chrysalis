@@ -1,7 +1,5 @@
 import json
-import os
 import pytest
-from pathlib import Path
 
 from src.tools.supernote_parser import (
     read_markdown_file,
@@ -13,20 +11,26 @@ from src.tools.supernote_parser import (
 @pytest.fixture
 def tmp_md(tmp_path):
     """Helper to write a markdown file and return its path."""
+
     def _write(content, name="note.md"):
         p = tmp_path / name
         p.write_text(content, encoding="utf-8")
         return p
+
     return _write
 
 
 # --- read_markdown_file ---
 
+
 class TestReadMarkdownFile:
     def test_with_frontmatter(self, tmp_md):
-        md = tmp_md("---\ndate: 2025-01-15\nlocation: Lab\ntags:\n  - physics\nsource: Observation\n---\n## Purification\nSome content\n")
+        md = tmp_md(
+            "---\ndate: 2025-01-15\nlocation: Lab\ntags:\n  - physics\nsource: Observation\n---\n## Purification\nSome content\n"
+        )
         meta, body = read_markdown_file(md)
         import datetime
+
         # YAML parses bare dates as datetime.date objects
         assert meta["date"] == datetime.date(2025, 1, 15)
         assert meta["location"] == "Lab"
@@ -58,10 +62,12 @@ class TestReadMarkdownFile:
         md = tmp_md("---\ndate: 2025-06-01\n---\nBody\n")
         meta, _ = read_markdown_file(md)
         import datetime
+
         assert isinstance(meta["date"], (str, datetime.date))
 
 
 # --- extract_protocol_content ---
+
 
 class TestExtractProtocolContent:
     def test_all_steps_present(self):
@@ -99,6 +105,7 @@ class TestExtractProtocolContent:
 
 # --- process_notes (integration) ---
 
+
 class TestProcessNotes:
     def test_end_to_end(self, tmp_path):
         """Full pipeline: write markdown, run process_notes, check JSON output."""
@@ -119,6 +126,7 @@ class TestProcessNotes:
         (input_dir / "test_note.md").write_text(md_content)
 
         from src.tools.supernote_parser import process_notes
+
         process_notes(input_dir=input_dir, output_dir=output_dir)
 
         out_file = output_dir / "test_note.json"
@@ -137,6 +145,7 @@ class TestProcessNotes:
         input_dir.mkdir()
 
         from src.tools.supernote_parser import process_notes
+
         process_notes(input_dir=input_dir, output_dir=output_dir)
 
         captured = capsys.readouterr()
@@ -153,6 +162,7 @@ class TestProcessNotes:
         )
 
         from src.tools.supernote_parser import process_notes
+
         process_notes(input_dir=input_dir, output_dir=output_dir)
 
         data = json.loads((output_dir / "dates.json").read_text())

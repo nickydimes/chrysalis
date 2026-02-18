@@ -1,0 +1,18 @@
+{
+    "experiment_name": "CI_Test_Sim",
+    "simulation_module": "ising_2d",
+    "output_base_dir": "simulations/results/CI_Test_Sim",
+    "global_params": {
+        "eq_sweeps": 100,
+        "meas_sweeps": 200
+    },
+    "parameter_sweep": {
+        "T": [
+            2.269
+        ],
+        "N": [
+            8
+        ]
+    },
+    "num_seeds": 1
+}

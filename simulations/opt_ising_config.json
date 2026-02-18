@@ -1,0 +1,13 @@
+{
+    "experiment_name": "Ising_Fine_Opt",
+    "simulation_module": "ising_2d",
+    "global_params": {
+        "eq_sweeps": 200,
+        "meas_sweeps": 500,
+        "N": 32
+    },
+    "parameter_sweep": {
+        "T": [1.5, 2.0, 2.5, 3.0]
+    },
+    "num_seeds": 1
+}

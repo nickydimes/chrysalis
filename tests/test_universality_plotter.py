@@ -1,6 +1,5 @@
-import numpy as np
-import pytest
 import matplotlib
+
 matplotlib.use("Agg")  # Non-interactive backend for tests
 import matplotlib.pyplot as plt
 

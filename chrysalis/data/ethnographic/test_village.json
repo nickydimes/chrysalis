@@ -1,0 +1,18 @@
+{
+    "title": "Riverbend Flood",
+    "source": "Test",
+    "period_or_event": "2020",
+    "geographic_location": "River",
+    "summary": "Flood transition in Riverbend.",
+    "critical_elements_observed": [
+        "Structural dissolution"
+    ],
+    "eight_step_protocol_relevance": {
+        "Anchoring": "Traditional anchoring",
+        "Emergence": "Fishing economy"
+    },
+    "tags": [
+        "flood",
+        "transition"
+    ]
+}

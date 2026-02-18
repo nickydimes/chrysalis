@@ -26,8 +26,8 @@ import matplotlib.pyplot as plt
 from numba import njit
 from pathlib import Path
 
-
 # --- Statistical Infrastructure ---
+
 
 def bootstrap_error(samples, n_bootstrap=200):
     """Return (mean, stderr) via bootstrap resampling."""
@@ -51,6 +51,7 @@ def powerlaw_mle(data, s_min=5):
 
 
 # --- Model (numba-accelerated) ---
+
 
 @njit
 def _run_avalanche(N, p, seed_i, seed_j, max_activations, rand_vals, footprint):
@@ -119,8 +120,9 @@ def run_avalanche_sparse(N, sigma, rng, max_activations):
     # Pre-generate random numbers (4 per potential neuron)
     rand_vals = rng.random(N * N)
     footprint = np.zeros((N, N), dtype=np.bool_)
-    size, duration = _run_avalanche(N, p, seed_i, seed_j, max_activations,
-                                     rand_vals, footprint)
+    size, duration = _run_avalanche(
+        N, p, seed_i, seed_j, max_activations, rand_vals, footprint
+    )
     return size, duration, footprint
 
 
@@ -193,15 +195,16 @@ def _simulate_single(N, sigma_values, n_avalanches, seed):
 def simulate(N=100, sigma_values=None, n_avalanches=2000, seeds=None):
     """Run multi-seed ensemble critical brain simulation with bootstrap errors."""
     if sigma_values is None:
-        sigma_values = np.concatenate([
-            np.linspace(0.2, 0.8, 8, endpoint=False),
-            np.linspace(0.8, 1.3, 14, endpoint=False),
-            np.linspace(1.3, 2.0, 6),
-        ])
+        sigma_values = np.concatenate(
+            [
+                np.linspace(0.2, 0.8, 8, endpoint=False),
+                np.linspace(0.8, 1.3, 14, endpoint=False),
+                np.linspace(1.3, 2.0, 6),
+            ]
+        )
     if seeds is None:
         seeds = SEEDS
 
-    sigma_c = 1.0
     snap_targets = [0.5, 1.0, 1.5]
 
     all_op = []
@@ -266,12 +269,14 @@ def simulate_scaling(N_values=None, sigma_values=None, n_avalanches=2000, seeds=
     results_by_N = {}
     for N in N_values:
         print(f"\n--- N = {N} ---")
-        results_by_N[N] = simulate(N=N, sigma_values=sigma_values,
-                                    n_avalanches=n_avalanches, seeds=seeds)
+        results_by_N[N] = simulate(
+            N=N, sigma_values=sigma_values, n_avalanches=n_avalanches, seeds=seeds
+        )
     return results_by_N
 
 
 # --- Visualization ---
+
 
 def plot_results(results, output_path):
     """Generate 4-panel figure summarizing the neural critical transition."""
@@ -279,15 +284,26 @@ def plot_results(results, output_path):
     sigma_c = 1.0
 
     fig = plt.figure(figsize=(14, 10))
-    fig.suptitle("Neural Branching Process — Critical Brain Hypothesis",
-                 fontsize=16, fontweight="bold")
+    fig.suptitle(
+        "Neural Branching Process — Critical Brain Hypothesis",
+        fontsize=16,
+        fontweight="bold",
+    )
 
     # Panel 1: Order parameter
     ax1 = fig.add_subplot(2, 2, 1)
-    ax1.errorbar(sigma, results["order_param"], yerr=results["op_err"],
-                 fmt="o-", color="#2c7bb6", markersize=4, capsize=2)
-    ax1.axvline(sigma_c, color="gray", linestyle="--", alpha=0.7,
-                label=r"$\sigma_c$ = 1.0")
+    ax1.errorbar(
+        sigma,
+        results["order_param"],
+        yerr=results["op_err"],
+        fmt="o-",
+        color="#2c7bb6",
+        markersize=4,
+        capsize=2,
+    )
+    ax1.axvline(
+        sigma_c, color="gray", linestyle="--", alpha=0.7, label=r"$\sigma_c$ = 1.0"
+    )
     ax1.set_xlabel(r"Branching ratio $\sigma$")
     ax1.set_ylabel(r"$\langle s \rangle / N^2$")
     ax1.set_title("Order Parameter (Mean Avalanche Size)")
@@ -295,10 +311,18 @@ def plot_results(results, output_path):
 
     # Panel 2: Susceptibility
     ax2 = fig.add_subplot(2, 2, 2)
-    ax2.errorbar(sigma, results["susceptibility"], yerr=results["sus_err"],
-                 fmt="o-", color="#d7191c", markersize=4, capsize=2)
-    ax2.axvline(sigma_c, color="gray", linestyle="--", alpha=0.7,
-                label=r"$\sigma_c$ = 1.0")
+    ax2.errorbar(
+        sigma,
+        results["susceptibility"],
+        yerr=results["sus_err"],
+        fmt="o-",
+        color="#d7191c",
+        markersize=4,
+        capsize=2,
+    )
+    ax2.axvline(
+        sigma_c, color="gray", linestyle="--", alpha=0.7, label=r"$\sigma_c$ = 1.0"
+    )
     ax2.set_xlabel(r"Branching ratio $\sigma$")
     ax2.set_ylabel(r"Var$(s)$")
     ax2.set_title("Susceptibility (Avalanche Size Variance)")
@@ -306,10 +330,18 @@ def plot_results(results, output_path):
 
     # Panel 3: Mean duration
     ax3 = fig.add_subplot(2, 2, 3)
-    ax3.errorbar(sigma, results["mean_duration"], yerr=results["dur_err"],
-                 fmt="o-", color="#fdae61", markersize=4, capsize=2)
-    ax3.axvline(sigma_c, color="gray", linestyle="--", alpha=0.7,
-                label=r"$\sigma_c$ = 1.0")
+    ax3.errorbar(
+        sigma,
+        results["mean_duration"],
+        yerr=results["dur_err"],
+        fmt="o-",
+        color="#fdae61",
+        markersize=4,
+        capsize=2,
+    )
+    ax3.axvline(
+        sigma_c, color="gray", linestyle="--", alpha=0.7, label=r"$\sigma_c$ = 1.0"
+    )
     ax3.set_xlabel(r"Branching ratio $\sigma$")
     ax3.set_ylabel(r"$\langle d \rangle$")
     ax3.set_title("Mean Avalanche Duration")
@@ -322,21 +354,29 @@ def plot_results(results, output_path):
 
     snapshots = results["snapshots"]
     snap_targets = results["snap_targets"]
-    labels = [r"Subcritical" + "\n" + r"($\sigma$=0.5)",
-              r"Critical" + "\n" + r"($\sigma$=1.0)",
-              r"Supercritical" + "\n" + r"($\sigma$=1.5)"]
+    labels = [
+        r"Subcritical" + "\n" + r"($\sigma$=0.5)",
+        r"Critical" + "\n" + r"($\sigma$=1.0)",
+        r"Supercritical" + "\n" + r"($\sigma$=1.5)",
+    ]
 
     for i, (s_target, label) in enumerate(zip(snap_targets, labels)):
         if s_target in snapshots:
             inset = fig.add_axes([0.58 + i * 0.14, 0.12, 0.12, 0.25])
-            inset.imshow(snapshots[s_target].astype(float), cmap="Purples",
-                         vmin=0, vmax=1, interpolation="nearest")
+            inset.imshow(
+                snapshots[s_target].astype(float),
+                cmap="Purples",
+                vmin=0,
+                vmax=1,
+                interpolation="nearest",
+            )
             inset.set_xticks([])
             inset.set_yticks([])
             inset.set_title(label, fontsize=9)
 
-    fig.subplots_adjust(left=0.08, right=0.95, top=0.92, bottom=0.08,
-                        hspace=0.35, wspace=0.3)
+    fig.subplots_adjust(
+        left=0.08, right=0.95, top=0.92, bottom=0.08, hspace=0.35, wspace=0.3
+    )
     plt.savefig(output_path, dpi=150, bbox_inches="tight")
     print(f"\nResults saved to {output_path}")
 
@@ -344,13 +384,14 @@ def plot_results(results, output_path):
 def plot_scaling(results_by_N, output_path):
     """Generate 4-panel scaling analysis figure."""
     # Known mean-field branching exponents
-    tau_s = 3.0 / 2.0     # P(s) ~ s^{-3/2}
-    tau_d = 2.0            # P(d) ~ d^{-2}
-    gamma_sd = 2.0         # <s|d> ~ d^{gamma_sd}
+    tau_s = 3.0 / 2.0  # P(s) ~ s^{-3/2}
+    tau_d = 2.0  # P(d) ~ d^{-2}
+    gamma_sd = 2.0  # <s|d> ~ d^{gamma_sd}
 
     fig, axes = plt.subplots(2, 2, figsize=(14, 10))
-    fig.suptitle("Neural Branching Process — Scaling Analysis",
-                 fontsize=16, fontweight="bold")
+    fig.suptitle(
+        "Neural Branching Process — Scaling Analysis", fontsize=16, fontweight="bold"
+    )
 
     # Use the largest N for distribution plots
     largest_N = max(results_by_N.keys())
@@ -376,8 +417,14 @@ def plot_scaling(results_by_N, output_path):
             ref_mask = bin_centers[mask] >= 5
             if np.any(ref_mask):
                 p_fit *= hist[mask][ref_mask][0] / (5 ** (-alpha_s))
-            ax1.loglog(s_fit, p_fit, "--", color="gray", alpha=0.7,
-                       label=rf"$\alpha_s$ = {alpha_s:.2f} (exact = {tau_s:.2f})")
+            ax1.loglog(
+                s_fit,
+                p_fit,
+                "--",
+                color="gray",
+                alpha=0.7,
+                label=rf"$\alpha_s$ = {alpha_s:.2f} (exact = {tau_s:.2f})",
+            )
     ax1.set_xlabel("Avalanche size $s$")
     ax1.set_ylabel("$P(s)$")
     ax1.set_title(f"Size Distribution at $\\sigma_c$ (N={largest_N})")
@@ -392,7 +439,9 @@ def plot_scaling(results_by_N, output_path):
         hist_d, bin_edges_d = np.histogram(dur_pos, bins=bins_d, density=True)
         bin_centers_d = np.sqrt(bin_edges_d[:-1] * bin_edges_d[1:])
         mask_d = hist_d > 0
-        ax2.loglog(bin_centers_d[mask_d], hist_d[mask_d], "o", color="#d7191c", markersize=4)
+        ax2.loglog(
+            bin_centers_d[mask_d], hist_d[mask_d], "o", color="#d7191c", markersize=4
+        )
 
         alpha_d = powerlaw_mle(dur_pos, s_min=5)
         if not np.isnan(alpha_d):
@@ -401,8 +450,14 @@ def plot_scaling(results_by_N, output_path):
             ref_mask_d = bin_centers_d[mask_d] >= 5
             if np.any(ref_mask_d):
                 p_fit_d *= hist_d[mask_d][ref_mask_d][0] / (5 ** (-alpha_d))
-            ax2.loglog(d_fit, p_fit_d, "--", color="gray", alpha=0.7,
-                       label=rf"$\alpha_d$ = {alpha_d:.2f} (exact = {tau_d:.2f})")
+            ax2.loglog(
+                d_fit,
+                p_fit_d,
+                "--",
+                color="gray",
+                alpha=0.7,
+                label=rf"$\alpha_d$ = {alpha_d:.2f} (exact = {tau_d:.2f})",
+            )
     ax2.set_xlabel("Avalanche duration $d$")
     ax2.set_ylabel("$P(d)$")
     ax2.set_title(f"Duration Distribution at $\\sigma_c$ (N={largest_N})")
@@ -432,9 +487,14 @@ def plot_scaling(results_by_N, output_path):
             log_s = np.log(mean_s_given_d)
             coeffs = np.polyfit(log_d, log_s, 1)
             d_fit = np.logspace(np.log10(d_vals.min()), np.log10(d_vals.max()), 50)
-            ax3.loglog(d_fit, np.exp(coeffs[1]) * d_fit ** coeffs[0], "--",
-                       color="gray", alpha=0.7,
-                       label=rf"slope = {coeffs[0]:.2f} (exact $\gamma_{{sd}}$ = {gamma_sd})")
+            ax3.loglog(
+                d_fit,
+                np.exp(coeffs[1]) * d_fit ** coeffs[0],
+                "--",
+                color="gray",
+                alpha=0.7,
+                label=rf"slope = {coeffs[0]:.2f} (exact $\gamma_{{sd}}$ = {gamma_sd})",
+            )
     ax3.set_xlabel("Duration $d$")
     ax3.set_ylabel(r"$\langle s | d \rangle$")
     ax3.set_title("Size-Duration Scaling")
@@ -442,7 +502,6 @@ def plot_scaling(results_by_N, output_path):
 
     # Panel 4: Mean avalanche size at sigma_c vs N (log-log)
     ax4 = axes[1, 1]
-    colors = {50: "#2c7bb6", 100: "#fdae61", 200: "#d7191c"}
     N_arr = []
     mean_s_arr = []
     for N, res in results_by_N.items():
@@ -457,9 +516,14 @@ def plot_scaling(results_by_N, output_path):
 
         coeffs = np.polyfit(np.log(N_arr), np.log(mean_s_arr), 1)
         N_fit = np.linspace(N_arr.min(), N_arr.max(), 50)
-        ax4.loglog(N_fit, np.exp(coeffs[1]) * N_fit ** coeffs[0], "--",
-                   color="gray", alpha=0.7,
-                   label=rf"slope = {coeffs[0]:.2f}")
+        ax4.loglog(
+            N_fit,
+            np.exp(coeffs[1]) * N_fit ** coeffs[0],
+            "--",
+            color="gray",
+            alpha=0.7,
+            label=rf"slope = {coeffs[0]:.2f}",
+        )
     ax4.set_xlabel("Grid size $N$")
     ax4.set_ylabel(r"$\langle s \rangle$ at $\sigma_c$")
     ax4.set_title(r"Mean Avalanche Size vs $N$ (Finite-Size Scaling)")
